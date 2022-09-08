@@ -12,6 +12,7 @@ public class PointCollider : MonoBehaviour
         if(other.tag == "Ball")
         {
             //scoreKeeperTemp.GetComponent<ScoreKeeper>().score += score;
+            print(score);
         }
     }
 }
