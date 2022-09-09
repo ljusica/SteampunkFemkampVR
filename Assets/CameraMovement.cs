@@ -44,4 +44,8 @@ public class CameraMovement : MonoBehaviour
     {
         Camera.main.transform.position -= Camera.main.transform.forward * Time.deltaTime;
     }
+    void MoveCamera()
+    {
+        //Camera.main.transform.eulerAngles.Set(Camera.main.transform.eulerAngles.x);
+    }
 }
