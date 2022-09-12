@@ -3867,8 +3867,9 @@ GameObject:
   - component: {fileID: 720314820}
   - component: {fileID: 720314819}
   - component: {fileID: 720314818}
+  - component: {fileID: 720314821}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BoosterRamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3952,6 +3953,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &720314821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720314816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8deca9c33ce3328499ecd3ce17f04fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &721314404
 MeshCollider:
   m_ObjectHideFlags: 0
