@@ -8,21 +8,20 @@ public class CameraMovement : MonoBehaviour
     TestControlls controller;
     InputAction moveForward;
     InputAction moveBackwad;
-    InputAction mouseX;
-    InputAction mouseY;
+    private float sensitivity = 10;
+    private float moveSpeed = 5;
+
     void Start()
     {
         controller = new TestControlls();
         moveForward = controller.FirstPerson.Forward;
         moveBackwad = controller.FirstPerson.Backward;
-        mouseX = controller.FirstPerson.MouseDeltaX;
-        mouseY = controller.FirstPerson.MouseDeltaY;
 
         moveForward.Enable();
         moveBackwad.Enable();
-        mouseX.Enable();
-        mouseY.Enable();
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
@@ -34,18 +33,22 @@ public class CameraMovement : MonoBehaviour
         {
             MoveBackward();
         }
+        MoveCamera();
     }
 
     void MoveForward()
     {
-            Camera.main.transform.position += Camera.main.transform.forward * Time.deltaTime;
+        transform.position += Camera.main.transform.forward * moveSpeed *Time.deltaTime;
     }
     void MoveBackward()
     {
-        Camera.main.transform.position -= Camera.main.transform.forward * Time.deltaTime;
+        transform.position -= Camera.main.transform.forward * moveSpeed * Time.deltaTime;
     }
     void MoveCamera()
     {
-        //Camera.main.transform.eulerAngles.Set(Camera.main.transform.eulerAngles.x);
+        Vector2 mouse = Mouse.current.delta.ReadValue();
+
+        transform.Rotate(Vector3.up * mouse.x * sensitivity * Time.deltaTime);  
+        Camera.main.transform.Rotate(Vector3.right * -1 * mouse.y * sensitivity * Time.deltaTime);  
     }
 }
