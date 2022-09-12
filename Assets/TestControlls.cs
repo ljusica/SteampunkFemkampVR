@@ -46,22 +46,22 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""MouseDeltaX"",
-                    ""type"": ""Value"",
+                    ""name"": ""Look"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""30ef4017-df04-44c0-bae3-5e59d5a50ce8"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""MouseDeltaY"",
-                    ""type"": ""Value"",
-                    ""id"": ""4df81516-12f4-4ab3-9f3b-4217daa44451"",
-                    ""expectedControlType"": ""Axis"",
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""82716567-f437-40d1-83de-b0e1fa2bbc54"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -89,23 +89,23 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""d26c5d04-eb31-4fb5-bd83-b01b20f9ec0f"",
-                    ""path"": ""<Mouse>/delta/x"",
+                    ""id"": ""c4910d71-755d-4b92-b600-fde39844961c"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MouseDeltaX"",
+                    ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""88c1a7b4-947f-4c6e-ae61-ffd29a576db1"",
-                    ""path"": ""<Mouse>/delta/y"",
+                    ""id"": ""8107a32d-d373-4593-a5a1-2679609e6fa3"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MouseDeltaY"",
+                    ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -118,8 +118,8 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
         m_FirstPerson = asset.FindActionMap("FirstPerson", throwIfNotFound: true);
         m_FirstPerson_Forward = m_FirstPerson.FindAction("Forward", throwIfNotFound: true);
         m_FirstPerson_Backward = m_FirstPerson.FindAction("Backward", throwIfNotFound: true);
-        m_FirstPerson_MouseDeltaX = m_FirstPerson.FindAction("MouseDeltaX", throwIfNotFound: true);
-        m_FirstPerson_MouseDeltaY = m_FirstPerson.FindAction("MouseDeltaY", throwIfNotFound: true);
+        m_FirstPerson_Look = m_FirstPerson.FindAction("Look", throwIfNotFound: true);
+        m_FirstPerson_Shoot = m_FirstPerson.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -181,16 +181,16 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
     private IFirstPersonActions m_FirstPersonActionsCallbackInterface;
     private readonly InputAction m_FirstPerson_Forward;
     private readonly InputAction m_FirstPerson_Backward;
-    private readonly InputAction m_FirstPerson_MouseDeltaX;
-    private readonly InputAction m_FirstPerson_MouseDeltaY;
+    private readonly InputAction m_FirstPerson_Look;
+    private readonly InputAction m_FirstPerson_Shoot;
     public struct FirstPersonActions
     {
         private @TestControlls m_Wrapper;
         public FirstPersonActions(@TestControlls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Forward => m_Wrapper.m_FirstPerson_Forward;
         public InputAction @Backward => m_Wrapper.m_FirstPerson_Backward;
-        public InputAction @MouseDeltaX => m_Wrapper.m_FirstPerson_MouseDeltaX;
-        public InputAction @MouseDeltaY => m_Wrapper.m_FirstPerson_MouseDeltaY;
+        public InputAction @Look => m_Wrapper.m_FirstPerson_Look;
+        public InputAction @Shoot => m_Wrapper.m_FirstPerson_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_FirstPerson; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -206,12 +206,12 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
                 @Backward.started -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnBackward;
                 @Backward.performed -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnBackward;
                 @Backward.canceled -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnBackward;
-                @MouseDeltaX.started -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaX;
-                @MouseDeltaX.performed -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaX;
-                @MouseDeltaX.canceled -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaX;
-                @MouseDeltaY.started -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaY;
-                @MouseDeltaY.performed -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaY;
-                @MouseDeltaY.canceled -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnMouseDeltaY;
+                @Look.started -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnLook;
+                @Shoot.started -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_FirstPersonActionsCallbackInterface.OnShoot;
             }
             m_Wrapper.m_FirstPersonActionsCallbackInterface = instance;
             if (instance != null)
@@ -222,12 +222,12 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
                 @Backward.started += instance.OnBackward;
                 @Backward.performed += instance.OnBackward;
                 @Backward.canceled += instance.OnBackward;
-                @MouseDeltaX.started += instance.OnMouseDeltaX;
-                @MouseDeltaX.performed += instance.OnMouseDeltaX;
-                @MouseDeltaX.canceled += instance.OnMouseDeltaX;
-                @MouseDeltaY.started += instance.OnMouseDeltaY;
-                @MouseDeltaY.performed += instance.OnMouseDeltaY;
-                @MouseDeltaY.canceled += instance.OnMouseDeltaY;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
             }
         }
     }
@@ -236,7 +236,7 @@ public partial class @TestControlls : IInputActionCollection2, IDisposable
     {
         void OnForward(InputAction.CallbackContext context);
         void OnBackward(InputAction.CallbackContext context);
-        void OnMouseDeltaX(InputAction.CallbackContext context);
-        void OnMouseDeltaY(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

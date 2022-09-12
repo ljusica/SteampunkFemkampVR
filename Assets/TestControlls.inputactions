@@ -24,22 +24,22 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MouseDeltaX",
-                    "type": "Value",
+                    "name": "Look",
+                    "type": "PassThrough",
                     "id": "30ef4017-df04-44c0-bae3-5e59d5a50ce8",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "MouseDeltaY",
-                    "type": "Value",
-                    "id": "4df81516-12f4-4ab3-9f3b-4217daa44451",
-                    "expectedControlType": "Axis",
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "82716567-f437-40d1-83de-b0e1fa2bbc54",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -67,23 +67,23 @@
                 },
                 {
                     "name": "",
-                    "id": "d26c5d04-eb31-4fb5-bd83-b01b20f9ec0f",
-                    "path": "<Mouse>/delta/x",
+                    "id": "c4910d71-755d-4b92-b600-fde39844961c",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MouseDeltaX",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "88c1a7b4-947f-4c6e-ae61-ffd29a576db1",
-                    "path": "<Mouse>/delta/y",
+                    "id": "8107a32d-d373-4593-a5a1-2679609e6fa3",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MouseDeltaY",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
