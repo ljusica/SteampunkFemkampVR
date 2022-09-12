@@ -5,17 +5,20 @@ using UnityEngine;
 public class BoostBall : MonoBehaviour
 {
     private Rigidbody ballRB;
+    public float boostMultiplier;
+    public float boostMin;
+    public float boostMax;
 
     private void Boost()
     {
-        if (ballRB.velocity.z < 6 && ballRB.velocity.z > 1.75)
+        if (ballRB.velocity.z < boostMax && ballRB.velocity.z > boostMin)
         {
             Vector3 vel = ballRB.velocity;
-            vel.z += 1f;
+            vel.z += boostMultiplier;
+            vel.y += boostMultiplier;
             ballRB.velocity = vel;
             Debug.Log("Boosting!");
-
-            float targetAngleY = Mathf.Atan2(ballRB.velocity.y, ballRB.velocity.z) * Mathf.Rad2Deg + transform.rotation.eulerAngles.z;
+            //float targetAngleY = Mathf.Atan2(ballRB.velocity.y, ballRB.velocity.z) * Mathf.Rad2Deg + transform.rotation.eulerAngles.z;
 
         }
     }
