@@ -25,19 +25,22 @@ public class Bullet : MonoBehaviour
 
     public void Fire(Vector3 forward)
     {
-        GetComponent<Rigidbody>().velocity = forward * firePower;
+        rb = GetComponent<Rigidbody>();
+        rb.velocity = forward * firePower;
     }
     public void ReturnTooPool()
     {
         rb.velocity = Vector3.zero;
+        rb.useGravity = false;
         timer = 0;
         pool.Release(this);
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Anka"))
+        if (collision.transform.CompareTag("Player"))
         {
             ReturnTooPool();
         }
+        rb.useGravity = true;
     }
 }
