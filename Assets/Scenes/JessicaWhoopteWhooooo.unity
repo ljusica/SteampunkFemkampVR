@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 117209719}
   - component: {fileID: 117209718}
   - component: {fileID: 117209717}
+  - component: {fileID: 117209720}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Duck
@@ -222,6 +223,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117209715}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &117209720
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117209715}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &204490882
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +251,7 @@ GameObject:
   - component: {fileID: 204490886}
   - component: {fileID: 204490885}
   - component: {fileID: 204490884}
+  - component: {fileID: 204490887}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Duck
@@ -249,7 +267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204490882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.142, y: 0.36785805, z: -2.891275}
+  m_LocalPosition: {x: 1.142, y: 0.36785793, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -319,6 +337,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204490882}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &204490887
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204490882}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &218355365
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +453,7 @@ MonoBehaviour:
   length: 2
   speed: 1
   offset: 0
+  xDown: 0
 --- !u!1 &251102479
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +466,7 @@ GameObject:
   - component: {fileID: 251102483}
   - component: {fileID: 251102482}
   - component: {fileID: 251102481}
+  - component: {fileID: 251102484}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Duck
@@ -446,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251102479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.975, y: 0.377, z: -2.891275}
+  m_LocalPosition: {x: -0.975, y: 0.3770001, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -516,6 +552,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251102479}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &251102484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251102479}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &264755666
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +580,7 @@ GameObject:
   - component: {fileID: 264755670}
   - component: {fileID: 264755669}
   - component: {fileID: 264755668}
+  - component: {fileID: 264755671}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Duck
@@ -613,6 +666,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264755666}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &264755671
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264755666}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &359292584
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +695,7 @@ GameObject:
   - component: {fileID: 359292586}
   - component: {fileID: 359292585}
   m_Layer: 0
-  m_Name: Water (3)
+  m_Name: Water Tier3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,10 +713,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626cf1a81951f047a2f0974a8b05370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 1
-  length: 2
-  speed: 1
+  amplitude: 0.02
+  length: 0.2
+  speed: 5
   offset: 0
+  xDown: 2.6
 --- !u!23 &359292586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -725,6 +795,7 @@ GameObject:
   - component: {fileID: 537051730}
   - component: {fileID: 537051729}
   - component: {fileID: 537051728}
+  - component: {fileID: 537051731}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Duck
@@ -810,6 +881,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537051726}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &537051731
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537051726}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &599916901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805853615}
+  - component: {fileID: 805853616}
   m_Layer: 0
   m_Name: Tier 2
   m_TagString: Untagged
@@ -1038,6 +1126,27 @@ Transform:
   m_Father: {fileID: 1516807743}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805853616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805853614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f116c2f255cd448ad30f8bedccb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ducks:
+  - {fileID: 264755666}
+  - {fileID: 1779243266}
+  - {fileID: 1931080622}
+  - {fileID: 1170164197}
+  - {fileID: 117209715}
+  waveManager: {fileID: 1389397175}
+  depthBeforeSubmerged: 1
+  displacementAmount: 3
 --- !u!1 &809752368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1159,7 @@ GameObject:
   - component: {fileID: 809752372}
   - component: {fileID: 809752371}
   - component: {fileID: 809752370}
+  - component: {fileID: 809752373}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Duck
@@ -1065,7 +1175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809752368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17330743, y: 0.36785805, z: -2.891275}
+  m_LocalPosition: {x: 0.17330743, y: 0.36785793, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1135,6 +1245,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809752368}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &809752373
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809752368}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &949969914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1273,7 @@ GameObject:
   - component: {fileID: 949969918}
   - component: {fileID: 949969917}
   - component: {fileID: 949969916}
+  - component: {fileID: 949969919}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Duck
@@ -1232,6 +1359,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949969914}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &949969919
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949969914}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1011769091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,6 +1384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1011769092}
+  - component: {fileID: 1011769093}
   m_Layer: 0
   m_Name: Tier 1
   m_TagString: Untagged
@@ -1270,6 +1414,29 @@ Transform:
   m_Father: {fileID: 1516807743}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011769093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011769091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f116c2f255cd448ad30f8bedccb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ducks:
+  - {fileID: 809752368}
+  - {fileID: 1911496915}
+  - {fileID: 1132599889}
+  - {fileID: 1299726116}
+  - {fileID: 1062192202}
+  - {fileID: 251102479}
+  - {fileID: 204490882}
+  waveManager: {fileID: 1465105138}
+  depthBeforeSubmerged: 1
+  displacementAmount: 3
 --- !u!1 &1062192202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1449,7 @@ GameObject:
   - component: {fileID: 1062192206}
   - component: {fileID: 1062192205}
   - component: {fileID: 1062192204}
+  - component: {fileID: 1062192207}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Duck
@@ -1297,7 +1465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062192202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.476, y: 0.36785805, z: -2.891275}
+  m_LocalPosition: {x: 0.476, y: 0.36785793, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1367,6 +1535,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062192202}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1062192207
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062192202}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1069865254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,6 +1560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1069865255}
+  - component: {fileID: 1069865256}
   m_Layer: 0
   m_Name: Tier 3
   m_TagString: Untagged
@@ -1401,6 +1586,25 @@ Transform:
   m_Father: {fileID: 1516807743}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069865256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069865254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764f116c2f255cd448ad30f8bedccb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ducks:
+  - {fileID: 537051726}
+  - {fileID: 949969914}
+  - {fileID: 1982457096}
+  waveManager: {fileID: 359292585}
+  depthBeforeSubmerged: 1
+  displacementAmount: 3
 --- !u!1 &1132599889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1617,7 @@ GameObject:
   - component: {fileID: 1132599893}
   - component: {fileID: 1132599892}
   - component: {fileID: 1132599891}
+  - component: {fileID: 1132599894}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Duck
@@ -1428,7 +1633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132599889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.815, y: 0.36785805, z: -2.891275}
+  m_LocalPosition: {x: 0.815, y: 0.36785793, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1498,6 +1703,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132599889}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1132599894
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132599889}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1135607818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1523,12 +1744,12 @@ PrefabInstance:
     - target: {fileID: 1948756345394529081, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.08
+      value: -3.74
       objectReference: {fileID: 0}
     - target: {fileID: 1948756345394529081, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.26
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 1948756345394529081, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
@@ -1579,6 +1800,7 @@ GameObject:
   - component: {fileID: 1170164201}
   - component: {fileID: 1170164200}
   - component: {fileID: 1170164199}
+  - component: {fileID: 1170164202}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Duck
@@ -1664,6 +1886,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170164197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1170164202
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170164197}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1288858168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +2045,7 @@ GameObject:
   - component: {fileID: 1299726120}
   - component: {fileID: 1299726119}
   - component: {fileID: 1299726118}
+  - component: {fileID: 1299726121}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Duck
@@ -1822,7 +2061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299726116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.148, y: 0.368, z: -2.891275}
+  m_LocalPosition: {x: -0.14799999, y: 0.36800003, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1892,6 +2131,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299726116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1299726121
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299726116}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1360749229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,7 +2196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764f116c2f255cd448ad30f8bedccb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1360749230}
+  ducks: []
+  waveManager: {fileID: 0}
   depthBeforeSubmerged: 1
   displacementAmount: 3
 --- !u!65 &1360749232
@@ -2035,7 +2291,7 @@ GameObject:
   - component: {fileID: 1389397176}
   - component: {fileID: 1389397175}
   m_Layer: 0
-  m_Name: Water (2)
+  m_Name: Water Tier2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2053,10 +2309,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626cf1a81951f047a2f0974a8b05370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 1
-  length: 2
-  speed: 1
+  amplitude: 0.02
+  length: 0.2
+  speed: 5
   offset: 0
+  xDown: 2.95
 --- !u!23 &1389397176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2135,7 +2392,7 @@ GameObject:
   - component: {fileID: 1465105139}
   - component: {fileID: 1465105138}
   m_Layer: 0
-  m_Name: Water (1)
+  m_Name: Water Tier1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2153,10 +2410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626cf1a81951f047a2f0974a8b05370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 1
-  length: 2
-  speed: 1
+  amplitude: 0.02
+  length: 0.2
+  speed: 5
   offset: 0
+  xDown: 3.28
 --- !u!23 &1465105139
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2434,6 +2692,7 @@ GameObject:
   - component: {fileID: 1779243270}
   - component: {fileID: 1779243269}
   - component: {fileID: 1779243268}
+  - component: {fileID: 1779243271}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Duck
@@ -2519,6 +2778,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779243266}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1779243271
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779243266}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1875745353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +2903,7 @@ GameObject:
   - component: {fileID: 1911496919}
   - component: {fileID: 1911496918}
   - component: {fileID: 1911496917}
+  - component: {fileID: 1911496920}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Duck
@@ -2643,7 +2919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911496915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.527, y: 0.36785805, z: -2.891275}
+  m_LocalPosition: {x: -0.527, y: 0.36785793, z: -2.891275}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2713,6 +2989,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911496915}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1911496920
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911496915}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1931080622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,6 +3017,7 @@ GameObject:
   - component: {fileID: 1931080626}
   - component: {fileID: 1931080625}
   - component: {fileID: 1931080624}
+  - component: {fileID: 1931080627}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Duck
@@ -2810,6 +3103,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931080622}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1931080627
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931080622}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1982457096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +3131,7 @@ GameObject:
   - component: {fileID: 1982457100}
   - component: {fileID: 1982457099}
   - component: {fileID: 1982457098}
+  - component: {fileID: 1982457101}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Duck
@@ -2907,3 +3217,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982457096}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1982457101
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982457096}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 5
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
