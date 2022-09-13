@@ -15,7 +15,7 @@ public class BoostBall : MonoBehaviour
         {
             Vector3 vel = ballRB.velocity;
             vel.z += boostMultiplier;
-            vel.y += boostMultiplier;
+            vel.y += boostMultiplier * 0.75f;
             ballRB.velocity = vel;
             Debug.Log("Boosting!");
             //float targetAngleY = Mathf.Atan2(ballRB.velocity.y, ballRB.velocity.z) * Mathf.Rad2Deg + transform.rotation.eulerAngles.z;
