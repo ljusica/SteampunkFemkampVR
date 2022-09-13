@@ -46,6 +46,7 @@ public class DuckMovement : MonoBehaviour
                 }
             }
 
+            counter = Random.Range(2, 7);
             timer = Time.time;
         }
 
@@ -66,7 +67,7 @@ public class DuckMovement : MonoBehaviour
 
     private void Hide(GameObject duck)
     {
-        duck.transform.DOMoveY(hidingPos, 5);
+        duck.transform.DOMoveY(hidingPos, counter);
     }
 
 }
