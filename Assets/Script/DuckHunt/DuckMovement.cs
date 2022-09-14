@@ -65,7 +65,7 @@ public class DuckMovement : MonoBehaviour
         duck.transform.DOMoveX(duckDestination, 10 * Mathf.Abs(duck.transform.position.x - duckDestination)).OnComplete(() => Move(duck));
     }
 
-    private void Hide(GameObject duck)
+    public void Hide(GameObject duck)
     {
         duck.transform.DOMoveY(hidingPos, counter);
     }

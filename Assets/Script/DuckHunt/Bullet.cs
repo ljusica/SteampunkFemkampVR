@@ -9,6 +9,10 @@ public class Bullet : MonoBehaviour
     Rigidbody rb;
     float firePower = 10;
     float timer;
+
+    private GameObject duck;
+    private DuckMovement duckMovement;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -35,12 +39,16 @@ public class Bullet : MonoBehaviour
         timer = 0;
         pool.Release(this);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Duck"))
         {
-            ReturnTooPool();
+            duck = other.gameObject;
+            duckMovement = duck.GetComponentInParent<DuckMovement>();
+
+            duckMovement.Hide(duck);
         }
+
         rb.useGravity = true;
     }
 }
