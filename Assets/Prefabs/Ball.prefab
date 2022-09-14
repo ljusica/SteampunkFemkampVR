@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4329702259043268234}
   - component: {fileID: 7605777585422372451}
   - component: {fileID: 5628009253850468093}
+  - component: {fileID: 4527513672292826609}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -258,3 +259,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
+--- !u!114 &4527513672292826609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4329702259043268235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d79a8e23832b4148a17b0e6e3f48ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballBoxDropper: {fileID: 0}
