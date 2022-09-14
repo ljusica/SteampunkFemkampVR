@@ -5,12 +5,13 @@ public class Ball : MonoBehaviour
     Rigidbody rb;
 
     public GameObject ballBoxDropper;
+    public bool hasLanded;
 
-    private bool hasLanded;
     private float timer = 4f;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         ballBoxDropper = GameObject.FindGameObjectWithTag("BallBoxDropper").gameObject;
     }
 
@@ -41,7 +42,5 @@ public class Ball : MonoBehaviour
         rb.velocity = Vector3.zero;
         transform.position = ballBoxDropper.transform.position;
     }
-
-    
 
 }
