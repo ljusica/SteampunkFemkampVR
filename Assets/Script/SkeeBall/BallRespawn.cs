@@ -6,10 +6,9 @@ public class BallRespawn : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Ball")
+        if (other.CompareTag("Ball"))
         {
-            other.transform.position = other.GetComponent<BallPos>().startPos;
-            other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            other.gameObject.GetComponent<Ball>().ReturnToBoxDropper();
         }
     }
 }
