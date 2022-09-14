@@ -38,8 +38,8 @@ public class Ball : MonoBehaviour
     public void ReturnToBoxDropper()
     {
         Debug.Log("Dropping ball!");
-        transform.position = ballBoxDropper.transform.position;
         rb.velocity = Vector3.zero;
+        transform.position = ballBoxDropper.transform.position;
     }
 
     

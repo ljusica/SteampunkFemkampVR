@@ -3,7 +3,117 @@ guid: ccbe95cf105381046af3e7a64a547e3c
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_001
+    second: {fileID: 2100000, guid: b00a1cbb92bedc34395d3889795610aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_007
+    second: {fileID: 2100000, guid: dd9a0f3d165f3a540a7046bb7f5306a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_008
+    second: {fileID: 2100000, guid: 4dfb3f6b915349944a2c4bf1b8ccdff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_009
+    second: {fileID: 2100000, guid: 1b706163c2b364e43b20da258f3c973b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_A02
+    second: {fileID: 2100000, guid: 2c107895492c6b24ab21c6d2740e2cf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_B17
+    second: {fileID: 2100000, guid: 5582568c74be5b94fb2413b9058812eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_I07
+    second: {fileID: 2100000, guid: ae5244852435b79409c263ee54f0fcfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Construction
+    second: {fileID: 2100000, guid: 2957f842c88ffcd4c83c24d70e18d919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fencing_Mesh_Blue
+    second: {fileID: 2100000, guid: 9758bc41c3e8ba242acbf15915c718f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Aluminum_Anodized
+    second: {fileID: 2100000, guid: 66eceeeeb36dc884d97f966c5e08e5d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Corrogated_Shiny
+    second: {fileID: 2100000, guid: 80e4b637ba993474eb2fe6573acf4f48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0021_DarkRed
+    second: {fileID: 2100000, guid: cc5c6ac1097c55d40b754a4d75776e77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0056_Yellow
+    second: {fileID: 2100000, guid: 0857930d113f04a4b9efd5da84be9353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0071_MediumSpringGreen
+    second: {fileID: 2100000, guid: 5e981c2406c4e364584ea21c2ef4333a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _0100_SteelBlue
+    second: {fileID: 2100000, guid: 332e9b39abfe6ee439ba5ef74ab6f422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __LightGray_
+    second: {fileID: 2100000, guid: 11f0a62ad12aa384287d0fd4d6251499, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Corrogated_Shiny_1
+    second: {fileID: 2100000, guid: 56fceb1aec9c9a748a19979850828e86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Corrogated_Shiny_2
+    second: {fileID: 2100000, guid: 011b380f8a887d74394b73a77a248843, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: __Metal_Corrogated_Shiny_3
+    second: {fileID: 2100000, guid: 0a14daa3ff9d3054ba9ef67fd6165137, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 1a02e988722c5854da32044221a0a8d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: cb8da2267be99b64e93b61062433f20a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0
+    second: {fileID: 2100000, guid: 7f8f60c07cdc9594d938de4def0c03ae, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
