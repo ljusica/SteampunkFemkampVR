@@ -8,6 +8,8 @@ public class CameraMovement : MonoBehaviour
     TestControlls controller;
     InputAction moveForward;
     InputAction moveBackwad;
+    InputAction moveRight;
+    InputAction moveLeft;
     private float sensitivity = 10;
     private float moveSpeed = 5;
 
@@ -16,9 +18,13 @@ public class CameraMovement : MonoBehaviour
         controller = new TestControlls();
         moveForward = controller.FirstPerson.Forward;
         moveBackwad = controller.FirstPerson.Backward;
+        moveRight = controller.FirstPerson.Right;
+        moveLeft = controller.FirstPerson.Left;
 
         moveForward.Enable();
         moveBackwad.Enable();
+        moveRight.Enable();
+        moveLeft.Enable();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -33,6 +39,15 @@ public class CameraMovement : MonoBehaviour
         {
             MoveBackward();
         }
+
+        if (moveRight.IsPressed())
+        {
+            MoveRight();
+        }else if (moveLeft.IsPressed())
+        {
+            MoveLeft();
+        }
+
         MoveCamera();
     }
 
@@ -43,6 +58,14 @@ public class CameraMovement : MonoBehaviour
     void MoveBackward()
     {
         transform.position -= Camera.main.transform.forward * moveSpeed * Time.deltaTime;
+    }
+    void MoveRight()
+    {
+        transform.position += Camera.main.transform.right * moveSpeed * Time.deltaTime;
+    }
+    void MoveLeft()
+    {
+        transform.position -= Camera.main.transform.right * moveSpeed * Time.deltaTime;
     }
     void MoveCamera()
     {
