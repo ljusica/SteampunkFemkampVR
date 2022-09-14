@@ -32,25 +32,25 @@ public class DuckMovement : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if (Time.time >= timer + counter)
-        {
-            for (int i = 0; i < ducks.Length; i++)
-            {
-                hidingPropability = Random.Range(0, 2);
+    //private void Update()
+    //{
+    //    if (Time.time >= timer + counter)
+    //    {
+    //        for (int i = 0; i < ducks.Length; i++)
+    //        {
+    //            hidingPropability = Random.Range(0, 2);
 
-                if (hidingPropability > 0)
-                {
-                    Hide(ducks[i]);
-                }
-            }
+    //            if (hidingPropability > 0)
+    //            {
+    //                Hide(ducks[i]);
+    //            }
+    //        }
 
-            counter = Random.Range(2, 7);
-            timer = Time.time;
-        }
+    //        counter = Random.Range(2, 7);
+    //        timer = Time.time;
+    //    }
 
-    }
+    //}
 
     private float ChooseNewDestination()
     {

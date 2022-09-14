@@ -8,7 +8,7 @@ public class BallRespawn : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            other.gameObject.GetComponent<Ball>().ReturnToBoxDropper();
+            other.gameObject.GetComponent<Ball>().hasLanded = true;
         }
     }
 }
