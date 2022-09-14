@@ -52,12 +52,5 @@ public class BulletObjectPool : MonoBehaviour
     {
         bulletPool.Get();
     }
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
+
 }

@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Unity.VisualScripting.Member;
 
 public class FireGun : MonoBehaviour
 {
     TestControlls controller;
     InputAction shoot;
     AudioClip[] clips;
+    AudioSource source;
     void Start()
     {
         controller = new TestControlls();
         shoot = controller.FirstPerson.Shoot;
+        source = GetComponent<AudioSource>();
         shoot.Enable();
 
         shoot.performed += Shoot;
@@ -28,13 +31,16 @@ public class FireGun : MonoBehaviour
         switch (Random.Range(0,2))
         {
             case 0:
-                AudioSource.PlayClipAtPoint(clips[0], transform.position);
+                source.clip = clips[0];
+                source.Play();
                 break;
             case 1:
-                AudioSource.PlayClipAtPoint(clips[1], transform.position);
+                source.clip = clips[1];
+                source.Play();
                 break;
             case 2:
-                AudioSource.PlayClipAtPoint(clips[2], transform.position);
+                source.clip = clips[2];
+                source.Play();
                 break;
         }
     }
