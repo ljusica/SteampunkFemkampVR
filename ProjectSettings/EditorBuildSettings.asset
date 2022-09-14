@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoriaTest2.unity
     guid: 13c806e2dcbbc47449f314fd18f4a475
+  - enabled: 1
+    path: Assets/Scenes/GameSelectorMenu.unity
+    guid: 0c7b6bb28dec3874eae096dbc525e516
+  - enabled: 1
+    path: Assets/Scenes/CarlTest.unity
+    guid: 6a81a61a26c53fb41a1a24340b2a9046
+  - enabled: 1
+    path: Assets/Scenes/DuckHunt.unity
+    guid: 2d891694ca756734b9eff71f51fa102c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
