@@ -7,14 +7,17 @@ public class ReloadGun : MonoBehaviour
     [SerializeField]
     GameObject lever;
     Vector3 startPos;
+    Rigidbody rb;
     void Start()
     {
         startPos = lever.transform.localPosition;
+        rb = GetComponent<Rigidbody>();
     }
 
     public void OnReleaseLever()
     {
         Mathf.Lerp(transform.localPosition.z, startPos.z,1);
+        rb.constraints = RigidbodyConstraints.FreezePositionZ;
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,5 +26,9 @@ public class ReloadGun : MonoBehaviour
         {
             FireGun.canShoot = true;
         }
+    }
+    public void OnGrabLever()
+    {
+        rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
     }
 }
