@@ -48,4 +48,4 @@ MonoBehaviour:
   - {fileID: 3321746399087707318, guid: bbb6467646befba46ac3762192136b90, type: 3}
   - {fileID: 3079487964888835676, guid: 3c683487c66b5344eb756970f03cab10, type: 3}
   bulletSpawnPoint: {fileID: 0}
-  gun: {fileID: 0}
+  gun: {fileID: 8367260339250984736, guid: af26c3941b291a8449bf10ebc6380585, type: 3}
