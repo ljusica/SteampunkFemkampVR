@@ -12,10 +12,12 @@ public class Bullet : MonoBehaviour
 
     private GameObject duck;
     private DuckMovement duckMovement;
+    AudioSource sourceSFX;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        sourceSFX = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -47,6 +49,11 @@ public class Bullet : MonoBehaviour
             duckMovement = duck.GetComponentInParent<DuckMovement>();
 
             duckMovement.Hide(duck);
+        }
+        else
+        {
+            sourceSFX.pitch = Random.Range(0.8f,1.4f);
+            sourceSFX.Play();
         }
 
         rb.useGravity = true;
