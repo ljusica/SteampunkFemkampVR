@@ -158,6 +158,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c070cd3bd2e7c00469fc814226cfdcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &755764549643718845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795198729166803639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee093116bd86114a8b0aa9bdd5bbb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 0
+  flipped: 0
+  score: 0
+  multiplier: 0
 --- !u!4 &7795198729167294103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 6e7e8e4ba05c5f84793d51bdc4237479,
