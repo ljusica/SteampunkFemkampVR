@@ -24,33 +24,37 @@ public class DuckMovement : MonoBehaviour
 
         for (int i = 0; i < ducks.Length; i++)
         {
-            startPosY = ducks[i].transform.position.y;
-            hidingPos = startPosY - 1;
+            startPosY = ducks[i].transform.localPosition.y;
+            hidingPos = startPosY - 2f;
 
             Move(ducks[i]);
         }
 
     }
 
-    //private void Update()
-    //{
-    //    if (Time.time >= timer + counter)
-    //    {
-    //        for (int i = 0; i < ducks.Length; i++)
-    //        {
-    //            hidingPropability = Random.Range(0, 2);
+    private void Update()
+    {
+        if (Time.time >= timer + counter)
+        {
+            for (int i = 0; i < ducks.Length; i++)
+            {
+                hidingPropability = Random.Range(0, 2);
 
-    //            if (hidingPropability > 0)
-    //            {
-    //                Hide(ducks[i]);
-    //            }
-    //        }
+                if (hidingPropability > 0)
+                {
+                    Hide(ducks[i]);
+                }
+                else
+                {
+                    ducks[i].transform.DOLocalMoveY(startPosY, 1);
+                }
+            }
 
-    //        counter = Random.Range(2, 7);
-    //        timer = Time.time;
-    //    }
+            counter = Random.Range(2, 7);
+            timer = Time.time;
+        }
 
-    //}
+    }
 
     private float ChooseNewDestination()
     {
@@ -67,7 +71,7 @@ public class DuckMovement : MonoBehaviour
 
     public void Hide(GameObject duck)
     {
-        duck.transform.DOMoveY(hidingPos, counter);
+        duck.transform.DOLocalMoveY(hidingPos, 1);
     }
 
 }
