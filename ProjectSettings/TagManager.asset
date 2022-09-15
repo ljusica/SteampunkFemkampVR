@@ -10,6 +10,7 @@ TagManager:
   - Duck
   - RespawnTrigger
   - BallBoxDropper
+  - ReloadLever
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,7 @@ public class FireGun : MonoBehaviour
     InputAction shoot;
     AudioClip[] clips;
     AudioSource source;
+    public static bool canShoot = true;
     void Start()
     {
         controller = new TestControlls();
@@ -26,21 +27,25 @@ public class FireGun : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext call)
     {
-        BulletObjectPool.Instance.FireBullet();
-        switch (Random.Range(0,2))
+        if (canShoot)
         {
-            case 0:
-                source.clip = clips[0];
-                source.Play();
-                break;
-            case 1:
-                source.clip = clips[1];
-                source.Play();
-                break;
-            case 2:
-                source.clip = clips[2];
-                source.Play();
-                break;
+            BulletObjectPool.Instance.FireBullet();
+            switch (Random.Range(0,2))
+            {
+                case 0:
+                    source.clip = clips[0];
+                    source.Play();
+                    break;
+                case 1:
+                    source.clip = clips[1];
+                    source.Play();
+                    break;
+                case 2:
+                    source.clip = clips[2];
+                    source.Play();
+                    break;
+            }
+            canShoot = false;
         }
     }
 }
