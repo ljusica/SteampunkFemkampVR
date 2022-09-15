@@ -247,6 +247,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3964825790976837149, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1283061659}
+    - target: {fileID: 7763809824808894247, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1283061659}
     - target: {fileID: 7763809824808894247, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_InteractionLayers.m_Bits
@@ -2107,6 +2117,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.82308686, y: 1.081716, z: 0.7363434}
   m_Center: {x: -0.00535806, y: 2.6278234, z: 0}
+--- !u!114 &1283061659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3304988915684254937, guid: 73110538e7714744b881d60b86ecf45d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2000022738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1323712448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,6 +3817,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin Duck Hunt
       objectReference: {fileID: 0}
+    - target: {fileID: 5861809824209349081, guid: 1179cecebf4d17e4ba01a0a7689ad019,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1283061659}
+    - target: {fileID: 5861809824458396443, guid: 1179cecebf4d17e4ba01a0a7689ad019,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1283061659}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1179cecebf4d17e4ba01a0a7689ad019, type: 3}
 --- !u!1 &7653094279669764963
