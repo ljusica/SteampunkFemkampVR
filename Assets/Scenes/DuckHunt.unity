@@ -266,11 +266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 761042112}
+      objectReference: {fileID: 151659120}
     - target: {fileID: 7763809824808894247, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FireBullet
+      value: Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
@@ -334,6 +334,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af26c3941b291a8449bf10ebc6380585, type: 3}
+--- !u!114 &151659120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2285499005872141714, guid: af26c3941b291a8449bf10ebc6380585,
+    type: 3}
+  m_PrefabInstance: {fileID: 151659119}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542607839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071608d147758b04bae3cb7c480d03c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &194755456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1049,18 +1061,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f2d3abda329de442821aadb14257e33, type: 3}
---- !u!114 &761042112 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5309181584159769224, guid: 5f2d3abda329de442821aadb14257e33,
-    type: 3}
-  m_PrefabInstance: {fileID: 761042111}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d861940887ecc4a92cad3dbd380647, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &792009269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2285499006564304000, guid: af26c3941b291a8449bf10ebc6380585,

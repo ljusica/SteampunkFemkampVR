@@ -12,12 +12,12 @@ public class FireGun : MonoBehaviour
     public static bool canShoot = true;
     void Start()
     {
-        controller = new TestControlls();
-        shoot = controller.FirstPerson.Shoot;
-        source = GetComponent<AudioSource>();
-        shoot.Enable();
+        //controller = new TestControlls();
+        //shoot = controller.FirstPerson.Shoot;
+        //source = GetComponent<AudioSource>();
+        //shoot.Enable();
 
-        shoot.performed += Shoot;
+        //shoot.performed += Shoot;
         clips = new AudioClip[3];
         for (int i = 0; i < 2; i++)
         {
@@ -25,7 +25,7 @@ public class FireGun : MonoBehaviour
         }
     }
 
-    public void Shoot(InputAction.CallbackContext call)
+    public void Shoot()
     {
         if (canShoot)
         {

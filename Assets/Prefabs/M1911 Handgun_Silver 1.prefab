@@ -1032,8 +1032,8 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 0
   m_LinearLimitSpring:
-    spring: 0.06
-    damper: 1
+    spring: 0.4
+    damper: 0
   m_LinearLimit:
     limit: 0
     bounciness: 0
@@ -1066,7 +1066,7 @@ ConfigurableJoint:
     serializedVersion: 3
     positionSpring: 0
     positionDamper: 0
-    maximumForce: 0
+    maximumForce: 3.402823e+38
   m_YDrive:
     serializedVersion: 3
     positionSpring: 0
@@ -1075,8 +1075,8 @@ ConfigurableJoint:
   m_ZDrive:
     serializedVersion: 3
     positionSpring: 2000
-    positionDamper: 200
-    maximumForce: 3
+    positionDamper: 20
+    maximumForce: 3.402823e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
   m_RotationDriveMode: 0
@@ -1303,10 +1303,9 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5309181584159769224, guid: 5f2d3abda329de442821aadb14257e33,
-          type: 3}
-        m_TargetAssemblyTypeName: BulletObjectPool, Assembly-CSharp
-        m_MethodName: FireBullet
+      - m_Target: {fileID: 2285499005872141714}
+        m_TargetAssemblyTypeName: FireGun, Assembly-CSharp
+        m_MethodName: Shoot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
