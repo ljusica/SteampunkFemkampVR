@@ -1032,10 +1032,10 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 0
   m_LinearLimitSpring:
-    spring: 0.4
+    spring: 0
     damper: 0
   m_LinearLimit:
-    limit: 0
+    limit: 0.2
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
@@ -1075,7 +1075,7 @@ ConfigurableJoint:
   m_ZDrive:
     serializedVersion: 3
     positionSpring: 2000
-    positionDamper: 20
+    positionDamper: 200
     maximumForce: 3.402823e+38
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
