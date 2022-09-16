@@ -468,12 +468,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199846381855048165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0418, y: 0.041850075, z: -0.1589}
+  m_LocalPosition: {x: -0.09201622, y: 0.088, z: 0.06607151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1593072034407592829}
-  m_RootOrder: 1
+  m_Father: {fileID: 8361265698516832598}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2588210237129984974
 BoxCollider:
@@ -756,12 +756,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7687756486269709242}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.063816234, y: 0.048850074, z: -0.10797149}
+  m_LocalPosition: {x: -0.06999999, y: 0.09500003, z: 0.11700001}
   m_LocalScale: {x: 0.019319344, y: 0.06872277, z: 0.019319344}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1593072034407592829}
-  m_RootOrder: 0
+  m_Father: {fileID: 8361265698516832598}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &1956490013230900200
 MeshFilter:
@@ -971,7 +971,7 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7687756486269709242}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 7763809824808894248}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -0.91, z: 0}
   m_Axis: {x: 0, y: 0, z: 0}
@@ -1101,7 +1101,8 @@ Transform:
   - {fileID: 2331449988491533583}
   - {fileID: 2285499006564304001}
   - {fileID: 2285499006810481119}
-  - {fileID: 1593072034407592829}
+  - {fileID: 4023772091362929896}
+  - {fileID: 3294925861077647255}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1389,36 +1390,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &8921097639346718467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1593072034407592829}
-  m_Layer: 0
-  m_Name: Lever
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1593072034407592829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8921097639346718467}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13381623, y: 0.046149924, z: 0.2479715}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4023772091362929896}
-  - {fileID: 3294925861077647255}
-  m_Father: {fileID: 8361265698516832598}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
