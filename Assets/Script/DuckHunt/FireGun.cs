@@ -14,7 +14,7 @@ public class FireGun : MonoBehaviour
     {
         //controller = new TestControlls();
         //shoot = controller.FirstPerson.Shoot;
-        //source = GetComponent<AudioSource>();
+        source = GetComponent<AudioSource>();
         //shoot.Enable();
 
         //shoot.performed += Shoot;
