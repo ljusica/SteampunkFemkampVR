@@ -500,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4260ef70f001d444b3259e135ce5bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: {fileID: 3964825790976837149}
 --- !u!54 &1645445705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1064,7 +1065,7 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 2000
+    positionSpring: 4000
     positionDamper: 200
     maximumForce: 3.402823e+38
   m_YDrive:
