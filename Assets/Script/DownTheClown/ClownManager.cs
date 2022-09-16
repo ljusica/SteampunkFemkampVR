@@ -20,7 +20,6 @@ public class ClownManager : MonoBehaviour
     public void KnockDown(GameObject clown)
     {
         Clown clownRef = clown.transform.GetComponentInChildren<Clown>();
-        print(clownRef.score);
         switch (clownRef.row)
         {
             case 1:
@@ -51,6 +50,16 @@ public class ClownManager : MonoBehaviour
             CheckRowDown();
             rowDown = 3;
         }
+
+        AddScore(clownRef);
+    }
+
+    private void AddScore(Clown clown)
+    {
+        float score = clown.score * clown.multiplier;
+        print(score);
+        clown.multiplier = 1;
+        clown.ChangeColor();
     }
 
     private void CheckRowDown()
