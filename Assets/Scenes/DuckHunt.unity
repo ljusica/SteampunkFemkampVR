@@ -252,6 +252,26 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1283061659}
+    - target: {fileID: 6543210693116484658, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.06999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543210693116484658, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.09500003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543210693116484658, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.11700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6543210693116484658, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7763809824808894247, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_InteractionManager
