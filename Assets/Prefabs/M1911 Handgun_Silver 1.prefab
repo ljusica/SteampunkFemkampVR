@@ -903,6 +903,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders:
   - {fileID: 2438988179299675012}
+  - {fileID: 5482325831356546373}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -974,7 +975,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -1031,10 +1032,10 @@ ConfigurableJoint:
   m_AngularYMotion: 0
   m_AngularZMotion: 0
   m_LinearLimitSpring:
-    spring: 2000
-    damper: 1
+    spring: 200
+    damper: 100
   m_LinearLimit:
-    limit: 0.1
+    limit: 0.06
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
