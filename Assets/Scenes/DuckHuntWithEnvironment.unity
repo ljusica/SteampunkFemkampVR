@@ -13183,8 +13183,8 @@ MonoBehaviour:
   - {fileID: 385994625}
   - {fileID: 889827542}
   - {fileID: 1071839903}
-  farLeft: -1.048
-  farRight: 1.439
+  farLeft: 58.5
+  farRight: 54.9
   hidingPos: 0
 --- !u!1 &734884672
 GameObject:
@@ -30677,8 +30677,8 @@ MonoBehaviour:
   - {fileID: 1710311829}
   - {fileID: 550079614}
   - {fileID: 2132771473}
-  farLeft: -1.048
-  farRight: 1.439
+  farLeft: 58.5
+  farRight: 54.9
   hidingPos: 0
 --- !u!1 &1572425940
 GameObject:
@@ -39468,8 +39468,8 @@ MonoBehaviour:
   - {fileID: 1242921046}
   - {fileID: 1293588191}
   - {fileID: 334688882}
-  farLeft: -1.048
-  farRight: 1.439
+  farLeft: 58.5
+  farRight: 54.9
   hidingPos: 0
 --- !u!1 &2032686688
 GameObject:
