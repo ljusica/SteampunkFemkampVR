@@ -83,7 +83,7 @@ public class ClownManager : MonoBehaviour
                 clown.GetComponent<FlipClown>().BackFlip();
                 clown.transform.GetComponentInChildren<Clown>().flipped = false;
             }
-            row1.Clear();
+            row2.Clear();
         }
         else if (rowDown == 3)
         {
@@ -92,7 +92,7 @@ public class ClownManager : MonoBehaviour
                 clown.GetComponent<FlipClown>().BackFlip();
                 clown.transform.GetComponentInChildren<Clown>().flipped = false;
             }
-            row1.Clear();
+            row3.Clear();
         }
     }
 
