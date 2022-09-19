@@ -7,6 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ReloadGun : MonoBehaviour
 {
     [SerializeField]
+    AudioSource audio;
+    [SerializeField]
     XRGrabInteractable interactable;
 
 
@@ -17,6 +19,7 @@ public class ReloadGun : MonoBehaviour
         {
             FireGun.canShoot = true;
             interactable.enabled = false;
+            audio.Play();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -26,9 +29,5 @@ public class ReloadGun : MonoBehaviour
             FireGun.canShoot = true;
             interactable.enabled = true;
         }
-    }
-    public void OnGrabLever()
-    {
-        
     }
 }
