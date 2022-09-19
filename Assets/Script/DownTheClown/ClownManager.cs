@@ -57,7 +57,7 @@ public class ClownManager : MonoBehaviour
     private void AddScore(Clown clown)
     {
         float score = clown.score * clown.multiplier;
-        print(score);
+        ScoreManager.Instance.AddScore("DTC", score);
         clown.multiplier = 1;
         clown.ChangeColor();
     }

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PointCollider : MonoBehaviour
 {
-    //public GameObject scoreKeeperTemp;
-    public int score;
+    public float score;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Ball")
         {
-            //scoreKeeperTemp.GetComponent<ScoreKeeper>().score += score;
-            print(score);
+            ScoreManager.Instance.AddScore("SkeeBall", score);
         }
     }
 }

@@ -47,7 +47,7 @@ public class Bullet : MonoBehaviour
         {
             duck = other.gameObject;
             duckMovement = duck.GetComponentInParent<DuckMovement>();
-
+            ScoreManager.Instance.AddScore("DuckHunt", 100f);
             duckMovement.Hide(duck);
         }
         else
