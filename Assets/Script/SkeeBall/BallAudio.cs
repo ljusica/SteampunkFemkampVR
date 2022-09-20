@@ -8,7 +8,7 @@ public class BallAudio : MonoBehaviour
     AudioSource audioSource;
     private void OnCollisionEnter(Collision collision)
     {
-        if(!collision.gameObject.CompareTag("Ball") || !collision.gameObject.CompareTag("Tabel"))
+        if(!collision.gameObject.CompareTag("Ball") || !collision.gameObject.CompareTag("Table"))
             audioSource.Play();
     }
 }

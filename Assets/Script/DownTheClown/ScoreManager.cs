@@ -106,15 +106,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    private void ResetScore(Scene scene, LoadSceneMode lsm)
-    {
-        skeeBallScore = 0;
-        duckHuntScore = 0;
-        dtcScore = 0;
-        tankRacetScore = 0;
-        wamScore = 0;
-    }
-    public void ResetScore()
+    public void ResetScore(Scene scene = default, LoadSceneMode lsm = default)
     {
         skeeBallScore = 0;
         duckHuntScore = 0;
