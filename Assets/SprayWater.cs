@@ -47,7 +47,7 @@ public class SprayWater : MonoBehaviour
     }
     void GetScore()
     {
-        ScoreManager.Instance.AddScore("TankRaceet", 0.1f);
+        ScoreManager.Instance.AddScore("TankRacet", 0.1f);
     }
     public void ReleaseSpray()
     {
