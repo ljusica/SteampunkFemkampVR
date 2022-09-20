@@ -131,5 +131,5 @@ Material:
     - _MoveDirection: {r: 0, g: 0, b: 3, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0.16703449, g: 0.34985027, b: 0.8679245, a: 1}
+    - _WaterColor: {r: 0.5283019, g: 0.041865394, b: 0.060144525, a: 1}
   m_BuildTextureStacks: []

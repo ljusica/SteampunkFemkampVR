@@ -345,6 +345,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 495654228762333523, guid: f6ce2c436d5755c458df7d4cd17e1063,
+        type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 495654228762333523, guid: f6ce2c436d5755c458df7d4cd17e1063,
+        type: 3}
+      propertyPath: TrailModule.textureMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 495654228762333523, guid: f6ce2c436d5755c458df7d4cd17e1063,
+        type: 3}
+      propertyPath: TrailModule.sizeAffectsLifetime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8280365166427985912, guid: f6ce2c436d5755c458df7d4cd17e1063,
         type: 3}
       propertyPath: m_RootOrder
