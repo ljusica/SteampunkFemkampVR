@@ -12,6 +12,7 @@ TagManager:
   - BallBoxDropper
   - ReloadLever
   - Hitbox
+  - Table
   layers:
   - Default
   - TransparentFX
