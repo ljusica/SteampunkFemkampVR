@@ -5,18 +5,19 @@ using TMPro;
 
 public class StartTimer : MonoBehaviour
 {
-    public double timer;
+    public float timer;
     public TextMeshPro scoreText;
     public TextMeshPro timerText;
     public GameObject ducks;
 
     bool countingDown = false;
-    double countDown;
+    float countDown;
     private void Update()
     {
         if (countingDown)
         {
             countDown -= Time.deltaTime;
+            Mathf.Round(countDown);
             timerText.text = "Time: " + countDown;
         }
 
