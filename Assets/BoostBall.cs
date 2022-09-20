@@ -14,8 +14,8 @@ public class BoostBall : MonoBehaviour
         if (ballRB.velocity.z < boostMax && ballRB.velocity.z > boostMin)
         {
             Vector3 vel = ballRB.velocity;
-            vel.z += boostMultiplier;
-            vel.y += boostMultiplier * 0.75f;
+            vel.z += boostMultiplier / (vel.z / 10);
+            vel.y += boostMultiplier / (vel.z / 10) * 0.75f;
             ballRB.velocity = vel;
             Debug.Log("Boosting!");
         }

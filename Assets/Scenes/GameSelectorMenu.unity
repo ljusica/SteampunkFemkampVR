@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bbcd5d04f4e6a4cadb854edfba20db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: DuckHunt
+  levelName: DuckHuntWithEnvironment
 --- !u!1 &172432071
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bbcd5d04f4e6a4cadb854edfba20db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: CarlTest
+  levelName: SkeeBall
 --- !u!1 &404924850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,6 +1546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a481e885d418a94cad526bbc31d1323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skeeBallScore: 0
+  duckHuntScore: 0
+  dtcScore: 0
+  tankRacetScore: 0
+  wamScore: 0
 --- !u!4 &1413287077
 Transform:
   m_ObjectHideFlags: 0
