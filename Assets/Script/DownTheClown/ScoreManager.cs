@@ -60,6 +60,24 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    public float GetScore(string gameName)
+    {
+        switch (gameName)
+        {
+            case "SkeeBall":
+                return skeeBallScore;
+            case "DuckHunt":
+                return duckHuntScore;
+            case "DTC":
+                return dtcScore;
+            case "TankRacet":
+                return tankRacetScore;
+            case "WAM":
+                return wamScore;
+        }
+        return 0;
+    }
+
     public void SetHighScore(string gameName, float currentScore)
     {
         if(currentScore > PlayerPrefs.GetFloat(gameName))
