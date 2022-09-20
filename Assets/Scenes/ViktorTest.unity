@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ebc5c6c2cd31c4a8910d02a7577ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 3304988916631020297}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -12922,7 +12922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fb6646109353f4abfc437388d9f516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 3304988916631020297}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -13710,7 +13710,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractionManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3304988916631020297}
     - target: {fileID: 691301037807981394, guid: 8d8c36b4d665aa7458ce85ffd453ebde,
         type: 3}
       propertyPath: m_RootOrder
