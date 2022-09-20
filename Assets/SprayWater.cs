@@ -39,6 +39,15 @@ public class SprayWater : MonoBehaviour
         lineRenderer.enabled = true;
         waterHitParticle.gameObject.SetActive(true);
         waterHitParticle.transform.position = forwardPoint;
+
+        if (hit.transform.CompareTag("Mouth"))
+        {
+            GetScore();
+        }
+    }
+    void GetScore()
+    {
+        ScoreManager.Instance.AddScore("TankRace", 0.1f);
     }
     public void ReleaseSpray()
     {
