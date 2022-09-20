@@ -31,7 +31,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         CreateSavedScores();
-
+        SceneManager.sceneLoaded += ResetScore;
         //if (!PlayerPrefs.HasKey("HighScore"))
         //    PlayerPrefs.SetFloat("HighScore", 0);
         //else
@@ -88,7 +88,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void ResetScore(Scene scene, LoadSceneMode lsm)
     {
         skeeBallScore = 0;
         duckHuntScore = 0;
