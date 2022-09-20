@@ -11,13 +11,22 @@ public class SprayWater : MonoBehaviour
     TestControlls controller;
     InputAction shoot;
     Vector3 forwardPoint;
+    private bool isSpraying;
+
+    private void FixedUpdate()
+    {
+        if (isSpraying)
+        {
+            Spray();
+        }
+    }
     public void StartSpraying()
     {
-        InvokeRepeating(nameof(Spray),0,0.05f);
+       isSpraying = true;
     }
     public void Spray()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 30))
+        if (!Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 30))
         {
             forwardPoint = transform.forward * 30;
         }
@@ -33,7 +42,7 @@ public class SprayWater : MonoBehaviour
     }
     public void ReleaseSpray()
     {
-        CancelInvoke(nameof(Spray));
+        isSpraying = false;
         lineRenderer.enabled = false;
         waterHitParticle.gameObject.SetActive(false);
     }
