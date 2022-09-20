@@ -28,7 +28,7 @@ public class StartTimer : MonoBehaviour
     public void StartCountDown()
     {
         countDown = timer;
-        scoreText.text = "Score: ";
+        ScoreManager.Instance.ResetScore();
         ducks.SetActive(true);
         countingDown = true;
     }
@@ -36,7 +36,6 @@ public class StartTimer : MonoBehaviour
     {
         ducks.SetActive(false);
         countingDown = false;
-        ScoreManager.Instance.ResetScore();
-        timerText.text = "Time: " +0;
+        timerText.text = "Time: " + 0;
     }
 }
