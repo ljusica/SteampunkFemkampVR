@@ -26,7 +26,7 @@ public class Pebble : XRGrabInteractable
     protected override void OnSelectEntering(SelectEnterEventArgs args)
     {
         // Do this first, so we get the right physics values
-        if (args.interactor is XRDirectInteractor)
+        if (args.interactorObject is XRDirectInteractor)
             Clear();
 
         // Make sure to do this
@@ -45,7 +45,7 @@ public class Pebble : XRGrabInteractable
         base.OnSelectExited(args);
 
         // If it's a notch, launch the arrow
-        if (args.interactor is Notch notch)
+        if (args.interactorObject is Notch notch)
             Launch(notch);
     }
 
