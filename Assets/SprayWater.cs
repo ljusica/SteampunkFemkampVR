@@ -32,7 +32,7 @@ public class SprayWater : MonoBehaviour
         }
         else
         {
-            forwardPoint = hit.transform.position;
+            forwardPoint = hit.point;
         }
         lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y, transform.position.z));
         lineRenderer.SetPosition(1, forwardPoint);
