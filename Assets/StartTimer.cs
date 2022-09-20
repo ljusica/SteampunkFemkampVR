@@ -5,13 +5,13 @@ using TMPro;
 
 public class StartTimer : MonoBehaviour
 {
-    public float timer;
+    public double timer;
     public TextMeshPro scoreText;
     public TextMeshPro timerText;
     public GameObject ducks;
 
     bool countingDown = false;
-    float countDown;
+    double countDown;
     private void Update()
     {
         if (countingDown)
