@@ -17,8 +17,7 @@ public class StartTimer : MonoBehaviour
         if (countingDown)
         {
             countDown -= Time.deltaTime;
-            Mathf.Round(countDown);
-            timerText.text = "Time: " + countDown;
+            timerText.text = "Time: " + Mathf.Round(countDown); ;
         }
 
         if(countDown < 0)
@@ -37,6 +36,7 @@ public class StartTimer : MonoBehaviour
     {
         ducks.SetActive(false);
         countingDown = false;
+        ScoreManager.Instance.ResetScore();
         timerText.text = "Time: " +0;
     }
 }

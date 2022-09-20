@@ -114,4 +114,12 @@ public class ScoreManager : MonoBehaviour
         tankRacetScore = 0;
         wamScore = 0;
     }
+    public void ResetScore()
+    {
+        skeeBallScore = 0;
+        duckHuntScore = 0;
+        dtcScore = 0;
+        tankRacetScore = 0;
+        wamScore = 0;
+    }
 }
