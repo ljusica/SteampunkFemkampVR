@@ -13,6 +13,8 @@ TagManager:
   - ReloadLever
   - Hitbox
   - Table
+  - Water
+  - Mouth
   layers:
   - Default
   - TransparentFX
