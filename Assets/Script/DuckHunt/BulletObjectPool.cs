@@ -18,7 +18,6 @@ public class BulletObjectPool : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -51,6 +50,11 @@ public class BulletObjectPool : MonoBehaviour
     public void FireBullet()
     {
         bulletPool.Get();
+    }
+
+    private void OnDisable()
+    {
+        Destroy(this);
     }
 
 }

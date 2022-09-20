@@ -1,9 +1,14 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SelectLevel : MonoBehaviour
 {
+    public Animator animator;
+    public GameObject levelObject;
+    private AsyncOperation asyncLoad;
+
     private void OnTriggerEnter(Collider other)
     {
         //if(other.gameObject.tag == "Ball")
@@ -13,13 +18,14 @@ public class SelectLevel : MonoBehaviour
 
         if(other.gameObject.tag == "Ball")
         {
-            StartCoroutine("LoadSceneAsync", other.gameObject.GetComponent<LevelName>()?.levelName);
+            levelObject = other.gameObject;
+            animator.SetTrigger("FadeOut");
         }
     }
 
     private IEnumerator LoadSceneAsync(string levelName)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelName);
+        asyncLoad = SceneManager.LoadSceneAsync(levelName);
 
         while (!asyncLoad.isDone)
         {
