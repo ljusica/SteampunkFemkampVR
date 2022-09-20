@@ -33221,8 +33221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostMultiplier: 0.5
-  boostMin: 2.5
-  boostMax: 4
+  boostMin: 0
+  boostMax: 5
 --- !u!65 &1615682682
 BoxCollider:
   m_ObjectHideFlags: 0
