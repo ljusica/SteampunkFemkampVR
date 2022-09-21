@@ -17,7 +17,6 @@ public class HammerHand : MonoBehaviour
     private void SetHand(SelectEnterEventArgs args)
     {
         hammerHand = args.interactorObject.transform.GetComponent<XRController>();
-        print(hammerHand);
     }
 
     private void OnDisable()
