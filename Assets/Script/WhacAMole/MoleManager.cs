@@ -34,6 +34,7 @@ public class MoleManager : MonoBehaviour
     {
         moles.Add(mole);
         lastHit = mole;
+        ScoreManager.Instance.AddScore("WAM", 100);
     }
 
     private void PickMole()
