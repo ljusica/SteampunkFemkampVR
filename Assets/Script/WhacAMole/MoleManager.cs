@@ -6,11 +6,13 @@ public class MoleManager : MonoBehaviour
 {
     public List<Mole> moles = new List<Mole>();
     private float timer;
-    private float buffer = 2;
+    private float buffer = 1.5f;
+    private float lastHitBuffer = 3;
+    private Mole lastHit;
 
     private void Start()
     {
-        Mole.whack += ResetTimer;
+        Mole.whack += WhackMole;
         timer = Time.time;
     }
 
@@ -20,22 +22,30 @@ public class MoleManager : MonoBehaviour
         {
             if(moles.Count > 0)
                 PickMole();
-            timer = Time.time;
+        }
+
+        if(Time.time > timer + lastHitBuffer)
+        {
+            lastHit = null;
         }
     }
 
-    private void ResetTimer(Mole mole)
+    private void WhackMole(Mole mole)
     {
         moles.Add(mole);
-        PickMole();
-        timer = Time.time;
+        lastHit = mole;
     }
 
     private void PickMole()
     {
         int rand = Random.Range(0, moles.Count);
         Mole tempMole = moles[rand];
+        if(lastHit == tempMole)
+        {
+            return;
+        }
         moles.Remove(tempMole);
         tempMole.Open();
+        timer = Time.time;
     }
 }

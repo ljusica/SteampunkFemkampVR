@@ -30,13 +30,13 @@ public class Mole : MonoBehaviour
 
     public void Hide()
     {
-        transform.DOMove(hidingPos, 0.4f);
+        transform.DOMove(hidingPos, 0.2f);
         hidden = true;
     }
 
     public void Open()
     {
-        transform.DOMove(openPos, 0.4f);
+        transform.DOMove(openPos, 0.2f);
         hidden = false;
     }
 }
