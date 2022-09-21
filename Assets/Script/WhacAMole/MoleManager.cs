@@ -5,9 +5,11 @@ using UnityEngine;
 public class MoleManager : MonoBehaviour
 {
     public List<Mole> moles = new List<Mole>();
+
     private float timer;
-    private float buffer = 1f;
     private int moleAmount;
+    private float buffer = 1f;
+    private float points = 100;
     private bool molesUp = true;
 
     private void Start()
@@ -47,7 +49,7 @@ public class MoleManager : MonoBehaviour
     private void WhackMole(Mole mole)
     {
         moles.Add(mole);
-        ScoreManager.Instance.AddScore("WAM", 100);
+        ScoreManager.Instance.AddScore("WAM", points);
         if(moles.Count == 5)
         {
             molesUp = false;

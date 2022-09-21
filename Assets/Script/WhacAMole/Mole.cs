@@ -8,7 +8,12 @@ public class Mole : MonoBehaviour
 {
     public Vector3 hidingPos;
     public Vector3 openPos;
+
     private bool hidden = true;
+    private float speed = 0.2f;
+    private float offset = 0.12f;
+    private float hapticForce = 0.4f;
+    private float hapticDuration = 0.1f;
 
     public delegate void Whack(Mole mole);
     public static Whack whack;
@@ -16,7 +21,7 @@ public class Mole : MonoBehaviour
     void Awake()
     {
         hidingPos = transform.position;
-        openPos = new Vector3(hidingPos.x, hidingPos.y + 0.12f, hidingPos.z);
+        openPos = new Vector3(hidingPos.x, hidingPos.y + offset, hidingPos.z);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,19 +30,19 @@ public class Mole : MonoBehaviour
         {
             Hide();
             whack?.Invoke(this);
-            HammerHand.hammerHand.SendHapticImpulse(0.4f, 0.1f);
+            HammerHand.hammerHand.SendHapticImpulse(hapticForce, hapticDuration);
         }
     }
 
     public void Hide()
     {
-        transform.DOMove(hidingPos, 0.2f);
+        transform.DOMove(hidingPos, speed);
         hidden = true;
     }
 
     public void Open()
     {
-        transform.DOMove(openPos, 0.2f);
+        transform.DOMove(openPos, speed);
         hidden = false;
     }
 }
