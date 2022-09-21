@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SkeeBall.unity
     guid: 4be5787b3e5852349b408a082b5e587a
+  - enabled: 1
+    path: Assets/Scenes/WAMTest.unity
+    guid: e914114ddef0d75479ab5b056f60171c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
