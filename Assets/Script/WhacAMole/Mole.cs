@@ -25,6 +25,7 @@ public class Mole : MonoBehaviour
         {
             Hide();
             whack?.Invoke(this);
+            HammerHand.hammerHand.SendHapticImpulse(0.4f, 0.1f);
         }
     }
 
