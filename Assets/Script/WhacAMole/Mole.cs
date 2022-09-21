@@ -8,12 +8,12 @@ public class Mole : MonoBehaviour
 {
     public Vector3 hidingPos;
     public Vector3 openPos;
-    public bool hidden;
+    private bool hidden = true;
 
     public delegate void Whack(Mole mole);
     public static Whack whack;
 
-    void Start()
+    void Awake()
     {
         hidingPos = transform.position;
         openPos = new Vector3(hidingPos.x, hidingPos.y + 0.12f, hidingPos.z);
@@ -21,7 +21,7 @@ public class Mole : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Ball")
+        if(other.gameObject.tag == "Ball" && !hidden)
         {
             Hide();
             whack?.Invoke(this);
