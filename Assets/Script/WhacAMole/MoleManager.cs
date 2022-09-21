@@ -5,6 +5,8 @@ using UnityEngine;
 public class MoleManager : MonoBehaviour
 {
     public List<Mole> moles = new List<Mole>();
+    public delegate void GameOver(List<Mole> moles);
+    public static GameOver gameOver;
 
     private float timer;
     private int moleAmount;
@@ -15,7 +17,6 @@ public class MoleManager : MonoBehaviour
     private void Start()
     {
         Mole.whack += WhackMole;
-        StartGame();
     }
 
     private void Update()
@@ -33,6 +34,12 @@ public class MoleManager : MonoBehaviour
     public void StartGame()
     {
         MolesUp();
+        molesUp = true;
+    }
+
+    public void StopGame()
+    {
+        gameOver?.Invoke(moles);
         molesUp = true;
     }
 

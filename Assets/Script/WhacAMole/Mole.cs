@@ -24,6 +24,11 @@ public class Mole : MonoBehaviour
         openPos = new Vector3(hidingPos.x, hidingPos.y + offset, hidingPos.z);
     }
 
+    private void Start()
+    {
+        MoleManager.gameOver += GameOver;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Ball" && !hidden)
@@ -44,5 +49,17 @@ public class Mole : MonoBehaviour
     {
         transform.DOMove(openPos, speed);
         hidden = false;
+    }
+
+    public void GameOver(List<Mole> moles)
+    {
+        transform.DOMove(hidingPos, speed);
+        hidden = true;
+        foreach(Mole mole in moles)
+        {
+            if (mole == this)
+                return;
+        }
+        moles.Add(this);
     }
 }
