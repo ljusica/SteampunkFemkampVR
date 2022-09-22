@@ -15,6 +15,7 @@ TagManager:
   - Table
   - Water
   - Mouth
+  - Bat
   layers:
   - Default
   - TransparentFX

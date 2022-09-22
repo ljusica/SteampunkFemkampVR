@@ -20,10 +20,12 @@ public class SprayWater : MonoBehaviour
             Spray();
         }
     }
+
     public void StartSpraying()
     {
        isSpraying = true;
     }
+
     public void Spray()
     {
         if (!Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 30))
@@ -45,10 +47,12 @@ public class SprayWater : MonoBehaviour
             GetScore();
         }
     }
+
     void GetScore()
     {
         ScoreManager.Instance.AddScore("TankRacet", 0.1f);
     }
+    
     public void ReleaseSpray()
     {
         isSpraying = false;
