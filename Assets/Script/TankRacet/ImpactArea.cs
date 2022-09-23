@@ -67,7 +67,7 @@ public class ImpactArea : MonoBehaviour
             }
         }
 
-        transform.DOMove(endPoint, duration).SetEase(Ease.OutBounce).OnComplete(() => Move(minXPos, maxXPos, minYPos, maxYPos));
+        transform.DOMove(endPoint, duration).SetEase(Ease.InOutBounce).OnComplete(() => Move(minXPos, maxXPos, minYPos, maxYPos));
 
         previousPos = endPoint;
     }

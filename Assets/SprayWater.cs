@@ -7,6 +7,7 @@ public class SprayWater : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public ParticleSystem waterHitParticle;
+    public BatMovement batMovement;
 
     TestControlls controller;
     InputAction shoot;
@@ -23,7 +24,7 @@ public class SprayWater : MonoBehaviour
 
     public void StartSpraying()
     {
-       isSpraying = true;
+        isSpraying = true;
     }
 
     public void Spray()
@@ -35,6 +36,10 @@ public class SprayWater : MonoBehaviour
         else
         {
             forwardPoint = hit.point;
+            if (hit.transform.tag == "Mouth")
+                {
+                    batMovement.Move();
+                }
         }
         lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y, transform.position.z));
         lineRenderer.SetPosition(1, forwardPoint);
@@ -42,17 +47,12 @@ public class SprayWater : MonoBehaviour
         waterHitParticle.gameObject.SetActive(true);
         waterHitParticle.transform.position = forwardPoint;
 
-        if (hit.transform.CompareTag("Mouth"))
-        {
-            GetScore();
-        }
+       
+            
+        
+
     }
 
-    void GetScore()
-    {
-        ScoreManager.Instance.AddScore("TankRacet", 0.1f);
-    }
-    
     public void ReleaseSpray()
     {
         isSpraying = false;
