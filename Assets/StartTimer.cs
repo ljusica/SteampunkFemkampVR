@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class StartTimer : MonoBehaviour
 {
@@ -16,6 +17,22 @@ public class StartTimer : MonoBehaviour
     float countDown;
 
     private BatMovement batMovement;
+
+    private void Start()
+    {
+        BatMovement.batFinish += Score;
+        if (positiveTimer)
+        {
+            batMovement = GameObject.FindGameObjectWithTag("Bat").GetComponent<BatMovement>();
+        }
+
+    }
+
+    private void Score()
+    {
+        float score = MathF.Round( 10000 / (countDown / 10));
+        ScoreManager.Instance.AddScore("TankRacet", score);
+    }
 
     private void Update()
     {
@@ -32,7 +49,6 @@ public class StartTimer : MonoBehaviour
 
         if (positiveTimer)
         {
-            batMovement = GameObject.FindGameObjectWithTag("Bat").GetComponent<BatMovement>();
 
             if (batMovement.finished)
             {
@@ -47,6 +63,11 @@ public class StartTimer : MonoBehaviour
 
     public void StartCountDown()
     {
+        if (positiveTimer)
+        {
+            batMovement.gameObject.transform.position = batMovement.startPoint.transform.position;
+            batMovement.finished = false;
+        }
         countDown = timer;
         ScoreManager.Instance.ResetScore();
         objectsToActivate.SetActive(true);

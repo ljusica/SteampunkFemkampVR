@@ -8,9 +8,12 @@ public class BatMovement : MonoBehaviour
     public Transform startPoint;
     public Transform endPoint;
 
-    [HideInInspector] public bool finished = false;
+    public bool finished = false;
+    public delegate void BatFinish();
+    public static BatFinish batFinish;
 
     private float score;
+    private bool moving;
 
     private void Start()
     {
@@ -19,14 +22,31 @@ public class BatMovement : MonoBehaviour
 
     void Update()
     {
-        score = ScoreManager.Instance.GetScore("TankRacet");
+        //score = ScoreManager.Instance.GetScore("TankRacet");
 
-        gameObject.transform.DOMoveX(endPoint.transform.position.x, score * Time.deltaTime);
+        //gameObject.transform.DOMoveX(endPoint.transform.position.x, score * Time.deltaTime);
 
-        if(gameObject.transform.position.x >= endPoint.transform.position.x)
+        //if(gameObject.transform.position.x >= endPoint.transform.position.x)
+        //{
+        //    finished = true;
+        //}
+    }
+
+    public void Move()
+    {
+        if (!moving)
         {
-            finished = true;
+            moving = true;
+
+            gameObject.transform.DOMoveX(transform.position.x + 0.05f, 0.1f).OnComplete(() => moving = false);
+
+            if (gameObject.transform.position.x >= endPoint.transform.position.x)
+            {
+                finished = true;
+                batFinish?.Invoke();
+            }
         }
+
     }
 
 }
