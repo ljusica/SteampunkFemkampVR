@@ -71,4 +71,9 @@ public class MoleManager : MonoBehaviour
         moles.Remove(tempMole);
         tempMole.Open();
     }
+
+    private void OnDisable()
+    {
+        Mole.whack -= WhackMole;
+    }
 }
