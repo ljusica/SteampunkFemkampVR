@@ -62,4 +62,9 @@ public class Mole : MonoBehaviour
         }
         moles.Add(this);
     }
+
+    private void OnDisable()
+    {
+        MoleManager.gameOver -= GameOver;
+    }
 }

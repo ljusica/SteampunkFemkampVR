@@ -1065,6 +1065,11 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 659188809}
+    - target: {fileID: 5532528026608623555, guid: eb8e715f891870e45b5ef58efc6a875e,
+        type: 3}
+      propertyPath: objectsToActivate
+      value: 
+      objectReference: {fileID: 2017199518}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb8e715f891870e45b5ef58efc6a875e, type: 3}
 --- !u!1 &948991941
@@ -1954,7 +1959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1211064604
 MonoBehaviour:
   m_ObjectHideFlags: 0
