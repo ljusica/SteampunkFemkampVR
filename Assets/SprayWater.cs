@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class SprayWater : MonoBehaviour
 {
-    public LineRenderer lineRenderer;
     public ParticleSystem waterHitParticle;
     public BatMovement batMovement;
 
@@ -29,34 +28,13 @@ public class SprayWater : MonoBehaviour
 
     public void Spray()
     {
-        if (!Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 30))
-        {
-            forwardPoint = transform.forward * 30;
-        }
-        else
-        {
-            forwardPoint = hit.point;
-            if (hit.transform.tag == "Mouth")
-                {
-                    batMovement.Move();
-                }
-        }
-        lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y, transform.position.z));
-        lineRenderer.SetPosition(1, forwardPoint);
-        lineRenderer.enabled = true;
         waterHitParticle.gameObject.SetActive(true);
         waterHitParticle.transform.position = forwardPoint;
-
-       
-            
-        
-
     }
 
     public void ReleaseSpray()
     {
         isSpraying = false;
-        lineRenderer.enabled = false;
         waterHitParticle.gameObject.SetActive(false);
     }
 }
