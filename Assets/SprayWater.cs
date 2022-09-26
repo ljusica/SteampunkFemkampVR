@@ -28,6 +28,19 @@ public class SprayWater : MonoBehaviour
 
     public void Spray()
     {
+        if (!Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 30))
+        {
+            forwardPoint = transform.forward * 30;
+        }
+        else
+        {
+            forwardPoint = hit.point;
+            //if (hit.transform.tag == "Mouth")
+            //{
+            //    batMovement.Move();
+            //}
+        }
+
         waterHitParticle.gameObject.SetActive(true);
         waterHitParticle.transform.position = forwardPoint;
         print("Spraying!");
