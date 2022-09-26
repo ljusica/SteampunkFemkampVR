@@ -41,12 +41,14 @@ public class TankRacetTimer : MonoBehaviour
         batMovement.gameObject.transform.position = batMovement.startPoint.transform.position;
         batMovement.finished = false;
         countDown = timer;
+        countingDown = true;
         ScoreManager.Instance.ResetScore();
         objectsToActivate.SetActive(true);
     }
 
     void CountDownEnd()
     {
+        countingDown = false;
         objectsToActivate.SetActive(false);
         timerText.text = "Time: " + 0;
     }
