@@ -30,6 +30,7 @@ public class SprayWater : MonoBehaviour
     {
         waterHitParticle.gameObject.SetActive(true);
         waterHitParticle.transform.position = forwardPoint;
+        print("Spraying!");
     }
 
     public void ReleaseSpray()
