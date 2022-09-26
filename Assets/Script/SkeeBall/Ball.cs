@@ -6,8 +6,9 @@ public class Ball : MonoBehaviour
 
     public GameObject ballBoxDropper;
     public bool hasLanded;
+    public bool hasScored;
 
-    private float timer = 4f;
+    private float timer = 2f;
 
     private void Start()
     {
@@ -21,6 +22,12 @@ public class Ball : MonoBehaviour
         if (Vector3.Distance(transform.position, ballBoxDropper.transform.position) > 10)
         {
             ReturnToBoxDropper();
+        }
+
+        if (hasScored)
+        {
+            ReturnToBoxDropper();
+            hasScored = false;
         }
 
         //Life After Landing
@@ -42,5 +49,4 @@ public class Ball : MonoBehaviour
         rb.velocity = Vector3.zero;
         transform.position = ballBoxDropper.transform.position;
     }
-
 }

@@ -8,9 +8,8 @@ public class PointCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Ball")
-        {
-            ScoreManager.Instance.AddScore("SkeeBall", score);
-        }
+        if(other.tag != "Ball") return;
+        ScoreManager.Instance.AddScore("SkeeBall", score);
+        other.gameObject.GetComponent<Ball>().hasScored = true;
     }
 }
