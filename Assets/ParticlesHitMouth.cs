@@ -7,6 +7,7 @@ public class ParticlesHitMouth : MonoBehaviour
     public BatMovement batMovement;
     private void OnParticleCollision(GameObject other)
     {
-        batMovement.Move();
+        Debug.Log("Bat moving");
+        //batMovement.Move();
     }
 }
