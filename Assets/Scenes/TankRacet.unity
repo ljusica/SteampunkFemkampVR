@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1453693139}
-  m_IndirectSpecularColor: {r: 0.003204829, g: 0.0063439845, b: 0.014498586, a: 1}
+  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6073,7 +6073,7 @@ PrefabInstance:
     - target: {fileID: 3304988915684254936, guid: 73110538e7714744b881d60b86ecf45d,
         type: 3}
       propertyPath: m_Name
-      value: XR Interaction Manager (1)
+      value: XR Interaction Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73110538e7714744b881d60b86ecf45d, type: 3}
@@ -13381,7 +13381,7 @@ PrefabInstance:
     - target: {fileID: 5474323824901191787, guid: 96d54d12d33b0704180fd3dec9a67701,
         type: 3}
       propertyPath: m_Name
-      value: Timer Text (1)
+      value: Timer Text
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96d54d12d33b0704180fd3dec9a67701, type: 3}
@@ -14656,7 +14656,7 @@ GameObject:
   - component: {fileID: 882075168}
   - component: {fileID: 882075167}
   m_Layer: 0
-  m_Name: Bat (1)
+  m_Name: Bat
   m_TagString: Bat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16008,7 +16008,7 @@ PrefabInstance:
     - target: {fileID: 5861809823541696824, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
       propertyPath: m_Name
-      value: XR Origin Duck Hunt (1)
+      value: XR Origin Duck Hunt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1179cecebf4d17e4ba01a0a7689ad019, type: 3}
@@ -16329,7 +16329,7 @@ PrefabInstance:
     - target: {fileID: 5532528025769973572, guid: eb8e715f891870e45b5ef58efc6a875e,
         type: 3}
       propertyPath: m_Name
-      value: ButtonFloor (1)
+      value: ButtonFloor
       objectReference: {fileID: 0}
     - target: {fileID: 5532528026608623554, guid: eb8e715f891870e45b5ef58efc6a875e,
         type: 3}
@@ -16340,6 +16340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532528026608623555, guid: eb8e715f891870e45b5ef58efc6a875e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532528026608623555, guid: eb8e715f891870e45b5ef58efc6a875e,
         type: 3}
@@ -16363,6 +16368,28 @@ PrefabInstance:
       objectReference: {fileID: 1778979369}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb8e715f891870e45b5ef58efc6a875e, type: 3}
+--- !u!1 &937749116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5532528026608623576, guid: eb8e715f891870e45b5ef58efc6a875e,
+    type: 3}
+  m_PrefabInstance: {fileID: 937749115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937749117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937749116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825ea7e26dc1abe4986f2b5290b9c7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 1
+  scoreText: {fileID: 1192122956}
+  timerText: {fileID: 56071963}
+  objectsToActivate: {fileID: 1778979369}
 --- !u!1 &938948561
 GameObject:
   m_ObjectHideFlags: 0
@@ -23278,7 +23305,7 @@ PrefabInstance:
     - target: {fileID: 3606818537577478085, guid: 6eb217879d3f2dd40ba3719fd92aa205,
         type: 3}
       propertyPath: m_Name
-      value: ScoreText (1)
+      value: ScoreText
       objectReference: {fileID: 0}
     - target: {fileID: 3606818537577478089, guid: 6eb217879d3f2dd40ba3719fd92aa205,
         type: 3}
@@ -30764,7 +30791,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
       propertyPath: m_Name
-      value: domekzzarowkami2 (1)
+      value: domekzzarowkami2
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
       propertyPath: m_RootOrder
@@ -31856,7 +31883,7 @@ GameObject:
   - component: {fileID: 1778979371}
   - component: {fileID: 1778979370}
   m_Layer: 0
-  m_Name: Vampire (1)
+  m_Name: Vampire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33875,7 +33902,7 @@ GameObject:
   - component: {fileID: 1907895296}
   - component: {fileID: 1907895295}
   m_Layer: 0
-  m_Name: End (1)
+  m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35816,7 +35843,7 @@ GameObject:
   - component: {fileID: 2040576115}
   - component: {fileID: 2040576114}
   m_Layer: 0
-  m_Name: Start (1)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
