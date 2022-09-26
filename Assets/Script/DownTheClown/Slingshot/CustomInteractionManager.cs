@@ -2,9 +2,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class CustomInteractionManager : XRInteractionManager
 {
-    public void ForceDeselect(XRBaseInteractor interactor)
+    public void ForceDeselect(IXRSelectInteractor interactor)
     {
-        if (interactor.selectTarget)
-            SelectExit(interactor, interactor.selectTarget);
+        if (interactor.hasSelection)
+            SelectExit(interactor, interactor.firstInteractableSelected);
     }
 }
