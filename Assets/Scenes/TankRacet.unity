@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1453693139}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003204829, g: 0.0063439845, b: 0.014498586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4825,7 +4825,7 @@ PrefabInstance:
     - target: {fileID: 8447756700165276268, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8447756700165276269, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
@@ -16010,6 +16010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin Duck Hunt
       objectReference: {fileID: 0}
+    - target: {fileID: 5861809823541696824, guid: 1179cecebf4d17e4ba01a0a7689ad019,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1179cecebf4d17e4ba01a0a7689ad019, type: 3}
 --- !u!1 &930504400
@@ -27080,7 +27085,6 @@ GameObject:
   - component: {fileID: 1516118865}
   - component: {fileID: 1516118864}
   - component: {fileID: 1516118863}
-  - component: {fileID: 1516118866}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Mouth
@@ -27166,19 +27170,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516118861}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1516118866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516118861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d307fcb2dd60a1f4cb6dfe375250c5bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  batMovement: {fileID: 882075167}
 --- !u!1 &1517816748
 GameObject:
   m_ObjectHideFlags: 0
@@ -31892,13 +31883,14 @@ GameObject:
   - component: {fileID: 1778979372}
   - component: {fileID: 1778979371}
   - component: {fileID: 1778979370}
+  - component: {fileID: 1778979375}
   m_Layer: 0
   m_Name: Vampire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1778979370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31995,6 +31987,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1778979375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778979369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1784209166
 GameObject:
   m_ObjectHideFlags: 0
@@ -32922,6 +32927,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1101359400876089755, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1101359400876089755, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1218291451984521619, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_Name
@@ -32935,12 +32950,12 @@ PrefabInstance:
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 59.315
+      value: 59.314
       objectReference: {fileID: 0}
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.849
+      value: 0.862
       objectReference: {fileID: 0}
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
@@ -32970,18 +32985,33 @@ PrefabInstance:
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.026
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -63.512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -88.493
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384421, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: batMovement
+      value: 
+      objectReference: {fileID: 882075167}
+    - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: TriggerModule.primitives.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[0]
+      value: 
+      objectReference: {fileID: 1516118862}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05846e640b334024aa932c38aa9b2461, type: 3}
 --- !u!1 &1843222706
