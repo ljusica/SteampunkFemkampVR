@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.InputSystem;
 
 public class FireGun : MonoBehaviour
 {
-    public static int maxBullets = 3;
-    static int bulletLeft;
+    public int maxBullets = 3;
+
+    int bulletLeft;
+    [SerializeField]
+    TMP_Text bulletText;
+
     AudioClip[] clips;
     AudioSource source;
     void Start()
@@ -19,10 +24,13 @@ public class FireGun : MonoBehaviour
             clips[i] = Resources.Load<AudioClip>("Audio/AirRelease" + (i+1));
         }
     }
-    public static void Reload()
+    public void Reload()
     {
         bulletLeft = maxBullets;
+        bulletText.text = "" + bulletLeft;
     }
+
+
     public void Shoot()
     {
         if (bulletLeft > 0)
@@ -44,6 +52,7 @@ public class FireGun : MonoBehaviour
                     break;
             }
             bulletLeft--;
+            bulletText.text = ""+bulletLeft;
         }
     }
 }
