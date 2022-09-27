@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ReloadGun : MonoBehaviour
 {
     public bool isBackTrigger = true;
-    bool hasHitBackTrigger = false;
+    static bool hasHitBackTrigger = false;
 
     [SerializeField]
     AudioSource audio;
