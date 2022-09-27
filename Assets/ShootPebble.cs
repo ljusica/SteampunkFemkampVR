@@ -20,8 +20,8 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         if (isShootable)
         {
-            transform.position = Vector3.zero;
             transform.parent = obj.transform;
+            transform.localPosition = Vector3.zero;
             rb.useGravity = false;
         }
     }
