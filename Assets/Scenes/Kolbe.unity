@@ -1967,6 +1967,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BloodGun
       objectReference: {fileID: 0}
+    - target: {fileID: 1218291451984521619, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1224813857779437541, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_RootOrder

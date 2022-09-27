@@ -6,27 +6,28 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ReloadGun : MonoBehaviour
 {
+    public bool isBackTrigger = true;
+    bool hasHitBackTrigger = false;
+
     [SerializeField]
     AudioSource audio;
     [SerializeField]
     XRGrabInteractable interactable;
 
 
+
     private void OnTriggerEnter(Collider collision)
     {
 
-        if (collision.CompareTag("ReloadLever"))
+        if (collision.CompareTag("ReloadLever") && isBackTrigger)
         {
-            FireGun.canShoot = true;
             interactable.enabled = false;
+            hasHitBackTrigger = true;
             audio.Play();
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("ReloadLever"))
+        if (hasHitBackTrigger)
         {
-            FireGun.canShoot = true;
+            FireGun.Reload();
             interactable.enabled = true;
         }
     }

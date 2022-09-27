@@ -32947,16 +32947,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1101359400876089755, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1101359400876089755, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1218291451984521619, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_Name
@@ -33022,31 +33012,6 @@ PrefabInstance:
       propertyPath: batMovement
       value: 
       objectReference: {fileID: 882075167}
-    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275080779786384441, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: TriggerModule.primitives.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
