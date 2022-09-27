@@ -4825,7 +4825,7 @@ PrefabInstance:
     - target: {fileID: 8447756700165276268, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8447756700165276269, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
@@ -16013,7 +16013,7 @@ PrefabInstance:
     - target: {fileID: 5861809823541696824, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1179cecebf4d17e4ba01a0a7689ad019, type: 3}
@@ -33025,23 +33025,38 @@ PrefabInstance:
     - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.055
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.201
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384441, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: TriggerModule.primitives.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
       objectReference: {fileID: 1516118862}
+    - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[1]
+      value: 
+      objectReference: {fileID: 1778979374}
     - target: {fileID: 8881659560791398972, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: batMovement
