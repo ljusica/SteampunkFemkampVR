@@ -5,29 +5,27 @@ using UnityEngine.InputSystem;
 
 public class FireGun : MonoBehaviour
 {
-    TestControlls controller;
-    InputAction shoot;
+    public static int maxBullets = 3;
+    static int bulletLeft;
     AudioClip[] clips;
     AudioSource source;
-    public static bool canShoot = true;
     void Start()
     {
-        //controller = new TestControlls();
-        //shoot = controller.FirstPerson.Shoot;
+        bulletLeft = maxBullets;
         source = GetComponent<AudioSource>();
-        //shoot.Enable();
-
-        //shoot.performed += Shoot;
         clips = new AudioClip[3];
         for (int i = 0; i < 2; i++)
         {
             clips[i] = Resources.Load<AudioClip>("Audio/AirRelease" + (i+1));
         }
     }
-
+    public static void Reload()
+    {
+        bulletLeft = maxBullets;
+    }
     public void Shoot()
     {
-        if (canShoot)
+        if (bulletLeft > 0)
         {
             BulletObjectPool.Instance.FireBullet();
             switch (Random.Range(0,2))
@@ -45,7 +43,7 @@ public class FireGun : MonoBehaviour
                     source.Play();
                     break;
             }
-            canShoot = false;
+            bulletLeft--;
         }
     }
 }
