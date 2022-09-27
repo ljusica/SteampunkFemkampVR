@@ -25,7 +25,7 @@ public class ReloadGun : MonoBehaviour
             hasHitBackTrigger = true;
             audio.Play();
         }
-        if (hasHitBackTrigger)
+        if (collision.CompareTag("ReloadLever") && hasHitBackTrigger)
         {
             FireGun.Reload();
             interactable.enabled = true;
