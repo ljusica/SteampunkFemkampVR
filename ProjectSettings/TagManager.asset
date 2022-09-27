@@ -16,6 +16,7 @@ TagManager:
   - Water
   - Mouth
   - Bat
+  - HandMenu
   layers:
   - Default
   - TransparentFX
