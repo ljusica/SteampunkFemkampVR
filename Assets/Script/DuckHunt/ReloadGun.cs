@@ -12,6 +12,8 @@ public class ReloadGun : MonoBehaviour
     [SerializeField]
     AudioSource audio;
     [SerializeField]
+    FireGun fireGunScript;
+    [SerializeField]
     XRGrabInteractable interactable;
 
 
@@ -27,7 +29,7 @@ public class ReloadGun : MonoBehaviour
         }
         if (collision.CompareTag("ReloadLever") && hasHitBackTrigger && !isBackTrigger)
         {
-            FireGun.Reload();
+            fireGunScript.Reload();
             interactable.enabled = true;
         }
     }
