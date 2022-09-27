@@ -1,0 +1,34 @@
+{
+    "name": "XR Hand Menu",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "32f2129b-6ae3-431d-a308-34390ae9a16b",
+            "actions": [
+                {
+                    "name": "Hand Menu",
+                    "type": "Button",
+                    "id": "f5d57636-dd83-4ec2-b632-c2fe4cdd8c42",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "67801cb5-c89c-4ed1-9d37-0a307a86078f",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hand Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

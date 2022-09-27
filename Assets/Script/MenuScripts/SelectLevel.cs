@@ -32,4 +32,10 @@ public class SelectLevel : MonoBehaviour
             yield return null;
         }
     }
+
+    public void LoadScene(string levelName)
+    {
+        SceneManager.LoadSceneAsync(levelName);
+        animator.SetTrigger("FadeOut");
+    }
 }
