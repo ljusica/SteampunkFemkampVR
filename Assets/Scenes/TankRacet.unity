@@ -30856,6 +30856,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
+--- !u!1 &1706927542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 2a15eb585566f624fa9ae0e264b00155,
+    type: 3}
+  m_PrefabInstance: {fileID: 1706927541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1706927543
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706927542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
 --- !u!1 &1709024482
 GameObject:
   m_ObjectHideFlags: 0
@@ -33002,6 +33022,16 @@ PrefabInstance:
       propertyPath: batMovement
       value: 
       objectReference: {fileID: 882075167}
+    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384440, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.201
+      objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: TriggerModule.primitives.Array.size
@@ -33012,6 +33042,11 @@ PrefabInstance:
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
       objectReference: {fileID: 1516118862}
+    - target: {fileID: 8881659560791398972, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: batMovement
+      value: 
+      objectReference: {fileID: 882075167}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05846e640b334024aa932c38aa9b2461, type: 3}
 --- !u!1 &1843222706
