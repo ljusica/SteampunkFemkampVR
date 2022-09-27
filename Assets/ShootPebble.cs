@@ -29,6 +29,7 @@ public class ShootPebble : MonoBehaviour, IShotable
     public void OnRelease()
     {
         isShootable = false;
+        transform.parent = null;
         StartCoroutine(ReleasePebble());
     }
 
@@ -37,7 +38,7 @@ public class ShootPebble : MonoBehaviour, IShotable
         pos1 = transform.position;
         yield return new WaitForSeconds(0.1f);
         direction = transform.position - pos1;
-        rb.velocity = direction;
+        rb.velocity = direction*25;
         rb.useGravity = true;
     }
 }
