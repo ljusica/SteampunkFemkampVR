@@ -48,10 +48,9 @@ public class ShootPebble : MonoBehaviour, IShotable
 
     public IEnumerator ReleasePebble()
     {
-        yield return new WaitForSeconds(0.1f);
         rb.velocity = notch.transform.forward * 10;
         rb.useGravity = true;
-        yield return new WaitForSeconds(0.1f);
         collider.enabled = true;
+        yield return null;
     }
 }
