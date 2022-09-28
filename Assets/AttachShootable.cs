@@ -12,7 +12,7 @@ public class AttachShootable : MonoBehaviour
     {
         if(other.GetComponent<IShotable>() != null)
         {
-            if (!hasAttached) {
+            if (!hasAttached && other.GetComponent<IShotable>().IsShotable()) {
                 other.GetComponent<XRGrabInteractable>().enabled = false;
                 shotable = other.GetComponent<IShotable>();
                 shotable.OnAttach(notch);
