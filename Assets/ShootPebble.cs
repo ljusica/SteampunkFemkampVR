@@ -51,5 +51,6 @@ public class ShootPebble : MonoBehaviour, IShotable
         rb.velocity = notch.transform.forward * 10;
         rb.useGravity = true;
         collider.enabled = true;
+        yield return null;
     }
 }
