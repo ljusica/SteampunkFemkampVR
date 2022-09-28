@@ -7,6 +7,7 @@ public class AttachShootable : MonoBehaviour
 {
     public GameObject notch;
     IShotable shotable;
+    bool hasAttached = false;
     private void OnTriggerEnter(Collider other)
     {
         if(other.GetComponent<IShotable>() != null)
@@ -14,6 +15,7 @@ public class AttachShootable : MonoBehaviour
             other.GetComponent<XRGrabInteractable>().enabled = false;
             shotable = other.GetComponent<IShotable>();
             shotable.OnAttach(notch);
+            hasAttached = true;
         }
     }
     public void OnRelease()
@@ -22,6 +24,7 @@ public class AttachShootable : MonoBehaviour
         {
             shotable.OnRelease();
             shotable = null;
+            hasAttached = false;
         }
     }
 }
