@@ -41,14 +41,8 @@ public class Clown : MonoBehaviour
     public void ChangeColor()
     {
         Color newColor = new Color();
-        if(multiplier == 2)
-        {
-            newColor = Color.red;
-        }
-        else if(multiplier == 1)
-        {
-            newColor = Color.white;
-        }
+        if(multiplier == 2) newColor = Color.red;
+        else if(multiplier == 1) newColor = Color.white;
 
         transform.GetChild(2).GetComponent<MeshRenderer>().material.color = newColor;
     }

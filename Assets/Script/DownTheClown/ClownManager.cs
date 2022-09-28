@@ -51,21 +51,20 @@ public class ClownManager : MonoBehaviour
             rowDown = 3;
         }
 
-        AddScore(clownRef);
-    }
+        AddScore();
 
-    private void AddScore(Clown clown)
-    {
-        float score = clown.score * clown.multiplier;
-        ScoreManager.Instance.AddScore("DTC", score);
-        clown.multiplier = 1;
-        clown.ChangeColor();
+        void AddScore()
+        {
+            float score = clownRef.score * clownRef.multiplier;
+            ScoreManager.Instance.AddScore("DTC", score);
+            clownRef.multiplier = 1;
+            clownRef.ChangeColor();
+        }
     }
 
     private void CheckRowDown()
     {
-        if(rowDown == 0)
-            return;
+        if(rowDown == 0) return;
 
         if(rowDown == 1)
         {
