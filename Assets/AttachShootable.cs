@@ -7,7 +7,6 @@ public class AttachShootable : MonoBehaviour
 {
     public GameObject notch;
     IShotable shotable;
-    public SelectExitEvent selectExited { get; set; }
     private void OnTriggerEnter(Collider other)
     {
         if(other.GetComponent<IShotable>() != null)
