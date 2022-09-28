@@ -16,8 +16,7 @@ public class ClownCollision : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         flipObject.GetComponent<FlipClown>().Flip();
-        if(!clown.flipped)
-            ClownKnockEvent.TriggerKnock(flipObject);
+        if(!clown.flipped) ClownKnockEvent.TriggerKnock(flipObject);
         clown.flipped = true;
     }
 }
