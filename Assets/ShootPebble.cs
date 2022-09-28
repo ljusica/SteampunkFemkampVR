@@ -9,6 +9,7 @@ public class ShootPebble : MonoBehaviour, IShotable
 
     Vector3 direction;
     Vector3 pos1;
+    GameObject notch;
     bool isShootable = true;
 
     public bool IsShotable()
@@ -20,9 +21,10 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         if (isShootable)
         {
-            transform.parent = obj.transform;
-            transform.localPosition = Vector3.zero;
+            notch = obj;
             rb.useGravity = false;
+            transform.parent = obj.transform;
+            transform.localPosition = obj.transform.forward;
         }
     }
 
@@ -35,10 +37,8 @@ public class ShootPebble : MonoBehaviour, IShotable
 
     public IEnumerator ReleasePebble()
     {
-        pos1 = transform.position;
         yield return new WaitForSeconds(0.1f);
-        direction = transform.position - pos1;
-        rb.velocity = direction*25;
+        rb.velocity = notch.transform.forward * 10;
         rb.useGravity = true;
     }
 }
