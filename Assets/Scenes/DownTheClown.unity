@@ -1743,13 +1743,18 @@ PrefabInstance:
     - target: {fileID: 6378821431562801762, guid: 3cbea9f2c3374dd4693e5a124f744181,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 18
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6378821431562801763, guid: 3cbea9f2c3374dd4693e5a124f744181,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 391903700}
+    - target: {fileID: 6378821432769507013, guid: 3cbea9f2c3374dd4693e5a124f744181,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cbea9f2c3374dd4693e5a124f744181, type: 3}
 --- !u!1 &746496068
