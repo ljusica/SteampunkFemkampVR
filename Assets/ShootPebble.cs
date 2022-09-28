@@ -7,11 +7,20 @@ public class ShootPebble : MonoBehaviour, IShotable
     [SerializeField]
     Rigidbody rb;
 
-    Vector3 direction;
-    Vector3 pos1;
+    Collider collider;
     GameObject notch;
     bool isShootable = true;
-
+    private void Start()
+    {
+        collider = GetComponent<Collider>();
+    }
+    private void Update()
+    {
+        if(transform.parent != null)
+        {
+            transform.localPosition = Vector3.zero;
+        }
+    }
     public bool IsShotable()
     {
         return isShootable;
@@ -22,9 +31,11 @@ public class ShootPebble : MonoBehaviour, IShotable
         if (isShootable)
         {
             notch = obj;
+            collider.enabled = false;
             rb.useGravity = false;
             transform.parent = obj.transform;
             transform.localPosition = Vector3.zero;
+
         }
     }
 
@@ -40,5 +51,7 @@ public class ShootPebble : MonoBehaviour, IShotable
         yield return new WaitForSeconds(0.1f);
         rb.velocity = notch.transform.forward * 10;
         rb.useGravity = true;
+        yield return new WaitForSeconds(0.1f);
+        collider.enabled = true;
     }
 }
