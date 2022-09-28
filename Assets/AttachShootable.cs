@@ -19,6 +19,10 @@ public class AttachShootable : MonoBehaviour
     }
     public void OnRelease()
     {
-        shotable.OnRelease();
+        if(shotable != null)
+        {
+            shotable.OnRelease();
+            shotable = null;
+        }
     }
 }

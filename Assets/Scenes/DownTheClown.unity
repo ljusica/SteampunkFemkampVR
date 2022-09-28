@@ -1102,8 +1102,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 391903700}
+    - target: {fileID: 6378821432769507014, guid: 3cbea9f2c3374dd4693e5a124f744181,
+        type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 727014885}
+    - target: {fileID: 6378821432769507019, guid: 3cbea9f2c3374dd4693e5a124f744181,
+        type: 3}
+      propertyPath: notch
+      value: 
+      objectReference: {fileID: 727014886}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cbea9f2c3374dd4693e5a124f744181, type: 3}
+--- !u!4 &727014885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6378821432769507010, guid: 3cbea9f2c3374dd4693e5a124f744181,
+    type: 3}
+  m_PrefabInstance: {fileID: 727014884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &727014886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6378821432769507011, guid: 3cbea9f2c3374dd4693e5a124f744181,
+    type: 3}
+  m_PrefabInstance: {fileID: 727014884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &746496068
 GameObject:
   m_ObjectHideFlags: 0

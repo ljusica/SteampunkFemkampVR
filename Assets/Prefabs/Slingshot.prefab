@@ -4684,7 +4684,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 6378821431174020857}
+  m_AttachTransform: {fileID: 6378821432769507010}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
@@ -4833,4 +4833,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09005efe3692594fafb17f0a01937ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notch: {fileID: 6378821431174020858}
+  notch: {fileID: 6378821432769507011}
