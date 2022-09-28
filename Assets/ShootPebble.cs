@@ -50,7 +50,7 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         rb.velocity = notch.transform.forward * 10;
         rb.useGravity = true;
+        yield return new WaitForSeconds(0.2f);
         collider.enabled = true;
-        yield return null;
     }
 }
