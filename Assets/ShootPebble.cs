@@ -1,15 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootPebble : MonoBehaviour, IShotable
 {
+    public Transform resetPoint;
+
     [SerializeField]
     Rigidbody rb;
 
     Collider collider;
     GameObject notch;
     bool isShootable = true;
+    float gravity = 9.81f;
+
     private void Start()
     {
         collider = GetComponent<Collider>();
@@ -20,6 +25,7 @@ public class ShootPebble : MonoBehaviour, IShotable
         {
             transform.localPosition = Vector3.zero;
         }
+        rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y + gravity*Time.deltaTime, rb.velocity.z);
     }
     public bool IsShotable()
     {
@@ -43,14 +49,27 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         isShootable = false;
         transform.parent = null;
+        gravity = gravity / 2;
         StartCoroutine(ReleasePebble());
     }
 
     public IEnumerator ReleasePebble()
     {
         rb.velocity = notch.transform.forward * 10;
-        rb.useGravity = true;
         collider.enabled = true;
         yield return null;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Teddy"))
+        {
+            ResetPebble();
+        }
+    }
+
+    private void ResetPebble()
+    {
+        transform.position = resetPoint.position;
+        gravity = 9.81f;
     }
 }
