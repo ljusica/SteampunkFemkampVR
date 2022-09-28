@@ -24,7 +24,7 @@ public class ShootPebble : MonoBehaviour, IShotable
             notch = obj;
             rb.useGravity = false;
             transform.parent = obj.transform;
-            transform.localPosition = obj.transform.forward;
+            transform.localPosition = Vector3.zero;
         }
     }
 
