@@ -15,7 +15,7 @@ public class HandMenu : MonoBehaviour
     {
         XRHandMenu = new XRHandMenu();
         openMenuInput = XRHandMenu.UI.HandMenu;
-
+        
         openMenuInput.started += OpenMenu;
         openMenuInput.canceled += OpenMenu;
     }

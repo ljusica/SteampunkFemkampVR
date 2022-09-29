@@ -5,8 +5,9 @@ using DG.Tweening;
 
 public class ImpactArea : MonoBehaviour
 {
-    public float duration = 3;
+    [HideInInspector] public bool moving;
 
+    public float duration = 3;
     public float minYPos;
     public float maxYPos;
     public float minXPos;
@@ -18,57 +19,55 @@ public class ImpactArea : MonoBehaviour
 
     private Vector3 previousPos;
 
-    void Start()
+    public void Move()
     {
-        Move(minXPos, maxXPos, minYPos, maxYPos);
-    }
-
-    void Move(float minX, float maxX, float minY, float maxY)
-    {
-        endPointX = Random.Range(minX, maxX);
-        endPointY = Random.Range(minY, maxY);
-
-        Vector3 endPoint = new Vector3(endPointX, endPointY, transform.position.z);
-
-        if (endPoint.x < previousPos.x && endPoint.x > previousPos.x - offset)
+        if (moving)
         {
-            endPoint.x = endPoint.x + offset;
+            endPointX = Random.Range(minXPos, maxXPos);
+            endPointY = Random.Range(minYPos, maxYPos);
 
-            if(endPoint.x > maxXPos)
+            Vector3 endPoint = new Vector3(endPointX, endPointY, transform.position.z);
+
+            if (endPoint.x < previousPos.x && endPoint.x > previousPos.x - offset)
             {
-                endPoint.x = maxXPos;
-            }
-        }
-        if (endPoint.x > previousPos.x && endPoint.x < previousPos.x + offset)
-        {
-            endPoint.x = endPoint.x - offset;
+                endPoint.x = endPoint.x + offset;
 
-            if(endPoint.x < minXPos)
+                if (endPoint.x > maxXPos)
+                {
+                    endPoint.x = maxXPos;
+                }
+            }
+            if (endPoint.x > previousPos.x && endPoint.x < previousPos.x + offset)
             {
-                endPoint.x = minXPos;
-            }
-        }
-        if (endPoint.y < previousPos.y && endPoint.y > previousPos.y - offset)
-        {
-            endPoint.y = endPoint.y + offset;
+                endPoint.x = endPoint.x - offset;
 
-            if(endPoint.y > maxYPos)
+                if (endPoint.x < minXPos)
+                {
+                    endPoint.x = minXPos;
+                }
+            }
+            if (endPoint.y < previousPos.y && endPoint.y > previousPos.y - offset)
             {
-                endPoint.y = maxYPos;
+                endPoint.y = endPoint.y + offset;
+
+                if (endPoint.y > maxYPos)
+                {
+                    endPoint.y = maxYPos;
+                }
             }
-        }
-        if (endPoint.y > previousPos.y && endPoint.y < previousPos.y + offset)
-        {
-            endPoint.y = endPoint.y - offset;
-           
-            if(endPoint.y < minYPos)
+            if (endPoint.y > previousPos.y && endPoint.y < previousPos.y + offset)
             {
-                endPoint.y = minYPos;
+                endPoint.y = endPoint.y - offset;
+
+                if (endPoint.y < minYPos)
+                {
+                    endPoint.y = minYPos;
+                }
             }
+
+            transform.DOMove(endPoint, duration).SetEase(Ease.InOutBounce).OnComplete(() => Move());
+
+            previousPos = endPoint;
         }
-
-        transform.DOMove(endPoint, duration).SetEase(Ease.InOutBounce).OnComplete(() => Move(minXPos, maxXPos, minYPos, maxYPos));
-
-        previousPos = endPoint;
     }
 }

@@ -6,9 +6,7 @@ public class BallHelpInHole : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ball"))
-        {
-            other.GetComponent<Rigidbody>().velocity += Vector3.up;
-        }
+        if (!other.CompareTag("Ball")) return;
+        other.GetComponent<Rigidbody>().velocity += Vector3.up;
     }
 }
