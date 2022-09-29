@@ -40,9 +40,9 @@ public class HandMenu : MonoBehaviour
     private void OpenMenu(InputAction.CallbackContext obj)
     {
         isMenuOpen = isMenuOpen ? false : true;
-        menuObj.SetActive(isMenuOpen = isMenuOpen ? false : true);
-        uiHand.SetActive(isMenuOpen = isMenuOpen ? false : true);
-        normalHand.SetActive(isMenuOpen = !isMenuOpen ? false : true);
+        menuObj.SetActive(isMenuOpen);
+        uiHand.SetActive(isMenuOpen);
+        normalHand.SetActive(!isMenuOpen);
 
     }
 }
