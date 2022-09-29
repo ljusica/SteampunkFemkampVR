@@ -11,16 +11,9 @@ public class SelectLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //if(other.gameObject.tag == "Ball")
-        //{
-        //    SceneManager.LoadScene(other.gameObject.GetComponent<LevelName>()?.levelName);
-        //}
-
-        if(other.gameObject.tag == "Ball")
-        {
-            levelObject = other.gameObject;
-            animator.SetTrigger("FadeOut");
-        }
+        if (!other.gameObject.CompareTag("Ball")) return;
+        levelObject = other.gameObject;
+        animator.SetTrigger("FadeOut");
     }
 
     private IEnumerator LoadSceneAsync(string levelName)

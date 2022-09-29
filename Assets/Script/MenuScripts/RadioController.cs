@@ -14,17 +14,13 @@ public class RadioController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Ball")
-        {
-            source.Stop();
-        } 
+        if(collision.gameObject.tag == "Bullet" 
+        || collision.gameObject.tag == "Ball") source.Stop();
     }
 
     public void ToggleMusic()
     {
-        if(source.isPlaying)
-            source.Stop();
-        else
-            source.Play();
+        if(source.isPlaying) source.Stop();
+        else source.Play();
     }
 }

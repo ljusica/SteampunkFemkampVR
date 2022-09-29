@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7795198729533191619}
   m_Layer: 0
   m_Name: ClownParent
-  m_TagString: Untagged
+  m_TagString: Teddy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,6 +55,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: 6e7e8e4ba05c5f84793d51bdc4237479, type: 3}
       propertyPath: m_Name
       value: misiek
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 6e7e8e4ba05c5f84793d51bdc4237479, type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 6e7e8e4ba05c5f84793d51bdc4237479, type: 3}
       propertyPath: m_RootOrder
@@ -162,8 +166,6 @@ MonoBehaviour:
   flipped: 0
   score: 0
   multiplier: 0
-  white: {fileID: 2100000, guid: 6d1e407403da3494fb2c5e6423649279, type: 2}
-  red: {fileID: 2100000, guid: cc81392ce122adc45ab71f218c1ac2b8, type: 2}
 --- !u!114 &7795198730197150468
 MonoBehaviour:
   m_ObjectHideFlags: 0

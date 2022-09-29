@@ -1,16 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootPebble : MonoBehaviour, IShotable
 {
+    public Transform resetPoint;
+
     [SerializeField]
     Rigidbody rb;
 
-    Vector3 direction;
-    Vector3 pos1;
+    Collider collider;
+    GameObject notch;
     bool isShootable = true;
+    float gravity = 9.81f;
 
+    private void Start()
+    {
+        collider = GetComponent<Collider>();
+    }
+    private void Update()
+    {
+        if(transform.parent != null)
+        {
+            transform.localPosition = Vector3.zero;
+        }
+        rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y + gravity*Time.deltaTime, rb.velocity.z);
+    }
     public bool IsShotable()
     {
         return isShootable;
@@ -20,9 +36,12 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         if (isShootable)
         {
+            notch = obj;
+            collider.enabled = false;
+            rb.useGravity = false;
             transform.parent = obj.transform;
             transform.localPosition = Vector3.zero;
-            rb.useGravity = false;
+
         }
     }
 
@@ -30,15 +49,27 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         isShootable = false;
         transform.parent = null;
+        gravity = gravity / 2;
         StartCoroutine(ReleasePebble());
     }
 
     public IEnumerator ReleasePebble()
     {
-        pos1 = transform.position;
-        yield return new WaitForSeconds(0.1f);
-        direction = transform.position - pos1;
-        rb.velocity = direction*25;
-        rb.useGravity = true;
+        rb.velocity = notch.transform.forward * 10;
+        collider.enabled = true;
+        yield return null;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Teddy"))
+        {
+            ResetPebble();
+        }
+    }
+
+    private void ResetPebble()
+    {
+        transform.position = resetPoint.position;
+        gravity = 9.81f;
     }
 }
