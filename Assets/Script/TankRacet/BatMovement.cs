@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class BatMovement : MonoBehaviour
 {
+    public float speed;
+
     public Transform startPoint;
     public Transform endPoint;
 
@@ -25,7 +27,7 @@ public class BatMovement : MonoBehaviour
         {
             moving = true;
 
-            gameObject.transform.DOMoveX(transform.position.x + 0.05f, 0.1f).OnComplete(() => moving = false);
+            gameObject.transform.DOMoveX(transform.position.x + 0.05f, speed).OnComplete(() => moving = false);
 
             if (gameObject.transform.position.x >= endPoint.transform.position.x)
             {

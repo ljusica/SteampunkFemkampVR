@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class VolumeSettings : MonoBehaviour
+[System.Serializable]
+public class VolumeSettings
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float musicVolume;
+    public float sfxVolume;
+    public bool isMusicOn;
+    public bool isSfxOn;
 }
