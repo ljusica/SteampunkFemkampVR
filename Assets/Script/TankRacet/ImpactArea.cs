@@ -65,7 +65,8 @@ public class ImpactArea : MonoBehaviour
                 }
             }
 
-            transform.DOMove(endPoint, duration).SetEase(Ease.InCubic).OnComplete(() => Move());
+            var distance = Vector3.Distance(gameObject.transform.position, endPoint);
+            transform.DOMove(endPoint, duration * Mathf.Abs(distance)).SetEase(Ease.InCubic).OnComplete(() => Move());
 
             previousPos = endPoint;
         }
