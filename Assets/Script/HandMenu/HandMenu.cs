@@ -11,7 +11,6 @@ public class HandMenu : MonoBehaviour
     public GameObject normalHand;
     public GameObject uiHand;
 
-
     private void Awake()
     {
         XRHandMenu = new XRHandMenu();
@@ -21,28 +20,14 @@ public class HandMenu : MonoBehaviour
         openMenuInput.canceled += OpenMenu;
     }
 
-    private void Update()
-    {
-        //menuObj.SetActive(isMenuOpen);
-        //uiHand.SetActive(isMenuOpen);
-        //normalHand.SetActive(!isMenuOpen);
-    }
-
-    private void OnEnable()
-    {
-        openMenuInput.Enable();
-    }
-    private void OnDisable()
-    {
-        openMenuInput.Disable();
-    }
+    private void OnEnable() => openMenuInput.Enable();
+    private void OnDisable() => openMenuInput.Disable();
 
     private void OpenMenu(InputAction.CallbackContext obj)
     {
         isMenuOpen = isMenuOpen ? false : true;
-        menuObj.SetActive(isMenuOpen);
+        menuObj.SetActive(isMenuOpen); 
         uiHand.SetActive(isMenuOpen);
         normalHand.SetActive(!isMenuOpen);
-
     }
 }
