@@ -8,6 +8,9 @@ public class HandMenu : MonoBehaviour
     private bool isMenuOpen;
 
     public GameObject menuObj;
+    public GameObject normalHand;
+    public GameObject uiHand;
+
 
     private void Awake()
     {
@@ -20,7 +23,9 @@ public class HandMenu : MonoBehaviour
 
     private void Update()
     {
-        menuObj.SetActive(isMenuOpen);
+        //menuObj.SetActive(isMenuOpen);
+        //uiHand.SetActive(isMenuOpen);
+        //normalHand.SetActive(!isMenuOpen);
     }
 
     private void OnEnable()
@@ -35,5 +40,9 @@ public class HandMenu : MonoBehaviour
     private void OpenMenu(InputAction.CallbackContext obj)
     {
         isMenuOpen = isMenuOpen ? false : true;
+        menuObj.SetActive(isMenuOpen = isMenuOpen ? false : true);
+        uiHand.SetActive(isMenuOpen = isMenuOpen ? false : true);
+        normalHand.SetActive(isMenuOpen = !isMenuOpen ? false : true);
+
     }
 }

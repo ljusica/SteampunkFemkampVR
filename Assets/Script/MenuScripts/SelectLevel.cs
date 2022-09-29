@@ -35,6 +35,7 @@ public class SelectLevel : MonoBehaviour
 
     public void LoadScene(string levelName)
     {
+        Debug.Log("Mamma mia är en film som finns, det är inget skämt");
         SceneManager.LoadSceneAsync(levelName);
         animator.SetTrigger("FadeOut");
     }
