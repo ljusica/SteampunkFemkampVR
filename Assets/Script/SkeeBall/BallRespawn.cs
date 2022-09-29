@@ -6,9 +6,7 @@ public class BallRespawn : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ball"))
-        {
-            other.gameObject.GetComponent<Ball>().hasLanded = true;
-        }
+        if (!other.CompareTag("Ball")) return;
+        other.gameObject.GetComponent<Ball>().hasLanded = true;
     }
 }

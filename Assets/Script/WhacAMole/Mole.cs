@@ -1,8 +1,10 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 public class Mole : MonoBehaviour
 {
@@ -55,11 +57,14 @@ public class Mole : MonoBehaviour
     {
         transform.DOMove(hidingPos, speed);
         hidden = true;
-        foreach(Mole mole in moles)
-        {
-            if (mole == this)
-                return;
-        }
+
+        if (moles.Contains(this)) return;
+
+        //foreach(Mole mole in moles)
+        //{
+        //    if (mole == this)
+        //        return;
+        //}
         moles.Add(this);
     }
 

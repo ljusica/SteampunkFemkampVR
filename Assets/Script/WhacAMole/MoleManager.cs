@@ -21,13 +21,11 @@ public class MoleManager : MonoBehaviour
 
     private void Update()
     {
-        if(!molesUp)
+        if (molesUp) return;
+        if(Time.time > timer + buffer)
         {
-            if(Time.time > timer + buffer)
-            {
-                MolesUp();
-                molesUp = true;
-            }
+            MolesUp();
+            molesUp = true;
         }
     }
 
@@ -57,11 +55,9 @@ public class MoleManager : MonoBehaviour
     {
         moles.Add(mole);
         ScoreManager.Instance.AddScore("WAM", points);
-        if(moles.Count == 5)
-        {
-            molesUp = false;
-            timer = Time.time;
-        }
+        if (moles.Count != 5) return;
+        molesUp = false;
+        timer = Time.time;
     }
 
     private void PickMole()
