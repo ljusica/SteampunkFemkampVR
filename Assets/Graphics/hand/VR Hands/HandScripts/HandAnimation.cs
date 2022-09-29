@@ -5,28 +5,35 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Animator))]
 public class HandAnimation : MonoBehaviour
 {
-    [SerializeField] private InputActionReference gripAction;
-    [SerializeField] private InputActionReference pinchAction;
-
-    private XRController hand;
+    private XRHandMenu XrHandMenu;
 
     private Animator animator;
+    public string whichHand;
+    
 
-    private void OnEnable()
+    private void Awake()
     {
-        hand = transform.parent.GetComponent<XRController>();
+        animator = GetComponent<Animator>();
+        XrHandMenu = new XRHandMenu();
+        XrHandMenu.Enable();
 
-        hand.
-        //grip
-        gripAction.action.performed += Gripping;
-        gripAction.action.canceled += GripRelease;
+        if(whichHand == "Right")
+        {
+            XrHandMenu.HandAnimations.GripRight.performed += Gripping;
+            XrHandMenu.HandAnimations.GripRight.canceled += GripRelease;
 
-        //pinch
-        pinchAction.action.performed += Pinching;
-        pinchAction.action.canceled += PinchRelease;
+            XrHandMenu.HandAnimations.PinchRight.performed += Pinching;
+            XrHandMenu.HandAnimations.PinchRight.canceled += PinchRelease;
+        }
+        else if (whichHand == "Left")
+        {
+            XrHandMenu.HandAnimations.GripLeft.performed += Gripping;
+            XrHandMenu.HandAnimations.GripLeft.canceled += GripRelease;
+
+            XrHandMenu.HandAnimations.PinchLeft.performed += Pinching;
+            XrHandMenu.HandAnimations.PinchLeft.canceled += PinchRelease;
+        }
     }
-
-    private void Awake() => animator = GetComponent<Animator>();
 
     private void Gripping(InputAction.CallbackContext obj) => animator.SetFloat("Grip", obj.ReadValue<float>());
 
