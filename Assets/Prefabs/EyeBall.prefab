@@ -275,6 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballBoxDropper: {fileID: 0}
   hasLanded: 0
+  hasScored: 0
 --- !u!82 &5462533629268542420
 AudioSource:
   m_ObjectHideFlags: 0
@@ -284,7 +285,8 @@ AudioSource:
   m_GameObject: {fileID: 6282115918011986341}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 8ea1bbb113429594384dd29c1ad57418, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
