@@ -31,7 +31,7 @@ public class LeavingPlayareaPrevention : MonoBehaviour
     }
     void MovePlayer()
     {
-        player.transform.position = newSpawnPoint.position;
+        player.transform.position = new Vector3(newSpawnPoint.position.x, player.transform.position.y, newSpawnPoint.position.z);
         DecreaseFog();
     }
     private void OnTriggerEnter(Collider other)
