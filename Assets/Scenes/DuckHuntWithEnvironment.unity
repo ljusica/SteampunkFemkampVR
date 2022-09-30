@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1453693139}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003204829, g: 0.0063439845, b: 0.014498586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -951,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
@@ -5215,7 +5215,7 @@ PrefabInstance:
     - target: {fileID: 8447756700165276269, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8447756700165276269, guid: 4477db6f8132fd24baea1f7ab0b2eaf6,
         type: 3}
@@ -5447,7 +5447,7 @@ PrefabInstance:
     - target: {fileID: 3304988915684254934, guid: 73110538e7714744b881d60b86ecf45d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3304988915684254934, guid: 73110538e7714744b881d60b86ecf45d,
         type: 3}
@@ -6240,7 +6240,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &288624849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7173,7 +7173,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &334688886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7744,7 +7744,7 @@ PrefabInstance:
     - target: {fileID: 2615468949945898260, guid: 99637e9ee2f77be4fb8cf6c23bec9470,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2615468949945898260, guid: 99637e9ee2f77be4fb8cf6c23bec9470,
         type: 3}
@@ -8261,7 +8261,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &385994629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9098,7 +9098,7 @@ PrefabInstance:
     - target: {fileID: 2383936099348654559, guid: 0afdd79ba47421c4d89183c117886c1e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2383936099348654559, guid: 0afdd79ba47421c4d89183c117886c1e,
         type: 3}
@@ -9636,7 +9636,7 @@ PrefabInstance:
     - target: {fileID: 288800987228023362, guid: d2ad374dd24efba4c8a4a75b386f63fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 288800987228023362, guid: d2ad374dd24efba4c8a4a75b386f63fe,
         type: 3}
@@ -10893,7 +10893,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &550079618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13486,16 +13486,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 733843153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cf19f0390ed8e4a85c79aa30f57366, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a5a6690ef484a94ba454086a0ee42e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ducks:
-  - {fileID: 385994625}
-  - {fileID: 889827542}
-  - {fileID: 1071839903}
-  farLeft: 58.5
-  farRight: 54.9
-  hidingPos: 0
+  points: 400
 --- !u!1 &734884672
 GameObject:
   m_ObjectHideFlags: 0
@@ -16165,7 +16159,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &889827546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17359,7 +17353,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &915704064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20363,7 +20357,7 @@ PrefabInstance:
     - target: {fileID: 5861809823541696822, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5861809823541696822, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
@@ -20373,12 +20367,12 @@ PrefabInstance:
     - target: {fileID: 5861809823541696822, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.293
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5861809823541696822, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.96
+      value: 32.08
       objectReference: {fileID: 0}
     - target: {fileID: 5861809823541696822, guid: 1179cecebf4d17e4ba01a0a7689ad019,
         type: 3}
@@ -20982,7 +20976,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1071839907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22975,7 +22969,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1195586365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23983,7 +23977,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1242921050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25159,7 +25153,7 @@ PrefabInstance:
     - target: {fileID: 939053217902686275, guid: f3167f05a6984e746963501ff812f5ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 939053217902686275, guid: f3167f05a6984e746963501ff812f5ab,
         type: 3}
@@ -25215,6 +25209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923780056988684886, guid: f3167f05a6984e746963501ff812f5ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3167f05a6984e746963501ff812f5ab, type: 3}
@@ -25391,7 +25390,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1293588195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28933,6 +28932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469355561}
+  - component: {fileID: 1469355562}
   m_Layer: 0
   m_Name: Ducks (2)
   m_TagString: Untagged
@@ -28958,6 +28958,42 @@ Transform:
   m_Father: {fileID: 1911040800}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469355562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469355560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cf19f0390ed8e4a85c79aa30f57366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ducksTier1:
+  - {fileID: 288624845}
+  - {fileID: 1814118988}
+  - {fileID: 915704060}
+  - {fileID: 1966428811}
+  - {fileID: 1710311829}
+  - {fileID: 550079614}
+  - {fileID: 2132771473}
+  ducksTier2:
+  - {fileID: 1195586361}
+  - {fileID: 1809605544}
+  - {fileID: 1242921046}
+  - {fileID: 1293588191}
+  - {fileID: 334688882}
+  ducksTier3:
+  - {fileID: 385994625}
+  - {fileID: 889827542}
+  - {fileID: 1071839903}
+  farLeft: 58.5
+  farRight: 54.9
+  hidingPos: 0
+  speedTier1: 10
+  speedTier2: 5
+  speedTier3: 2
 --- !u!1 &1469390725
 GameObject:
   m_ObjectHideFlags: 0
@@ -31184,20 +31220,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566240514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cf19f0390ed8e4a85c79aa30f57366, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a5a6690ef484a94ba454086a0ee42e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ducks:
-  - {fileID: 288624845}
-  - {fileID: 1814118988}
-  - {fileID: 915704060}
-  - {fileID: 1966428811}
-  - {fileID: 1710311829}
-  - {fileID: 550079614}
-  - {fileID: 2132771473}
-  farLeft: 58.5
-  farRight: 54.9
-  hidingPos: 0
+  points: 100
 --- !u!1 &1572425940
 GameObject:
   m_ObjectHideFlags: 0
@@ -32991,7 +33017,7 @@ Transform:
   - {fileID: 889994542}
   - {fileID: 918863344}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667162049
 GameObject:
@@ -34228,7 +34254,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1710311833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35803,7 +35829,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1809605548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36288,7 +36314,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1814118992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37943,7 +37969,7 @@ Transform:
   - {fileID: 17143063}
   - {fileID: 904452146}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912218584
 GameObject:
@@ -38617,7 +38643,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1966428815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40133,18 +40159,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020550538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cf19f0390ed8e4a85c79aa30f57366, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a5a6690ef484a94ba454086a0ee42e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ducks:
-  - {fileID: 1195586361}
-  - {fileID: 1809605544}
-  - {fileID: 1242921046}
-  - {fileID: 1293588191}
-  - {fileID: 334688882}
-  farLeft: 58.5
-  farRight: 54.9
-  hidingPos: 0
+  points: 200
 --- !u!1 &2032686688
 GameObject:
   m_ObjectHideFlags: 0
@@ -41361,7 +41379,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &2132771477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41665,7 +41683,7 @@ PrefabInstance:
     - target: {fileID: 814349172199877207, guid: f21a90b0a068639449405bf8e66a57ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 814349172199877207, guid: f21a90b0a068639449405bf8e66a57ae,
         type: 3}
@@ -41739,7 +41757,7 @@ PrefabInstance:
     - target: {fileID: 5474323824901191783, guid: 96d54d12d33b0704180fd3dec9a67701,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5474323824901191783, guid: 96d54d12d33b0704180fd3dec9a67701,
         type: 3}
@@ -41868,7 +41886,7 @@ PrefabInstance:
     - target: {fileID: 5532528025769973569, guid: eb8e715f891870e45b5ef58efc6a875e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5532528025769973569, guid: eb8e715f891870e45b5ef58efc6a875e,
         type: 3}
@@ -41977,7 +41995,7 @@ PrefabInstance:
     - target: {fileID: 8699972276083223474, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8699972276083223474, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
