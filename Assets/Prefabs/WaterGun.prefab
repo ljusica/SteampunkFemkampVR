@@ -5429,8 +5429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9197e8ee39ee0a744a5469a6188d5063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 1826020369680712224}
   waterHitParticle: {fileID: 495654228762333523}
+  batMovement: {fileID: 0}
 --- !u!1 &3707058292671127246
 GameObject:
   m_ObjectHideFlags: 0
@@ -5877,7 +5877,8 @@ AudioSource:
   m_GameObject: {fileID: 8286218794275221902}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

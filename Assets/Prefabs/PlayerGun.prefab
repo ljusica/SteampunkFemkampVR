@@ -137,6 +137,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6581764470865889381}
     m_Modifications:
+    - target: {fileID: 5156547266608405012, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+        type: 2}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_RootOrder
@@ -197,6 +203,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: M1911 Handgun_Silver 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8788927094238258563, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af26c3941b291a8449bf10ebc6380585, type: 3}
 --- !u!4 &8872772842821124191 stripped
