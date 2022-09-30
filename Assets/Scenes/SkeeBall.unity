@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 91333828}
-  m_IndirectSpecularColor: {r: 0.003204829, g: 0.0063439845, b: 0.014498586, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031296138, g: 0.0063240584, b: 0.014618333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12678,12 +12678,12 @@ PrefabInstance:
         type: 3}
       propertyPath: objectToFollow
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1484042549}
     - target: {fileID: 8699972275680202129, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
       propertyPath: objectToFollow
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1484042549}
     - target: {fileID: 8699972276083223473, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
       propertyPath: m_Name
@@ -17678,6 +17678,26 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1948756344932441775, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Id
+      value: bde010bc-47c7-4f87-afd5-7eafcb910e42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948756344932441775, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Id
+      value: 30cc4ae1-669e-4649-a187-998ba7c1fd36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948756344932441775, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 76829050-c658-4553-bbd4-bd9009a17dd9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948756344932441775, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 87b048d7-38c1-460a-aca7-3b9db8d5cfd4
+      objectReference: {fileID: 0}
     - target: {fileID: 1948756345394529079, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
       propertyPath: m_Name
@@ -18284,7 +18304,7 @@ PrefabInstance:
     - target: {fileID: 6657832662534597407, guid: bef81e4e5deafae4087068e75f73fe35,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: 6657832662534597407, guid: bef81e4e5deafae4087068e75f73fe35,
         type: 3}
@@ -19160,7 +19180,7 @@ PrefabInstance:
     - target: {fileID: 6657832662534597407, guid: bef81e4e5deafae4087068e75f73fe35,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1029
+      value: -0.2028
       objectReference: {fileID: 0}
     - target: {fileID: 6657832662534597407, guid: bef81e4e5deafae4087068e75f73fe35,
         type: 3}
@@ -28125,6 +28145,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1484042549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1948756344932441773, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+    type: 3}
+  m_PrefabInstance: {fileID: 916173010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484042554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484042549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1484795218
 GameObject:
   m_ObjectHideFlags: 0
