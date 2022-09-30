@@ -70,6 +70,7 @@ public class ShootPebble : MonoBehaviour, IShotable
     private void ResetPebble()
     {
         transform.position = resetPoint.position;
+        rb.velocity = Vector3.zero;
         gravity = 9.81f;
     }
 }

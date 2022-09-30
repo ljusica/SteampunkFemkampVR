@@ -6,23 +6,15 @@ using UnityEngine.UI;
 public class SliderAssign : MonoBehaviour
 {
     public string whichSlider;
-    private Slider slider;
+    public Slider slider;
 
-    private void Start()
+    private void OnEnable()
     {
-        slider = GetComponent<Slider>();
+        AudioManager.Instance.OnMenuEnable(slider, whichSlider);
+    }
 
-        switch (whichSlider)
-        {
-            case "Music":
-                AudioManager.Instance.musicSlider = gameObject.GetComponent<Slider>();
-                slider.onValueChanged.AddListener(AudioManager.Instance.UpdateMusicVolume);
-                break;
-
-            case "SFX":
-                AudioManager.Instance.sfxSlider = gameObject.GetComponent<Slider>();
-                slider.onValueChanged.AddListener(AudioManager.Instance.UpdateSfxVolume);
-                break;
-        }
+    private void OnDisable()
+    {
+        AudioManager.Instance.OnMenuDisable();
     }
 }
