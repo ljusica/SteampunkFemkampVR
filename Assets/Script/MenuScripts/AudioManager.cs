@@ -46,6 +46,7 @@ public class AudioManager : MonoBehaviour
     {
         float volume = MathF.Log10(value) * 20;
         LoadVolumeSettings.volumeSettings.musicVolume = volume;
+        audioMixer.SetFloat("MusicVolume", volume);
         string jsonString = JsonUtility.ToJson(LoadVolumeSettings.volumeSettings);
         PlayerPrefs.SetString("Volume", jsonString);
         PlayerPrefs.Save();
@@ -55,8 +56,33 @@ public class AudioManager : MonoBehaviour
     {
         float volume = MathF.Log10(value) * 20;
         LoadVolumeSettings.volumeSettings.sfxVolume = volume;
+        audioMixer.SetFloat("SfxVolume", volume);
         string jsonString = JsonUtility.ToJson(LoadVolumeSettings.volumeSettings);
         PlayerPrefs.SetString("Volume", jsonString);
         PlayerPrefs.Save();
+    }
+
+    public void OnMenuEnable(Slider slider, string type)
+    {
+        switch (type)
+        {
+            case "Music":
+                musicSlider = slider;
+                musicSlider.onValueChanged.AddListener(UpdateMusicVolume);
+                break;
+
+            case "SFX":
+                sfxSlider = slider;
+                sfxSlider.onValueChanged.AddListener(UpdateSfxVolume);
+                break;
+        }
+    }
+
+    public void OnMenuDisable()
+    {
+        musicSlider.onValueChanged.RemoveAllListeners();
+        sfxSlider.onValueChanged.RemoveAllListeners();
+        musicSlider = null;
+        sfxSlider = null;
     }
 }
