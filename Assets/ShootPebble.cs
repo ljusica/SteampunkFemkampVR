@@ -21,11 +21,14 @@ public class ShootPebble : MonoBehaviour, IShotable
     }
     private void Update()
     {
-        if(transform.parent != null)
+        if (transform.parent != null)
         {
             transform.localPosition = Vector3.zero;
         }
-        rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y + gravity*Time.deltaTime, rb.velocity.z);
+    }
+    private void FixedUpdate()
+    {
+            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y - gravity * Time.deltaTime, rb.velocity.z);
     }
     public bool IsShotable()
     {
