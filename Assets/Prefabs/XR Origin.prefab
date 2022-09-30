@@ -646,6 +646,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 672500437269391245, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 672500437269391245, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 672500437269391245, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2015465479779364708, guid: 7239fe82a4295284da122dc980581e2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -821,6 +836,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3607695041082303057, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053649904310819511, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685126804183574345, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685126804183574345, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770041763837277444, guid: 7239fe82a4295284da122dc980581e2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7239fe82a4295284da122dc980581e2e, type: 3}
 --- !u!1 &1098045348803854735 stripped
@@ -869,6 +909,44 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2763872370446852507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6912547974817780895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8770041763837277444, guid: 7239fe82a4295284da122dc980581e2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2763872370446852507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &269171575089450263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912547974817780895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: Music
+--- !u!1 &8239860832771930924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6053649904310819511, guid: 7239fe82a4295284da122dc980581e2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2763872370446852507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5229789659857771871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8239860832771930924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: SFX
 --- !u!1001 &5677003068366900135
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
 
     private GameObject duck;
     private DuckMovement duckMovement;
+    private DuckPoints duckPoints;
     AudioSource sourceSFX;
 
     void Start()
@@ -47,8 +48,11 @@ public class Bullet : MonoBehaviour
         {
             duck = other.gameObject;
             duckMovement = duck.GetComponentInParent<DuckMovement>();
-            ScoreManager.Instance.AddScore("DuckHunt", 100f);
+            duckPoints = duck.GetComponentInParent<DuckPoints>();
+            ScoreManager.Instance.AddScore("DuckHunt", duckPoints.points);
             duckMovement.Hide(duck);
+
+            Debug.Log(duckPoints.points);
         }
         else
         {

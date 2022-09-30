@@ -7,6 +7,5 @@ public class TestVolume : MonoBehaviour
     public float value;
     public void TestVolumee()
     {
-        AudioManager.Instance.TestSetVolume(value);
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get { return instance; } }
 
     public AudioMixer audioMixer;
+    public Slider musicSlider;
+    public Slider sfxSlider;
 
     private void Awake()
     {
@@ -39,9 +42,21 @@ public class AudioManager : MonoBehaviour
         if (!savedSettings.isMusicOn) audioMixer.SetFloat("MusicVolume", toggleAudio);
     }
 
-    public void TestSetVolume(float value)
+    public void UpdateMusicVolume(float value)
     {
         float volume = MathF.Log10(value) * 20;
-        audioMixer.SetFloat("MusicVolume", volume);
+        LoadVolumeSettings.volumeSettings.musicVolume = volume;
+        string jsonString = JsonUtility.ToJson(LoadVolumeSettings.volumeSettings);
+        PlayerPrefs.SetString("Volume", jsonString);
+        PlayerPrefs.Save();
+    }
+
+    public void UpdateSfxVolume(float value)
+    {
+        float volume = MathF.Log10(value) * 20;
+        LoadVolumeSettings.volumeSettings.sfxVolume = volume;
+        string jsonString = JsonUtility.ToJson(LoadVolumeSettings.volumeSettings);
+        PlayerPrefs.SetString("Volume", jsonString);
+        PlayerPrefs.Save();
     }
 }
