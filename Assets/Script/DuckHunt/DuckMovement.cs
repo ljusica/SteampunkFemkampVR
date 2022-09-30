@@ -41,8 +41,8 @@ public class DuckMovement : MonoBehaviour
         if (Time.time >= timer + counter)
         {
             CalculateHide(ducksTier1, 2, startYTier1);
-            CalculateHide(ducksTier2, 4, startYTier2);
-            CalculateHide(ducksTier3, 5, startYTier3);
+            CalculateHide(ducksTier2, 3, startYTier2);
+            CalculateHide(ducksTier3, 4, startYTier3);
 
             counter = Random.Range(2, 7);
             timer = Time.time;
