@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/GameSelectorMenu.unity
     guid: 0c7b6bb28dec3874eae096dbc525e516
   - enabled: 1
-    path: Assets/Scenes/DuckHuntWithEnvironment.unity
+    path: Assets/Scenes/GameScenes/SkullHunt.unity
     guid: edcebbcfc4e47694d92832c9dd95353e
   - enabled: 1
-    path: Assets/Scenes/SkeeBall.unity
+    path: Assets/Scenes/GameScenes/EyeBall.unity
     guid: 4be5787b3e5852349b408a082b5e587a
   - enabled: 1
     path: Assets/Scenes/WAMTest.unity
