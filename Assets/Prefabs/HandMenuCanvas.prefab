@@ -740,6 +740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6633669209323999629}
   - component: {fileID: 8588130702431926869}
+  - component: {fileID: 8178362122536817242}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -821,6 +822,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8178362122536817242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902413383615631367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: Voiceline
+  slider: {fileID: 8588130702431926869}
 --- !u!1 &1026709372802996374
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1545956503397105201}
   - component: {fileID: 5595996389305315354}
+  - component: {fileID: 798576121324211257}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -912,6 +928,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &798576121324211257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026709372802996374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: Master
+  slider: {fileID: 5595996389305315354}
 --- !u!1 &1034482478900096710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1654,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2983130264927543317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1878,6 +1908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2983130266236499855}
   - component: {fileID: 2983130266236499848}
+  - component: {fileID: 3004743355489729451}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -1959,6 +1990,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3004743355489729451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2983130266236499854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: SFX
+  slider: {fileID: 2983130266236499848}
 --- !u!1 &3003760940774809958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,6 +2483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649435276317548852}
   - component: {fileID: 1403917598100334650}
+  - component: {fileID: 8773996971852774912}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -2519,6 +2565,20 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8773996971852774912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153661233808061710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977a1d56304173c4e99792af63f2ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichSlider: Music
+  slider: {fileID: 1403917598100334650}
 --- !u!1 &4326114226757603369
 GameObject:
   m_ObjectHideFlags: 0
