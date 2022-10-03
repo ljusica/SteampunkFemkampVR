@@ -90,6 +90,8 @@ public class SaveManager : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("PentathlonData");
         PentathlonData loadedData = JsonUtility.FromJson<PentathlonData>(jsonString);
 
+        if (loadedData == null){return;}
+
         hasPlayedEyeBall = loadedData.hasPlayedEyeBall;
         hasPlayedBloodlust = loadedData.hasPlayedBloodlust;
         hasPlayedClubTheCub = loadedData.hasPlayedClubTheCub;
