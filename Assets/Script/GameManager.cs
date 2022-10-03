@@ -13,6 +13,13 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
+    private void Start()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     public bool pentathlonUnlocked()
     {
