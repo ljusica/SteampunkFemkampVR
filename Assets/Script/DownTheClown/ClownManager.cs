@@ -6,8 +6,10 @@ using UnityEngine;
 public class ClownManager : MonoBehaviour
 {
     public List<GameObject> row1, row2, row3;
+    public StartTimer timer;
 
     private int rowDown = 0;
+    private bool isGameFinished;
 
     void Start()
     {
@@ -98,5 +100,33 @@ public class ClownManager : MonoBehaviour
     private void OnDestroy()
     {
         ClownKnockEvent.knockDown -= KnockDown;
+    }
+
+    private void Update()
+    {
+        if(!timer.countingDown && !isGameFinished)
+        {
+            isGameFinished = true;
+            foreach(GameObject clown in row1)
+            {
+                clown.GetComponent<FlipClown>().BackFlip();
+                clown.transform.GetComponentInChildren<Clown>().flipped = false;
+            }
+            row1.Clear();
+            foreach (GameObject clown in row2)
+            {
+                clown.GetComponent<FlipClown>().BackFlip();
+                clown.transform.GetComponentInChildren<Clown>().flipped = false;
+            }
+            row2.Clear();
+            foreach (GameObject clown in row3)
+            {
+                clown.GetComponent<FlipClown>().BackFlip();
+                clown.transform.GetComponentInChildren<Clown>().flipped = false;
+            }
+            row3.Clear();
+        }
+
+        if (timer.countingDown) isGameFinished = false;
     }
 }

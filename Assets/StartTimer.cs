@@ -9,7 +9,7 @@ public class StartTimer : MonoBehaviour
     public GameObject objectsToActivate;
 
     bool hasGameStarted = false;
-    bool countingDown = false;
+    public bool countingDown = false;
     float countDown;
 
     private void Update()
