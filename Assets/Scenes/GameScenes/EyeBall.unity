@@ -9534,6 +9534,12 @@ PrefabInstance:
       propertyPath: randomFailLines.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 69ed906abbcff0b4eb31341c645eeb20, type: 3}
+    - target: {fileID: 3060681996301620782, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1879553701102746591, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+        type: 2}
     - target: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
         type: 3}
       propertyPath: m_Name

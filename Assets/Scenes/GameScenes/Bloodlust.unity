@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17823,7 +17823,8 @@ AudioSource:
   m_GameObject: {fileID: 1041964098}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7552258386303950291, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 8cb7d700e71378649ae4b129be6f02f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.76
@@ -18892,6 +18893,12 @@ PrefabInstance:
       propertyPath: mockLines.Array.data[9]
       value: 
       objectReference: {fileID: 8300000, guid: a4b6bc45b1f33b04bb1296d25b6ae342, type: 3}
+    - target: {fileID: 3060681996301620782, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1879553701102746591, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+        type: 2}
     - target: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
         type: 3}
       propertyPath: m_Name
@@ -18917,7 +18924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d1e664ee5ddcd41b413fcf226ed8e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceLinesPlayer: {fileID: 0}
+  voiceLinesPlayer: {fileID: 1089502869}
 --- !u!114 &1089502869 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
