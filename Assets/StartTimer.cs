@@ -8,6 +8,7 @@ public class StartTimer : MonoBehaviour
     public TextMeshPro timerText;
     public GameObject objectsToActivate;
 
+    bool hasGameStarted = false;
     bool countingDown = false;
     float countDown;
 
@@ -15,11 +16,12 @@ public class StartTimer : MonoBehaviour
     {
         if (countingDown)
         {
+            hasGameStarted = true;
             countDown -= Time.deltaTime;
             timerText.text = "Time: " + Mathf.Round(countDown);
         }
 
-        if (countDown <= 0)
+        if (countDown <= 0 && hasGameStarted)
         {
             CountDownEnd();
         }
