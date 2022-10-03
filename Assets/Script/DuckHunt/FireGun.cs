@@ -11,6 +11,8 @@ public class FireGun : MonoBehaviour
     int bulletLeft;
     [SerializeField]
     TMP_Text bulletText;
+    [SerializeField]
+    VoiceLinesPlayer voiceLinesPlayer;
 
     AudioClip[] clips;
     AudioSource source;
@@ -53,6 +55,9 @@ public class FireGun : MonoBehaviour
             }
             bulletLeft--;
             bulletText.text = ""+bulletLeft;
+
+            if(Random.Range(0,10) == 0)
+                voiceLinesPlayer.PlayMockLine();
         }
     }
 }

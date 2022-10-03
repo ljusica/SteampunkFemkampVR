@@ -826,6 +826,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2285499005872141714, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: voiceLinesPlayer
+      value: 
+      objectReference: {fileID: 1796651453}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_RootOrder
@@ -35067,6 +35072,152 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1796651452
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c7c0eabca7a8b64448b2a1480c371624, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 528ca269db32aff43897d81c18346684, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: cb468704dd6658643bbb9515d6afa429, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f4be1a0be3a6f9a45919bbe329f13ea0, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 96a460794e9bc9c45b48dba067de9ab1, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e87a003bba7d44ea7c0b30722d7d39, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 242ee3022b5c5a142b30584c37061bdf, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38f79af890d46ea43a939431c7a35141, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 68d80f1f20340c14694db86c5920f5b3, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c97d5dcd9dd5714cbd549107627f1f9, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: a223144afdd9b784aa6839afc6e426b2, type: 3}
+    - target: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceLinesPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b8a86ecf27eee744884edfdc703aa17, type: 3}
+--- !u!114 &1796651453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1796651452}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654d9364c855e4c4282032536d79f6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798588736
 GameObject:
   m_ObjectHideFlags: 0
