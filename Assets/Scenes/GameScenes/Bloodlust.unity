@@ -32304,6 +32304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1841282229, guid: 05846e640b334024aa932c38aa9b2461, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.71
+      objectReference: {fileID: 0}
     - target: {fileID: 1218291451984521619, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
       propertyPath: m_Name
@@ -32369,10 +32373,20 @@ PrefabInstance:
       propertyPath: batMovement
       value: 
       objectReference: {fileID: 129192790}
+    - target: {fileID: 7275080779786384441, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
-      propertyPath: TriggerModule.primitives.Array.size
-      value: 2
+      propertyPath: InitialModule.maxNumParticles
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7275080779786384442, guid: 05846e640b334024aa932c38aa9b2461,
         type: 3}
@@ -32384,11 +32398,6 @@ PrefabInstance:
       propertyPath: TriggerModule.primitives.Array.data[1]
       value: 
       objectReference: {fileID: 8381213118971289750}
-    - target: {fileID: 8881659560791398972, guid: 05846e640b334024aa932c38aa9b2461,
-        type: 3}
-      propertyPath: batMovement
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05846e640b334024aa932c38aa9b2461, type: 3}
 --- !u!1 &1842062018

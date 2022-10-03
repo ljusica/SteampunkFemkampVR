@@ -13,7 +13,7 @@ public class PlayFailLineBloodlust : MonoBehaviour
     }
     IEnumerator PlayFailLine()
     {
-        yield return new WaitForSeconds(Random.Range(4,10));
+        yield return new WaitForSeconds(Random.Range(10,25));
         voiceLinesPlayer.PlayMockLine();
         StartCoroutine(PlayFailLine());
     }

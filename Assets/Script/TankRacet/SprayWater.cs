@@ -5,7 +5,6 @@ using UnityEngine;
 public class SprayWater : MonoBehaviour
 {
     public ParticleSystem waterHitParticle;
-    public BatMovement batMovement;
 
     public void StartSpraying()
     {
