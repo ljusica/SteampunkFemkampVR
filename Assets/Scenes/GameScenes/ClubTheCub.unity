@@ -20888,6 +20888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1133213057}
   - component: {fileID: 1133213058}
+  - component: {fileID: 1133213059}
   m_Layer: 0
   m_Name: GameStarter (1)
   m_TagString: Untagged
@@ -20923,6 +20924,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moleManager: {fileID: 1914140358}
+--- !u!114 &1133213059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133213056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71849c4644190b642a018393fb76a237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLinesPlayer: {fileID: 1850119477}
 --- !u!1 &1135137855
 GameObject:
   m_ObjectHideFlags: 0
@@ -33288,6 +33302,152 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1850119476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: randomFailLinesTut
+      value: 
+      objectReference: {fileID: 8300000, guid: aad26f19ace158a469a4e1f78856b484, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d385df005e7be5643b7837d19eebdccb, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 51485d9a711dbff438763983eaacb9a4, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c05c221580b90c84baef417286d8b205, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 48f00d9643461c9409df0b0a97649b58, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: a2d61382d2ed7ad41808cf21cf530e4b, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ad4a67ca6c957ed4dba4d4c447edeaf6, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: bdeea561a22d88b4d90df13c06d33942, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: efeb07259b17aa148af30772dfbf20c1, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: b58b825d965fa794784e39b65bbe78bb, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 588bb434664184144b888072fdb7c0ff, type: 3}
+    - target: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceLinesPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b8a86ecf27eee744884edfdc703aa17, type: 3}
+--- !u!114 &1850119477 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850119476}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654d9364c855e4c4282032536d79f6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1851858527
 GameObject:
   m_ObjectHideFlags: 0
