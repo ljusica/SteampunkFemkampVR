@@ -12,9 +12,10 @@ public class PlayChooseGameVoiceLine : MonoBehaviour
     [SerializeField]
     List<AudioClip> scorekeeperLines;
 
-    static bool alreadyPlayed = false;
+    bool alreadyPlayed = false;
     private void OnTriggerEnter(Collider other)
     {
+        alreadyPlayed = (PlayerPrefs.GetInt("BackToLobby") == 1);
         if (!alreadyPlayed && other.CompareTag("Player"))
         {
             audioSource.clip = audioClipList[Random.Range(0, audioClipList.Count)];

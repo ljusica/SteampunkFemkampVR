@@ -17,6 +17,7 @@ public class VoiceLinesPlayer : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("BackToLobby", 1);
         StartCoroutine(PlayTutorialLine());
     }
     IEnumerator PlayTutorialLine()
