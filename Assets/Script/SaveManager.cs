@@ -8,7 +8,7 @@ using UnityEngine.SocialPlatforms.Impl;
 [Serializable]
 class PentathlonData
 {
-    public bool hasPlayedEyeBall;
+    public bool hasPlayedEyeBall; 
     public bool hasPlayedClubTheCub;
     public bool hasPlayedBloodlust;
     public bool hasPlayedTeddyKnockdown;
