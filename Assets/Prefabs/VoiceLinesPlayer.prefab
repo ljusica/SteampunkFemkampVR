@@ -48,6 +48,8 @@ MonoBehaviour:
   lines: []
   voiceSource: {fileID: 3060681996301620782}
   mockLines: []
+  randomFailLinesTut: {fileID: 0}
+  randomFailLinesMock: {fileID: 0}
 --- !u!82 &3060681996301620782
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57,7 +59,7 @@ AudioSource:
   m_GameObject: {fileID: 3060681996301620783}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+  OutputAudioMixerGroup: {fileID: -1879553701102746591, guid: 1f27add681a37a84f8ab2635a6d46dd0,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0

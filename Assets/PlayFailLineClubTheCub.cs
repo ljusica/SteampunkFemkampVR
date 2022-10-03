@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayFailLineBloodlust : MonoBehaviour
+public class PlayFailLineClubTheCub : MonoBehaviour
 {
     [SerializeField]
     VoiceLinesPlayer voiceLinesPlayer;
@@ -13,7 +13,7 @@ public class PlayFailLineBloodlust : MonoBehaviour
     }
     IEnumerator PlayFailLine()
     {
-        yield return new WaitForSeconds(Random.Range(4,10));
+        yield return new WaitForSeconds(Random.Range(4, 10));
         voiceLinesPlayer.PlayMockLine();
         StartCoroutine(PlayFailLine());
     }
