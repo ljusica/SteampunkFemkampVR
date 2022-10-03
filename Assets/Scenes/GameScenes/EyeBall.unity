@@ -1807,6 +1807,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1 &130469010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,6 +1890,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1 &131977297
 GameObject:
   m_ObjectHideFlags: 0
@@ -16884,6 +16904,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1001 &958228422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17200,6 +17230,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1001 &968762472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21083,7 +21123,8 @@ AudioSource:
   m_GameObject: {fileID: 1166451106}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: beec92cb2d4475b4cbfa98d900b1e253, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -22117,6 +22158,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1 &1226781136
 GameObject:
   m_ObjectHideFlags: 0
@@ -23763,6 +23814,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1 &1309891129
 GameObject:
   m_ObjectHideFlags: 0
@@ -27187,6 +27248,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1166451108}
+  clownLaughClips:
+  - {fileID: 8300000, guid: 553abe08eec42f44caa935b06d6e96e9, type: 3}
+  - {fileID: 8300000, guid: 892392ccc606dd648b2527478d976625, type: 3}
+  - {fileID: 8300000, guid: 2fdece67d795489438454dbe107af957, type: 3}
+  - {fileID: 8300000, guid: 05b4f6a2a47c17b4e91187c431341aeb, type: 3}
+  - {fileID: 8300000, guid: bea4e42e2e3df3448bd14b36fdafcf12, type: 3}
+  - {fileID: 8300000, guid: f7a8e7ff5957cf747a0d990ef73063ca, type: 3}
+  - {fileID: 8300000, guid: ab3da9cf0b2405b4885f479b3f48f07f, type: 3}
+  - {fileID: 8300000, guid: 3ffa62261917e1e4ea35e5d540f2fa95, type: 3}
+  - {fileID: 8300000, guid: cee74544c3781f34792033c5555624e6, type: 3}
 --- !u!1 &1455800064
 GameObject:
   m_ObjectHideFlags: 0
