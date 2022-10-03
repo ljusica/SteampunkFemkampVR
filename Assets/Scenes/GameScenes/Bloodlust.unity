@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031296138, g: 0.0063240584, b: 0.014618333, a: 1}
+  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6695,6 +6695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433646391}
   - component: {fileID: 433646392}
+  - component: {fileID: 433646393}
   m_Layer: 0
   m_Name: Mouth
   m_TagString: Mouth
@@ -6730,6 +6731,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &433646393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433646390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d1e664ee5ddcd41b413fcf226ed8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLinesPlayer: {fileID: 1089502869}
 --- !u!1 &444105490
 GameObject:
   m_ObjectHideFlags: 0
@@ -18598,6 +18612,186 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1089502866
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620776, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5039a9aa26de52e48825cc5e4ba4b6e2, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 88c7a147edf92574c82cff3b36e298c9, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 455e8ca5d51c58748918f552b77339cb, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: eca5f0f6ae341b64f9416c4a4124de8f, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 248ed158164c5b64fb677734c30a8bf7, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: eac0d68c38dc067458633b1d241cccb0, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: f04c253ee28777046af2f1078602e9c3, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3cee4f62c2ce30a4dbd842f8d70d7413, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: b9cd26a4d90ed2e43928b6d394d65818, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 248170f33d17f5846bba24f6a2a03cad, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd20892cf9fe85f4787f240a4bd4bae4, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 852931671413cf246b0993f9d4645b5b, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 574f856f19cf7c149b604c08a859a424, type: 3}
+    - target: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: mockLines.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: a4b6bc45b1f33b04bb1296d25b6ae342, type: 3}
+    - target: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceLinesPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6b8a86ecf27eee744884edfdc703aa17, type: 3}
+--- !u!1 &1089502867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3060681996301620783, guid: 6b8a86ecf27eee744884edfdc703aa17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1089502866}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089502868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089502867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d1e664ee5ddcd41b413fcf226ed8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLinesPlayer: {fileID: 0}
+--- !u!114 &1089502869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3060681996301620777, guid: 6b8a86ecf27eee744884edfdc703aa17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1089502866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089502867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654d9364c855e4c4282032536d79f6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1099014116
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class ThunderLightningFX : MonoBehaviour
     [SerializeField]
     List<AudioClip> thunderSounds = new List<AudioClip>();
     [SerializeField]
+    AudioSource thunderAudioSource;
+    [SerializeField]
     GameObject player;
 
     float randomThunderTimer;
@@ -37,7 +39,8 @@ public class ThunderLightningFX : MonoBehaviour
         thunderLight1.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         thunderLight1.SetActive(false);
-        AudioSource.PlayClipAtPoint(thunderSounds[Random.Range(0, 3)], player.transform.position);
+        thunderAudioSource.clip = thunderSounds[Random.Range(0, 3)];
+        thunderAudioSource.Play();
 
         willDoSecondThunder = (Random.Range(1, 3)==1) ? true : false;
 
@@ -48,7 +51,8 @@ public class ThunderLightningFX : MonoBehaviour
             thunderLight2.SetActive(true);
             yield return new WaitForSeconds(0.1f);
             thunderLight2.SetActive(false);
-            AudioSource.PlayClipAtPoint(thunderSounds[Random.Range(0, 3)], player.transform.position);
+            thunderAudioSource.clip = thunderSounds[Random.Range(0, 3)];
+            thunderAudioSource.Play();
         }
         StartCoroutine(DoThunderFX());
     }
