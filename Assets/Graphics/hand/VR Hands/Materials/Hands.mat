@@ -39,11 +39,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 45d99164b33a1a54f9476a3877c19e42, type: 3}
+        m_Texture: {fileID: 2800000, guid: d5e0a7fb0e0e6b04db804d3458e7469b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: f2e4bd8c70b1f25468ddf615a9e983ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: f32adfcd215911a45b029b9ec4054f4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -63,15 +63,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 45d99164b33a1a54f9476a3877c19e42, type: 3}
+        m_Texture: {fileID: 2800000, guid: d5e0a7fb0e0e6b04db804d3458e7469b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: fa66b97c8faa36548ae461f8d4633f96, type: 3}
+        m_Texture: {fileID: 2800000, guid: 53b833eccfaa09649b25fc790e9b7776, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: d29e53d6762c53349ac202cdebe6cc9d, type: 3}
+        m_Texture: {fileID: 2800000, guid: e7bb9145a6ab39b469319c432e6b18da, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -116,7 +116,7 @@ Material:
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -127,6 +127,6 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 2.5396097, b: 3.9999995, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
