@@ -43,7 +43,8 @@ public class VoiceLinesPlayer : MonoBehaviour
         {
             voiceSource.clip = mockLines[Random.Range(0, mockLines.Count)];
         }
-        
-        voiceSource.Play();
+
+        if (!voiceSource.isPlaying)
+            voiceSource.Play();
     }
 }
