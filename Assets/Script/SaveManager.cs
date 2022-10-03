@@ -45,23 +45,23 @@ public class SaveManager : MonoBehaviour
 
         switch (SceneManager.GetActiveScene().name)
         {
-            case "SkeeBall":
+            case "EyeBall":
                 //sätt skeeball bool
                 hasPlayedEyeBall = true;
                 break;
-            case "DuckHunt":
+            case "SkullHunt":
                 //sätt duckhunt bool
                 hasPlayedSkullHunt = true;
                 break;
-            case "DTC":
-                //sätt dtc 
+            case "TeddyKnockDown":
+                //sätt dtc bool
                 hasPlayedTeddyKnockdown = true;
                 break;
-            case "TankRacet":
+            case "Bloodlust":
                 //sätt TR bool
                 hasPlayedBloodlust = true;
                 break;
-            case "WAM":
+            case "ClubTheCub":
                 //sätt WAM bool
                 hasPlayedClubTheCub = true;
                 break;
