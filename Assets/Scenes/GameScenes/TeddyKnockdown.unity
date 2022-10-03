@@ -40631,7 +40631,7 @@ PrefabInstance:
     - target: {fileID: 4417321497824960103, guid: 8cfd20fcd702f8e4f93b25427ef2ae46,
         type: 3}
       propertyPath: gameName
-      value: DownTheClown
+      value: DTC
       objectReference: {fileID: 0}
     - target: {fileID: 5747170956144749970, guid: 8cfd20fcd702f8e4f93b25427ef2ae46,
         type: 3}
