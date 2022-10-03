@@ -17,8 +17,9 @@ public class LoadVolumeSettings : MonoBehaviour
         }
         else
         {
-            VolumeSettings defaultSettings = new VolumeSettings 
-            { isMusicOn = true, isSfxOn = true, musicVolume = 0.5f, sfxVolume = 0.5f};
+            VolumeSettings defaultSettings = new VolumeSettings
+            { isMusicOn = true, isSfxOn = true, isVoicelineOn = true,
+                musicVolume = 0.5f, sfxVolume = 0.5f, voicelineVolume = 0.5f};
 
             string jsonString = JsonUtility.ToJson(defaultSettings);
             PlayerPrefs.SetString("Volume", jsonString);
