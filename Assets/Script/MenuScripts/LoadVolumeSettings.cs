@@ -11,6 +11,9 @@ public class LoadVolumeSettings : MonoBehaviour
     void Awake()
     {
         if (PlayerPrefs.HasKey("Volume"))
+            PlayerPrefs.DeleteKey("Volume");
+
+        if (PlayerPrefs.HasKey("Volume"))
         {
             string jsonString = PlayerPrefs.GetString("Volume");
             volumeSettings = JsonUtility.FromJson<VolumeSettings>(jsonString);
@@ -18,8 +21,8 @@ public class LoadVolumeSettings : MonoBehaviour
         else
         {
             VolumeSettings defaultSettings = new VolumeSettings
-            { isMusicOn = true, isSfxOn = true, isVoicelineOn = true,
-                musicVolume = 0.5f, sfxVolume = 0.5f, voicelineVolume = 0.5f};
+            { isMusicOn = true, isSfxOn = true, isVoicelineOn = true, isMasterOn = true,
+                musicVolume = 0.5f, sfxVolume = 0.5f, voicelineVolume = 0.5f, masterVolume = 0.5f};
 
             string jsonString = JsonUtility.ToJson(defaultSettings);
             PlayerPrefs.SetString("Volume", jsonString);

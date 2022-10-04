@@ -12,9 +12,4 @@ public class SliderAssign : MonoBehaviour
     {
         AudioManager.Instance.OnMenuEnable(slider, whichSlider);
     }
-
-    private void OnDisable()
-    {
-        AudioManager.Instance.OnMenuDisable();
-    }
 }
