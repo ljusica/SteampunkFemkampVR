@@ -731,7 +731,7 @@ ConfigurableJoint:
   m_TargetVelocity: {x: 0, y: 0, z: 0}
   m_XDrive:
     serializedVersion: 3
-    positionSpring: 4000
+    positionSpring: 2000
     positionDamper: 200
     maximumForce: 3.402823e+38
   m_YDrive:
@@ -845,6 +845,7 @@ MonoBehaviour:
   maxBullets: 3
   bulletText: {fileID: 7195242754585927260}
   voiceLinesPlayer: {fileID: 0}
+  source: {fileID: 0}
 --- !u!54 &7763809824808894248
 Rigidbody:
   m_ObjectHideFlags: 0

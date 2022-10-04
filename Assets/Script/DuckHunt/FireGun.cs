@@ -15,6 +15,7 @@ public class FireGun : MonoBehaviour
     VoiceLinesPlayer voiceLinesPlayer;
 
     AudioClip[] clips;
+    [SerializeField]
     AudioSource source;
     void Start()
     {
