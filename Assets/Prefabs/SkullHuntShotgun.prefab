@@ -517,7 +517,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7687756486269709242}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0001, y: 0.078, z: 0.077}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
@@ -525,7 +525,7 @@ Transform:
   - {fileID: 4018699319353282323}
   m_Father: {fileID: 8361265698516832598}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &5482325831356546373
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -536,9 +536,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.2
+  m_Radius: 0.6
   m_Height: 1
-  m_Direction: 0
+  m_Direction: 2
   m_Center: {x: 0.000000059604645, y: -0.09, z: -0.00000008940697}
 --- !u!54 &6475257290341378481
 Rigidbody:
@@ -689,7 +689,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0.08, y: 0.08, z: 0.08}
+  m_ConnectedAnchor: {x: 0, y: 0.08, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -1134,7 +1134,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
@@ -1144,7 +1144,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
@@ -1159,7 +1159,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b64ec97193911647be649008ff4c5eb,
         type: 3}
