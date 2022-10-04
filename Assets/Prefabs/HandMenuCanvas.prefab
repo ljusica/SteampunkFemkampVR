@@ -47,7 +47,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7221112129871187684}
   - component: {fileID: 3453530179771762337}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MasterToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1654,7 +1654,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2983130264927543317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2015,7 @@ GameObject:
   - component: {fileID: 6368482653569182023}
   - component: {fileID: 91481159036262590}
   - component: {fileID: 8098784154332927581}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2589,7 +2589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 811116614412202823}
   - component: {fileID: 2199358983573687670}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: VoicesToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 4499322794255656571}
   - component: {fileID: 1514434103090202658}
   - component: {fileID: 5103960391429537968}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3834,7 +3834,7 @@ GameObject:
   - component: {fileID: 5366396825313285274}
   - component: {fileID: 7146830638727400095}
   - component: {fileID: 3741184071607429172}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,7 +4208,7 @@ GameObject:
   - component: {fileID: 7770401823796217100}
   - component: {fileID: 2189610731544290515}
   - component: {fileID: 2378785196495062529}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
