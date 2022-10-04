@@ -30,7 +30,10 @@ public class StartTimer : MonoBehaviour
     public void StartCountDown()
     {
         //This line stops the scenetransition of a pentathlon run if the player wants to retry a game
-        StopCoroutine(GameManager.Instance.GoToNextGameInPenthathlon());
+        if (GameManager.Instance.isDoingPenthathlonRun)
+        {
+            StopCoroutine(GameManager.Instance.GoToNextGameInPenthathlon());
+        }
         countDown = timer;
         ScoreManager.Instance.ResetScore();
         objectsToActivate.SetActive(true);

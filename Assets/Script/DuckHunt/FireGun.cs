@@ -15,11 +15,11 @@ public class FireGun : MonoBehaviour
     VoiceLinesPlayer voiceLinesPlayer;
 
     AudioClip[] clips;
+    [SerializeField]
     AudioSource source;
     void Start()
     {
         bulletLeft = maxBullets;
-        source = GetComponent<AudioSource>();
         clips = new AudioClip[3];
         for (int i = 0; i < 2; i++)
         {
