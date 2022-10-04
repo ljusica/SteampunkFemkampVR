@@ -21804,6 +21804,11 @@ PrefabInstance:
       propertyPath: voiceLinesPlayer
       value: 
       objectReference: {fileID: 1796651453}
+    - target: {fileID: 4161178385086806906, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: fireGunScript
+      value: 
+      objectReference: {fileID: 970051500}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_RootOrder
@@ -21879,6 +21884,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkullHuntShotgun
       objectReference: {fileID: 0}
+    - target: {fileID: 8788927094238258563, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af26c3941b291a8449bf10ebc6380585, type: 3}
 --- !u!4 &970051496 stripped
@@ -21905,6 +21916,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 970051495}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &970051500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2285499005872141714, guid: af26c3941b291a8449bf10ebc6380585,
+    type: 3}
+  m_PrefabInstance: {fileID: 970051495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970051499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071608d147758b04bae3cb7c480d03c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &977580335
 GameObject:
   m_ObjectHideFlags: 0

@@ -732,7 +732,7 @@ ConfigurableJoint:
   m_XDrive:
     serializedVersion: 3
     positionSpring: 2000
-    positionDamper: 200
+    positionDamper: 100
     maximumForce: 3.402823e+38
   m_YDrive:
     serializedVersion: 3
@@ -845,7 +845,7 @@ MonoBehaviour:
   maxBullets: 3
   bulletText: {fileID: 7195242754585927260}
   voiceLinesPlayer: {fileID: 0}
-  source: {fileID: 0}
+  source: {fileID: 5156547266608405012}
 --- !u!54 &7763809824808894248
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1020,7 +1020,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -3162124371329549590, guid: 1f27add681a37a84f8ab2635a6d46dd0,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
