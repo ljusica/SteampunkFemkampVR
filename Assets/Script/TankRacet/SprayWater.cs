@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SprayWater : MonoBehaviour
 {
     public ParticleSystem waterHitParticle;
-
+    ParticleSystem.EmissionModule emissionModule;
+    private void Start()
+    {
+        emissionModule = waterHitParticle.emission;
+    }
     public void StartSpraying()
     {
-        waterHitParticle.gameObject.SetActive(true);
+        emissionModule.enabled = true;
     }
 
     public void ReleaseSpray()
     {
-        waterHitParticle.gameObject.SetActive(false);
+        emissionModule.enabled = false;
     }
 }

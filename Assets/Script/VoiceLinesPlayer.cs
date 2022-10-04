@@ -35,6 +35,9 @@ public class VoiceLinesPlayer : MonoBehaviour
     }
     public void PlayMockLine()
     {
+        if (!voiceSource.isPlaying)
+            return;
+
         if (randomFailLinesMock != null && Random.Range(0, 100) == 0)
         {
             voiceSource.clip = randomFailLinesMock;
@@ -44,7 +47,6 @@ public class VoiceLinesPlayer : MonoBehaviour
             voiceSource.clip = mockLines[Random.Range(0, mockLines.Count)];
         }
 
-        if (!voiceSource.isPlaying)
-            voiceSource.Play();
+        voiceSource.Play();
     }
 }
