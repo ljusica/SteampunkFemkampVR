@@ -73,7 +73,7 @@ public class DuckMovement : MonoBehaviour
     {
         float duckDestination = ChooseNewDestination();
 
-        duck.transform.DOMoveX(duckDestination, speed * Mathf.Abs(duck.transform.position.x - duckDestination)).OnComplete(() => Move(duck, speed));
+        duck.transform.DOLocalMoveX(duckDestination, speed / Mathf.Abs(duck.transform.position.x - duckDestination)).OnComplete(() => Move(duck, speed));
     }
 
     private void CalculateHide(GameObject[] ducks, int maxChance, float startPositionY)
