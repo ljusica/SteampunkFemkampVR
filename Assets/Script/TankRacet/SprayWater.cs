@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SprayWater : MonoBehaviour
 {
     public ParticleSystem waterHitParticle;
 
+    [SerializeField]
+    AudioSource sprayAudio;
+    ParticleSystem.EmissionModule emissionModule;
+
+    private void Start()
+    {
+        emissionModule = waterHitParticle.emission;
+    }
     public void StartSpraying()
     {
-        waterHitParticle.gameObject.SetActive(true);
+        emissionModule.enabled = true;
+        sprayAudio.enabled = true;
     }
 
     public void ReleaseSpray()
     {
-        waterHitParticle.gameObject.SetActive(false);
+        emissionModule.enabled = false;
+        sprayAudio.enabled = false;
     }
 }

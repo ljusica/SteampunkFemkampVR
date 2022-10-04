@@ -581,7 +581,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh93566
+  m_Name: pb_Mesh-127962
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2037,7 +2037,7 @@ PrefabInstance:
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.292
+      value: 0.399
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
@@ -2047,22 +2047,22 @@ PrefabInstance:
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.687548
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.72613907
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
@@ -2077,7 +2077,7 @@ PrefabInstance:
     - target: {fileID: 8361265698516832598, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -93.127
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8367260339250984736, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
@@ -2087,7 +2087,7 @@ PrefabInstance:
     - target: {fileID: 8367260339250984736, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af26c3941b291a8449bf10ebc6380585, type: 3}
@@ -2216,6 +2216,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slingshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378821431146117721, guid: 3cbea9f2c3374dd4693e5a124f744181,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6378821431146117724, guid: 3cbea9f2c3374dd4693e5a124f744181,
         type: 3}
@@ -2439,6 +2444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NewPebble
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004029035951223614, guid: 5363532dbb3190c479e8036018e49638,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5004029035951223619, guid: 5363532dbb3190c479e8036018e49638,
         type: 3}

@@ -42,7 +42,7 @@ public class Bullet : MonoBehaviour
         timer = 0;
         pool.Release(this);
     }
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Duck"))
         {

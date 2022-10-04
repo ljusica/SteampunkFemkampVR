@@ -6,6 +6,7 @@ public class ParticlesHitMouth : MonoBehaviour
 {
     public BatMovement batMovement;
     public ParticleSystem ps;
+    public AudioSource hitMouthSound;
     List<ParticleSystem.Particle> particles;
     private void Start()
     {
@@ -16,6 +17,11 @@ public class ParticlesHitMouth : MonoBehaviour
         if(ParticlePhysicsExtensions.GetTriggerParticles(ps, ParticleSystemTriggerEventType.Enter, particles) > 0)
         {
             batMovement.Move();
+            if (!hitMouthSound.isPlaying)
+            {
+                hitMouthSound.pitch += 0.2f;
+                hitMouthSound.Play();
+            }
         }
     }
 }
