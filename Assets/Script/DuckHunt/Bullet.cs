@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     float firePower = 10;
     float timer;
 
+    bool alreadyGotScore = false;
     private GameObject duck;
     private DuckMovement duckMovement;
     private DuckPoints duckPoints;
@@ -34,6 +35,7 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = forward * firePower;
+        alreadyGotScore = false;
     }
     public void ReturnTooPool()
     {
@@ -51,7 +53,8 @@ public class Bullet : MonoBehaviour
             duckPoints = duck.GetComponentInParent<DuckPoints>();
             ScoreManager.Instance.AddScore("DuckHunt", duckPoints.points);
             duckMovement.Hide(duck);
-
+            rb.velocity = Vector3.zero;
+            alreadyGotScore = true;
             Debug.Log(duckPoints.points);
         }
         else
