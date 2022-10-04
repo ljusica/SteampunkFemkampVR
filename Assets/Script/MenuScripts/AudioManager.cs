@@ -113,16 +113,4 @@ public class AudioManager : MonoBehaviour
                 break;
         }
     }
-
-    public void OnMenuDisable()
-    {
-        musicSlider.onValueChanged.RemoveAllListeners();
-        sfxSlider.onValueChanged.RemoveAllListeners();
-        masterSlider.onValueChanged.RemoveAllListeners();
-        voicelineSlider.onValueChanged.RemoveAllListeners();
-        musicSlider = null;
-        sfxSlider = null;
-        voicelineSlider = null;
-        masterSlider = null;
-    }
 }
