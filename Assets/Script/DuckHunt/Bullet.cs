@@ -48,14 +48,17 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Duck"))
         {
-            duck = other.gameObject;
-            duckMovement = duck.GetComponentInParent<DuckMovement>();
-            duckPoints = duck.GetComponentInParent<DuckPoints>();
-            ScoreManager.Instance.AddScore("DuckHunt", duckPoints.points);
-            duckMovement.Hide(duck);
-            rb.velocity = Vector3.zero;
-            alreadyGotScore = true;
-            Debug.Log(duckPoints.points);
+            if (!alreadyGotScore)
+            {
+                duck = other.gameObject;
+                duckMovement = duck.GetComponentInParent<DuckMovement>();
+                duckPoints = duck.GetComponentInParent<DuckPoints>();
+                ScoreManager.Instance.AddScore("DuckHunt", duckPoints.points);
+                duckMovement.Hide(duck);
+                rb.velocity = Vector3.zero;
+                alreadyGotScore = true;
+                Debug.Log(duckPoints.points);
+            }
         }
         else
         {
