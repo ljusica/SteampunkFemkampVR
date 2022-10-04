@@ -15,6 +15,8 @@ public class ScoreManager : MonoBehaviour
     public float tankRacetScore = 0;
     public float wamScore = 0;
 
+    public float pentaScore;
+
     //private static float hScore;
     //public static float HighScore { get { return hScore; } }
 
@@ -38,6 +40,7 @@ public class ScoreManager : MonoBehaviour
         //    hScore = PlayerPrefs.GetFloat("HighScore");
     }
 
+
     public void AddScore(string gameName, float score)
     {
         switch (gameName)
@@ -56,6 +59,33 @@ public class ScoreManager : MonoBehaviour
                 break;
             case "WAM":
                 wamScore += score;
+                break;
+        }
+
+        if (GameManager.Instance.isDoingPenthathlonRun)
+        {
+            AddScoreToPenta(gameName, score);
+        }
+    }
+    public void AddScoreToPenta(string gameName, float score)
+    {
+        switch (gameName)
+        {
+            case "SkeeBall":
+                score *= 2;
+                pentaScore += score;
+                break;
+            case "DuckHunt":
+                pentaScore += score;
+                break;
+            case "DTC":
+                pentaScore += score;
+                break;
+            case "TankRacet":
+                pentaScore += score;
+                break;
+            case "WAM":
+                pentaScore += score;
                 break;
         }
     }
@@ -102,6 +132,8 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetFloat("TankRacet", 0);
         if (!PlayerPrefs.HasKey("WhacAMole"))
             PlayerPrefs.SetFloat("WhacAMole", 0);
+        if (!PlayerPrefs.HasKey("Pentathlon"))
+            PlayerPrefs.SetFloat("Pentathlon", 0);
 
         PlayerPrefs.Save();
     }
