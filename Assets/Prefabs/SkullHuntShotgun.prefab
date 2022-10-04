@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 7763809824808894247}
   - component: {fileID: 1391909674}
   - component: {fileID: 5156547266608405012}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SkullHuntShotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,6 +1181,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: shotgun_foreend
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7b64ec97193911647be649008ff4c5eb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 7b64ec97193911647be649008ff4c5eb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b64ec97193911647be649008ff4c5eb, type: 3}
 --- !u!4 &4018699319353282323 stripped
@@ -1280,6 +1290,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: shotgun_body
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71de108b1b412634fb9dbc4c6cbae792,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 71de108b1b412634fb9dbc4c6cbae792,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71de108b1b412634fb9dbc4c6cbae792, type: 3}
