@@ -18,6 +18,8 @@ TagManager:
   - Bat
   - HandMenu
   - Teddy
+  - Box0
+  - Ground
   layers:
   - Default
   - TransparentFX
