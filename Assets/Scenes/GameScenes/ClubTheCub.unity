@@ -7012,6 +7012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 419090887}
 --- !u!54 &419090881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22312,6 +22313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1289216100}
 --- !u!54 &1289216094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22568,6 +22570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1298177154}
 --- !u!54 &1298177148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25044,6 +25047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1422792478}
 --- !u!54 &1422792472
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31011,6 +31015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1753559156}
 --- !u!54 &1753559150
 Rigidbody:
   m_ObjectHideFlags: 0
