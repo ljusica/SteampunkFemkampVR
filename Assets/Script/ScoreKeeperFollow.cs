@@ -7,7 +7,7 @@ public class ScoreKeeperFollow : MonoBehaviour
     public GameObject objectToFollow;
     void Start()
     {
-        
+        objectToFollow = GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
