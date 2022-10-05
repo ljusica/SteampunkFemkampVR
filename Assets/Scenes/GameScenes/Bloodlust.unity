@@ -17430,7 +17430,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8cb7d700e71378649ae4b129be6f02f1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.76
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -21211,6 +21211,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 278785718180786054, guid: 73f5b773bbb491648a43a601a4ff3430,
+        type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[0]
+      value: 
+      objectReference: {fileID: 1103220413}
     - target: {fileID: 278785718630122882, guid: 73f5b773bbb491648a43a601a4ff3430,
         type: 3}
       propertyPath: player
@@ -28017,6 +28022,7 @@ MonoBehaviour:
   dtcScore: 0
   tankRacetScore: 0
   wamScore: 0
+  pentaScore: 0
 --- !u!4 &1605385861
 Transform:
   m_ObjectHideFlags: 0
@@ -29798,6 +29804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: domekzzarowkami2
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -29880,6 +29890,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
+--- !u!1 &1706927544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 2a15eb585566f624fa9ae0e264b00155,
+    type: 3}
+  m_PrefabInstance: {fileID: 1706927541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1706927545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706927544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 10, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1723136621
 GameObject:
   m_ObjectHideFlags: 0

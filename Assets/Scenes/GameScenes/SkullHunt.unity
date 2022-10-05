@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5917,7 +5917,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 8cb7d700e71378649ae4b129be6f02f1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.76
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22322,7 +22322,7 @@ PrefabInstance:
     - target: {fileID: 278785718180786054, guid: 73f5b773bbb491648a43a601a4ff3430,
         type: 3}
       propertyPath: TriggerModule.primitives.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 278785718180786054, guid: 73f5b773bbb491648a43a601a4ff3430,
         type: 3}
@@ -22334,6 +22334,11 @@ PrefabInstance:
       propertyPath: TriggerModule.primitives.Array.data[1]
       value: 
       objectReference: {fileID: 1188557411}
+    - target: {fileID: 278785718180786054, guid: 73f5b773bbb491648a43a601a4ff3430,
+        type: 3}
+      propertyPath: TriggerModule.primitives.Array.data[2]
+      value: 
+      objectReference: {fileID: 2085449637}
     - target: {fileID: 278785718630122882, guid: 73f5b773bbb491648a43a601a4ff3430,
         type: 3}
       propertyPath: player
@@ -47241,6 +47246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: duck_hunt_booth
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 47a111ef760d6b448bfe932489996fc9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a111ef760d6b448bfe932489996fc9, type: 3}
 --- !u!4 &2085449637 stripped
@@ -47249,6 +47259,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2085449636}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2085449638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 47a111ef760d6b448bfe932489996fc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2085449636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2085449639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085449638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 7}
+  m_Center: {x: 0, y: 2, z: -2}
 --- !u!1 &2085459910
 GameObject:
   m_ObjectHideFlags: 0
