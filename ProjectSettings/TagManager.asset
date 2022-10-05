@@ -21,6 +21,8 @@ TagManager:
   - Box0
   - Ground
   - drawerBottom
+  - Club
+  - Slingshot
   layers:
   - Default
   - TransparentFX

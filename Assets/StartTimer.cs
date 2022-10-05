@@ -54,7 +54,6 @@ public class StartTimer : MonoBehaviour
 
     void CountDownEnd()
     {
-        if (buttonAnimateCountdown > 1.2) return;
 
         objectsToActivate.SetActive(false);
         countingDown = false;
@@ -68,20 +67,25 @@ public class StartTimer : MonoBehaviour
     }
     void AnimateButton()
     {
-        if (!buttonIsDown)
-        {
-            
-            buttonAnimateCountdown += Time.deltaTime;
+        if (buttonAnimateCountdown > 2) return;
 
-            if(buttonAnimateCountdown > 1)
+        if (!buttonIsDown)
+        {  
+            transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y - buttonAnimOffset, buttonAnimateCountdown), buttonPos.z);
+            if (buttonAnimateCountdown > 1)
             {
                 buttonIsDown = true;
+                buttonAnimateCountdown = 0;
             }
         }
 
-        if (buttonIsDown) { buttonAnimateCountdown -= Time.deltaTime; }
+        if (buttonIsDown) 
+        {
+            transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y, buttonAnimateCountdown), buttonPos.z);
+        }
 
-        transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y - buttonAnimOffset, buttonAnimateCountdown), buttonPos.z);
+        buttonAnimateCountdown += Time.deltaTime * 4;
+
     }
     private void OnCollisionEnter(Collision collision)
     {
