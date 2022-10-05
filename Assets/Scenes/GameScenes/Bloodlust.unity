@@ -29804,6 +29804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: domekzzarowkami2
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 2a15eb585566f624fa9ae0e264b00155, type: 3}
       propertyPath: m_RootOrder
       value: 1
