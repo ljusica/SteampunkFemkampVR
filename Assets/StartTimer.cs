@@ -10,6 +10,7 @@ public class StartTimer : MonoBehaviour
     public GameObject objectsToActivate;
     public bool countingDown = false;
     public float buttonAnimOffset = 0.25f;
+    public AudioSource audioSource;
 
     bool hasGameStarted = false;
     bool buttonIsDown = false;
@@ -48,6 +49,7 @@ public class StartTimer : MonoBehaviour
         ScoreManager.Instance.ResetScore();
         objectsToActivate.SetActive(true);
         countingDown = true;
+        audioSource.Play();
     }
 
     void CountDownEnd()
