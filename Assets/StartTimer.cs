@@ -90,8 +90,13 @@ public class StartTimer : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Ball") || other.gameObject.CompareTag("Gun") || other.gameObject.CompareTag("Slingshot"))
+        if (other.gameObject.CompareTag("Gun") || other.gameObject.CompareTag("Slingshot"))
         {
+            StartCountDown();
+        }
+        else if (other.gameObject.CompareTag("Ball"))
+        {
+            HammerHand.hammerHand?.SendHapticImpulse(0.4f, 0.1f);
             StartCountDown();
         }
     }

@@ -12,6 +12,8 @@ public class FireGun : MonoBehaviour
     [SerializeField]
     TMP_Text bulletText;
     [SerializeField]
+    TMP_Text bulletTextLeftHand;
+    [SerializeField]
     VoiceLinesPlayer voiceLinesPlayer;
 
     AudioClip[] clips;
@@ -30,6 +32,7 @@ public class FireGun : MonoBehaviour
     {
         bulletLeft = maxBullets;
         bulletText.text = "" + bulletLeft;
+        bulletTextLeftHand.text = "" + bulletLeft;
     }
 
 
@@ -55,6 +58,7 @@ public class FireGun : MonoBehaviour
             }
             bulletLeft--;
             bulletText.text = ""+bulletLeft;
+            bulletTextLeftHand.text = ""+bulletLeft;
 
             if(Random.Range(0,10) == 0)
                 voiceLinesPlayer.PlayMockLine();

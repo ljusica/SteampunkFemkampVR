@@ -7012,6 +7012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 419090887}
 --- !u!54 &419090881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7075,7 +7076,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c0dbd938465a341809f9f335a292ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.62
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7119,7 +7120,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22312,6 +22313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1289216100}
 --- !u!54 &1289216094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22375,7 +22377,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c0dbd938465a341809f9f335a292ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.62
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22419,7 +22421,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22568,6 +22570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1298177154}
 --- !u!54 &1298177148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22631,7 +22634,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c0dbd938465a341809f9f335a292ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.62
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22675,7 +22678,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25044,6 +25047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1422792478}
 --- !u!54 &1422792472
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25107,7 +25111,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c0dbd938465a341809f9f335a292ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.62
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25151,7 +25155,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -31011,6 +31015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hidingPos: {x: 0, y: 0, z: 0}
   openPos: {x: 0, y: 0, z: 0}
+  audioSource: {fileID: 1753559156}
 --- !u!54 &1753559150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31074,7 +31079,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4c0dbd938465a341809f9f335a292ea, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.62
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -31118,7 +31123,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
