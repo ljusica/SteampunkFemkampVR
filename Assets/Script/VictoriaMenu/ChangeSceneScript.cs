@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneScript : MonoBehaviour
 {
+    public string gameName;
+
     void OnCollisionEnter(Collision collisionInfo)
     {
         if (collisionInfo.collider.name == "Drawer bottom")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(gameName);
             //Debug.Log("Drawer");
         }
     }
