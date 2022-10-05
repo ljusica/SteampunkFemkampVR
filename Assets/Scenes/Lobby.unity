@@ -11332,6 +11332,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1098045348803854733, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1948756345394529079, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
       propertyPath: m_Name
@@ -11412,6 +11417,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.02106514
       objectReference: {fileID: 0}
+    - target: {fileID: 5370989301116589717, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 473646853}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7c691f8cd79dc48bd24ae3ee06817c, type: 3}
 --- !u!4 &561441102 stripped

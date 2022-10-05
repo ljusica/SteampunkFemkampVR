@@ -43,4 +43,24 @@ public class HandAnimation : MonoBehaviour
 
     private void PinchRelease(InputAction.CallbackContext obj) => animator.SetFloat("Pinch", 0f);
 
+
+    private void OnDisable()
+    {
+        if (whichHand == "Right")
+        {
+            XrHandMenu.HandAnimations.GripRight.performed -= Gripping;
+            XrHandMenu.HandAnimations.GripRight.canceled -= GripRelease;
+
+            XrHandMenu.HandAnimations.PinchRight.performed -= Pinching;
+            XrHandMenu.HandAnimations.PinchRight.canceled -= PinchRelease;
+        }
+        else if (whichHand == "Left")
+        {
+            XrHandMenu.HandAnimations.GripLeft.performed -= Gripping;
+            XrHandMenu.HandAnimations.GripLeft.canceled -= GripRelease;
+
+            XrHandMenu.HandAnimations.PinchLeft.performed -= Pinching;
+            XrHandMenu.HandAnimations.PinchLeft.canceled -= PinchRelease;
+        }
+    }
 }
