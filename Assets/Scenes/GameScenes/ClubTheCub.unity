@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1760938799}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1361,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 73187566}
   - component: {fileID: 73187567}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Hammerhead
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -33089,6 +33089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: club
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e4f378de71bee834c8b141c0e6d02a9a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e4f378de71bee834c8b141c0e6d02a9a,
         type: 3}
