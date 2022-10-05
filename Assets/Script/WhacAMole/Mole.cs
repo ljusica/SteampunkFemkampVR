@@ -17,6 +17,9 @@ public class Mole : MonoBehaviour
     private float hapticForce = 0.4f;
     private float hapticDuration = 0.1f;
 
+    [SerializeField]
+    AudioSource audioSource;
+
     public delegate void Whack(Mole mole);
     public static Whack whack;
 
@@ -38,6 +41,8 @@ public class Mole : MonoBehaviour
             Hide();
             whack?.Invoke(this);
             HammerHand.hammerHand.SendHapticImpulse(hapticForce, hapticDuration);
+            audioSource.pitch = UnityEngine.Random.Range(0.6f,1.2f);
+            audioSource.Play();
         }
     }
 
