@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+public delegate void OnFlip();
 public class FlipClown : MonoBehaviour
 {
+    public event OnFlip onFlip;
+
     Vector3 flipRot;
     Vector3 origRot;
 
@@ -20,6 +23,7 @@ public class FlipClown : MonoBehaviour
     public void Flip()
     {
         transform.DORotate(flipRot, 0.3f);
+        onFlip?.Invoke();
     }
 
     public void BackFlip()
