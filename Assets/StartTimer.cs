@@ -94,9 +94,9 @@ public class StartTimer : MonoBehaviour
         {
             StartCountDown();
         }
-        else if (collision.gameObject.CompareTag("Ball"))
+        else if (other.gameObject.CompareTag("Ball"))
         {
-            HammerHand.hammerHand.SendHapticImpulse(0.4f, 0.1f);
+            HammerHand.hammerHand?.SendHapticImpulse(0.4f, 0.1f);
             StartCountDown();
         }
     }
