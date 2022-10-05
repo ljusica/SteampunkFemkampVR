@@ -4359,6 +4359,11 @@ PrefabInstance:
       propertyPath: TriggerModule.primitives.Array.data[0]
       value: 
       objectReference: {fileID: 546150384}
+    - target: {fileID: 278785718630122884, guid: 73f5b773bbb491648a43a601a4ff3430,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 278785718630122885, guid: 73f5b773bbb491648a43a601a4ff3430,
         type: 3}
       propertyPath: m_RootOrder
