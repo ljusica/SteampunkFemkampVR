@@ -64,29 +64,7 @@ public class ScoreManager : MonoBehaviour
 
         if (GameManager.Instance.isDoingPenthathlonRun)
         {
-            AddScoreToPenta(gameName, score);
-        }
-    }
-    public void AddScoreToPenta(string gameName, float score)
-    {
-        switch (gameName)
-        {
-            case "SkeeBall":
-                score *= 2;
-                pentaScore += score;
-                break;
-            case "DuckHunt":
-                pentaScore += score;
-                break;
-            case "DTC":
-                pentaScore += score;
-                break;
-            case "TankRacet":
-                pentaScore += score;
-                break;
-            case "WAM":
-                pentaScore += score;
-                break;
+            pentaScore += score;
         }
     }
 
@@ -104,6 +82,8 @@ public class ScoreManager : MonoBehaviour
                 return tankRacetScore;
             case "WAM":
                 return wamScore;
+            case "Penta":
+                return pentaScore;
         }
         return 0;
     }
@@ -145,5 +125,10 @@ public class ScoreManager : MonoBehaviour
         dtcScore = 0;
         tankRacetScore = 0;
         wamScore = 0;
+    }
+
+    public void ResetPentaScore()
+    {
+        pentaScore = 0;
     }
 }
