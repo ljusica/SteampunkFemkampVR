@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2015465479779364708}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HandMenu
   m_TagString: HandMenu
   m_Icon: {fileID: 0}
@@ -154,8 +154,8 @@ Transform:
   - {fileID: 2983130265961701272}
   - {fileID: 4193341034408071651}
   - {fileID: 6824789206131876647}
-  - {fileID: 2073891289955515261}
   - {fileID: 6252570572008465774}
+  - {fileID: 2073891289955515261}
   - {fileID: 5739931344520252379}
   m_Father: {fileID: 2983130264927543312}
   m_RootOrder: 0
@@ -380,7 +380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4193341034408071651}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 6476318500884902}
   - component: {fileID: 8167578105737906376}
   - component: {fileID: 5474805909202337167}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 6543096166167918814}
   - component: {fileID: 542901031720665712}
   - component: {fileID: 1182060901597422266}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   - component: {fileID: 173186609267189873}
   - component: {fileID: 2006580310213238847}
   - component: {fileID: 1373773962476185616}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2093,7 +2093,7 @@ GameObject:
   - component: {fileID: 8807095272817055410}
   - component: {fileID: 9153392071561216328}
   - component: {fileID: 7841515817261479694}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GoToLobbyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2449,7 +2449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073891289955515261}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2471,7 +2471,7 @@ Transform:
   - {fileID: 1201403018590413257}
   - {fileID: 8899688706495648415}
   m_Father: {fileID: 2015465479779364708}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4153661233808061710
 GameObject:
@@ -2886,7 +2886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6252570572008465774}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2908,7 +2908,7 @@ Transform:
   - {fileID: 6277671070351237439}
   - {fileID: 6568763469019713645}
   m_Father: {fileID: 2015465479779364708}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5431555943338086813
 GameObject:
@@ -2960,7 +2960,7 @@ GameObject:
   - component: {fileID: 9106779172315871340}
   - component: {fileID: 1399053494359945000}
   - component: {fileID: 7583254615628609526}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3172,7 +3172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8899688706495648415}
   - component: {fileID: 1868824114771335049}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SoundToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3681,7 +3681,7 @@ GameObject:
   - component: {fileID: 222208594404451134}
   - component: {fileID: 5192034137172878009}
   - component: {fileID: 3410802639827816937}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4121,7 +4121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6568763469019713645}
   - component: {fileID: 5947271262624667828}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MusicToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4282,7 +4282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6824789206131876647}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Voices
   m_TagString: Untagged
   m_Icon: {fileID: 0}
