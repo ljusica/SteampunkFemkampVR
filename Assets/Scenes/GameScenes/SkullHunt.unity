@@ -22104,6 +22104,11 @@ PrefabInstance:
       propertyPath: voiceLinesPlayer
       value: 
       objectReference: {fileID: 1796651453}
+    - target: {fileID: 2285499005872141715, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4161178385086806906, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}
       propertyPath: fireGunScript
@@ -22183,6 +22188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkullHuntShotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367260339250984736, guid: af26c3941b291a8449bf10ebc6380585,
+        type: 3}
+      propertyPath: m_TagString
+      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 8788927094238258563, guid: af26c3941b291a8449bf10ebc6380585,
         type: 3}

@@ -40,6 +40,7 @@ public class StartTimer : MonoBehaviour
 
     public void StartCountDown()
     {
+        if (countingDown) return;
         //This line stops the scenetransition of a pentathlon run if the player wants to retry a game
         if (GameManager.Instance.isDoingPenthathlonRun)
         {
@@ -54,7 +55,6 @@ public class StartTimer : MonoBehaviour
 
     void CountDownEnd()
     {
-        if (buttonAnimateCountdown > 1.2) return;
 
         objectsToActivate.SetActive(false);
         countingDown = false;
@@ -68,28 +68,33 @@ public class StartTimer : MonoBehaviour
     }
     void AnimateButton()
     {
-        if (!buttonIsDown)
-        {
-            
-            buttonAnimateCountdown += Time.deltaTime;
+        if (buttonAnimateCountdown > 2) return;
 
-            if(buttonAnimateCountdown > 1)
+        if (!buttonIsDown)
+        {  
+            transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y - buttonAnimOffset, buttonAnimateCountdown), buttonPos.z);
+            if (buttonAnimateCountdown > 1)
             {
                 buttonIsDown = true;
+                buttonAnimateCountdown = 0;
             }
         }
 
-        if (buttonIsDown) { buttonAnimateCountdown -= Time.deltaTime; }
+        if (buttonIsDown) 
+        {
+            transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y, buttonAnimateCountdown), buttonPos.z);
+        }
 
-        transform.position = new Vector3(buttonPos.x, Mathf.Lerp(transform.position.y, buttonPos.y - buttonAnimOffset, buttonAnimateCountdown), buttonPos.z);
+        buttonAnimateCountdown += Time.deltaTime * 4;
+
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
+        if (other.gameObject.CompareTag("Gun") || other.gameObject.CompareTag("Slingshot"))
         {
             StartCountDown();
         }
-        else if (collision.gameObject.CompareTag("Club"))
+        else if (collision.gameObject.CompareTag("Ball"))
         {
             HammerHand.hammerHand.SendHapticImpulse(0.4f, 0.1f);
             StartCountDown();

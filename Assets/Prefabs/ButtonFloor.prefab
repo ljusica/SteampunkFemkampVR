@@ -180,9 +180,9 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5532528026608623576}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.6
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   timerText: {fileID: 0}
   objectsToActivate: {fileID: 0}
   countingDown: 0
-  buttonAnimOffset: 0.4
+  buttonAnimOffset: 0.05
   audioSource: {fileID: 5532528025588987898}
 --- !u!54 &5532528026608623553
 Rigidbody:
