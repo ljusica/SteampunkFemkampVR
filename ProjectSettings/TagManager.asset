@@ -20,6 +20,7 @@ TagManager:
   - Teddy
   - Box0
   - Ground
+  - drawerBottom
   layers:
   - Default
   - TransparentFX

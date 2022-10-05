@@ -5,11 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneScript : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    /*public GameObject Box0;
+    public GameObject Box1;
+    public GameObject Box2;
+    public GameObject Box3;
+    public GameObject Box4;*/
+
+    void OnCollisionEnter(Collision drawerBottom)
+    {
+        if (gameObject.tag == "Box0")
+        {
+            Debug.Log("Collision happened");
+        }
+    }
+
+
+
+
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Box0")
         {
             Debug.Log("Triggered");
         }
-    }
+    }*/
 }
