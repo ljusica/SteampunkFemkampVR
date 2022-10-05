@@ -8762,7 +8762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Blood
+  m_text: Blood lust
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75f057a8b5a081446a9b97ef00090208, type: 2}
   m_sharedMaterial: {fileID: 2588850815664499641, guid: 75f057a8b5a081446a9b97ef00090208,
@@ -11417,6 +11417,12 @@ PrefabInstance:
 --- !u!4 &561441102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1948756344932441774, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+    type: 3}
+  m_PrefabInstance: {fileID: 561441101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &561441103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1948756345844610632, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
     type: 3}
   m_PrefabInstance: {fileID: 561441101}
   m_PrefabAsset: {fileID: 0}
@@ -26903,12 +26909,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1416089025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1948756345394529079, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
-    type: 3}
-  m_PrefabInstance: {fileID: 561441101}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416370444
 GameObject:
   m_ObjectHideFlags: 0
@@ -37145,7 +37145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skullhunt
+  m_text: Skull hunt
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75f057a8b5a081446a9b97ef00090208, type: 2}
   m_sharedMaterial: {fileID: 2588850815664499641, guid: 75f057a8b5a081446a9b97ef00090208,
@@ -40739,12 +40739,12 @@ PrefabInstance:
         type: 3}
       propertyPath: objectToFollow
       value: 
-      objectReference: {fileID: 1416089025}
+      objectReference: {fileID: 561441103}
     - target: {fileID: 8699972275680202129, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
       propertyPath: objectToFollow
       value: 
-      objectReference: {fileID: 1416089025}
+      objectReference: {fileID: 561441103}
     - target: {fileID: 8699972276083223473, guid: f98028b399f9f6f429038b90ca24910b,
         type: 3}
       propertyPath: m_Name
