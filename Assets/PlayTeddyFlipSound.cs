@@ -10,9 +10,10 @@ public class PlayTeddyFlipSound : MonoBehaviour
     [SerializeField]
     AudioSource audioSource;
 
-    FlipClown[] flipClowns;
+    List<FlipClown> flipClowns;
     void Start()
     {
+        flipClowns = new List<FlipClown>();
         flipClowns.AddRange(GetComponentsInChildren<FlipClown>());
         foreach (var FlipClown in flipClowns)
         {

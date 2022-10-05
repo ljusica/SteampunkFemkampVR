@@ -10580,6 +10580,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &530359552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5532528026608623555, guid: eb8e715f891870e45b5ef58efc6a875e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2069695687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462deb48e16500546ad3d72912d080b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &532607371
 GameObject:
   m_ObjectHideFlags: 0
@@ -14113,7 +14125,7 @@ MonoBehaviour:
   row1: []
   row2: []
   row3: []
-  timer: {fileID: 0}
+  timer: {fileID: 530359552}
 --- !u!1 &701367812
 GameObject:
   m_ObjectHideFlags: 0
