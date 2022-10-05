@@ -89,7 +89,7 @@ public class StartTimer : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Club") || collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
+        if (collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
         {
             StartCountDown();
         }
