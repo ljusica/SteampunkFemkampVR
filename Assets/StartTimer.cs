@@ -40,6 +40,7 @@ public class StartTimer : MonoBehaviour
 
     public void StartCountDown()
     {
+        if (countingDown) return;
         //This line stops the scenetransition of a pentathlon run if the player wants to retry a game
         if (GameManager.Instance.isDoingPenthathlonRun)
         {
@@ -87,9 +88,9 @@ public class StartTimer : MonoBehaviour
         buttonAnimateCountdown += Time.deltaTime * 4;
 
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
+        if (other.gameObject.CompareTag("Ball") || other.gameObject.CompareTag("Gun") || other.gameObject.CompareTag("Slingshot"))
         {
             StartCountDown();
         }
