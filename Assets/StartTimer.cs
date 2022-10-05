@@ -85,8 +85,13 @@ public class StartTimer : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Club") || collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
+        if (collision.gameObject.CompareTag("Gun") || collision.gameObject.CompareTag("Slingshot"))
         {
+            StartCountDown();
+        }
+        else if (collision.gameObject.CompareTag("Club"))
+        {
+            HammerHand.hammerHand.SendHapticImpulse(0.4f, 0.1f);
             StartCountDown();
         }
     }
