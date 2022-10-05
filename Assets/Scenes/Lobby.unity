@@ -9343,7 +9343,7 @@ BoxCollider:
   m_GameObject: {fileID: 485709524}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000004, y: 1.0000006, z: 1.4340459}
   m_Center: {x: 0.000007639722, y: 1.5044861e-13, z: -0.21702369}
@@ -15789,6 +15789,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: c4a32bc77dcd40541951a4b7fbd14fac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8520c3bed77ec6419ae775e22b1e368, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a32bc77dcd40541951a4b7fbd14fac, type: 3}
 --- !u!4 &845443081 stripped
