@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.FullSerializer;
-using UnityEditor;
 using UnityEngine;
 
 public class LoadVolumeSettings : MonoBehaviour
@@ -10,9 +6,6 @@ public class LoadVolumeSettings : MonoBehaviour
 
     void Awake()
     {
-        if (PlayerPrefs.HasKey("Volume"))
-            PlayerPrefs.DeleteKey("Volume");
-
         if (PlayerPrefs.HasKey("Volume"))
         {
             string jsonString = PlayerPrefs.GetString("Volume");
