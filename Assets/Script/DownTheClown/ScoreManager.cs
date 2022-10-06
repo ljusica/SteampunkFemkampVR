@@ -120,6 +120,12 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetScore(Scene scene = default, LoadSceneMode lsm = default)
     {
+        SetHighScore("SkeeBall", skeeBallScore);
+        SetHighScore("DuckHunt", duckHuntScore);
+        SetHighScore("DownTheClown", dtcScore);
+        SetHighScore("WhacAMole", wamScore);
+        SetHighScore("TankRacet", tankRacetScore);
+
         skeeBallScore = 0;
         duckHuntScore = 0;
         dtcScore = 0;
