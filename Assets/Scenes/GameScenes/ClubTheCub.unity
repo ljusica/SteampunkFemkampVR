@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1760938799}
-  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
+  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16928,6 +16928,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5370989301116589717, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1649470950}
     - target: {fileID: 5756310659352318487, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -16983,6 +16988,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 955951262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &955951266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5370989301116589717, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
+    type: 3}
+  m_PrefabInstance: {fileID: 955951262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c297801587e613b48ad374414b4e8bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &955951267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1948756345394529079, guid: 3b7c691f8cd79dc48bd24ae3ee06817c,
@@ -29272,6 +29289,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 290acb4c9c2e1fd47ba968ad1d802031, type: 3}
+--- !u!95 &1649470950 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5766024455945117788, guid: 290acb4c9c2e1fd47ba968ad1d802031,
+    type: 3}
+  m_PrefabInstance: {fileID: 1649470949}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1649470951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5766024455945117778, guid: 290acb4c9c2e1fd47ba968ad1d802031,
@@ -29290,7 +29313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1c026f21eec6d479fb0fe680303861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lvl: {fileID: 0}
+  lvl: {fileID: 955951266}
 --- !u!1 &1652322573
 GameObject:
   m_ObjectHideFlags: 0
