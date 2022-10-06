@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using static UnityEngine.ParticleSystem;
 
 public class ParticlesHitMouth : MonoBehaviour
 {
@@ -21,8 +22,13 @@ public class ParticlesHitMouth : MonoBehaviour
     }
     private void OnParticleTrigger()
     {
-        if(ParticlePhysicsExtensions.GetTriggerParticles(ps, ParticleSystemTriggerEventType.Enter, particles) > 0)
+        if (ParticlePhysicsExtensions.GetTriggerParticles(ps, ParticleSystemTriggerEventType.Enter, particles) > 0)
         {
+
+            if (!bloodSplattered)
+            {
+                StartCoroutine(SpawnBloodDecal(particles[0]));
+            }
             batMovement.Move();
             if (!hitMouthSound.isPlaying)
             {
@@ -30,23 +36,16 @@ public class ParticlesHitMouth : MonoBehaviour
                 hitMouthSound.Play();
             }
         }
+
     }
-    IEnumerator SpawnBloodDecal(GameObject other)
+    IEnumerator SpawnBloodDecal(ParticleSystem.Particle particle)
     {
         bloodSplattered = true;
         GameObject decal = Instantiate(bloodDecal);
-        decal.transform.position = particles[0].position;
-        decal.transform.parent = other.transform;
+        decal.transform.position = particle.position;
+        decal.transform.SetParent(vampire.transform);
         decal.GetComponent<DecalProjector>().material = bloodMaterials[Random.Range(0, bloodMaterials.Count)];
         yield return new WaitForSeconds(0.5f);
         bloodSplattered = false;
-    }
-
-    private void OnParticleCollision(GameObject other)
-    {
-        if (!bloodSplattered)
-        {
-            SpawnBloodDecal(other);
-        }
     }
 }
