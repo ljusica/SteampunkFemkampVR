@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -27,21 +28,25 @@ public class ParticlesHitMouth : MonoBehaviour
             {
                 hitMouthSound.pitch += 0.2f;
                 hitMouthSound.Play();
-                if (!bloodSplattered)
-                {
-                    SpawnBloodDecal();
-                }
             }
         }
     }
-    IEnumerator SpawnBloodDecal()
+    IEnumerator SpawnBloodDecal(GameObject other)
     {
         bloodSplattered = true;
         GameObject decal = Instantiate(bloodDecal);
         decal.transform.position = particles[0].position;
-        decal.transform.parent = vampire.transform;
+        decal.transform.parent = other.transform;
         decal.GetComponent<DecalProjector>().material = bloodMaterials[Random.Range(0, bloodMaterials.Count)];
         yield return new WaitForSeconds(0.5f);
         bloodSplattered = false;
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        if (!bloodSplattered)
+        {
+            SpawnBloodDecal(other);
+        }
     }
 }
