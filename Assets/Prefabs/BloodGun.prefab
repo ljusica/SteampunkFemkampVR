@@ -5365,6 +5365,14 @@ MonoBehaviour:
   batMovement: {fileID: 0}
   ps: {fileID: 7275080779786384442}
   hitMouthSound: {fileID: 1824936961}
+  bloodDecal: {fileID: 0}
+  bloodMaterials:
+  - {fileID: 2100000, guid: f851aecb0f0a46c41a0dbc287bb52ca9, type: 2}
+  - {fileID: 2100000, guid: 4af6e4b0cc1ae924ab7af0a8b3184ab6, type: 2}
+  - {fileID: 2100000, guid: c27a76f25dae8bc46a255f8a0bd3f537, type: 2}
+  - {fileID: 2100000, guid: e6f4e6890c44d454b96cd0ffc3770d88, type: 2}
+  - {fileID: 2100000, guid: b7f19e07c7cb1764887026178fdad8ed, type: 2}
+  vampire: {fileID: 0}
 --- !u!82 &1824936961
 AudioSource:
   m_ObjectHideFlags: 0
