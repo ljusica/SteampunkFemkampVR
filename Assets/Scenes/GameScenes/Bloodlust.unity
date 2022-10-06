@@ -37822,6 +37822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8381213118971289750}
   - component: {fileID: 9159156441294109229}
+  - component: {fileID: 9159156441294109230}
   m_Layer: 0
   m_Name: NosferatuLOW3
   m_TagString: Untagged
@@ -37847,3 +37848,16 @@ MonoBehaviour:
   maxYPos: 1.5
   minXPos: 58
   maxXPos: 60
+--- !u!65 &9159156441294109230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9159156441294109228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 2}
+  m_Center: {x: 0, y: 0.5, z: -0.5}
