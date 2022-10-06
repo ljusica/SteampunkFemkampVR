@@ -10,6 +10,7 @@ public class Mole : MonoBehaviour
 {
     public Vector3 hidingPos;
     public Vector3 openPos;
+    public ParticleSystem particleSystem;
 
     private bool hidden = true;
     private float speed = 0.2f;
@@ -43,6 +44,7 @@ public class Mole : MonoBehaviour
             Hide();
             whack?.Invoke(this);
             CompressTeddyOnHit();
+            particleSystem.Emit(5);
             HammerHand.hammerHand.SendHapticImpulse(hapticForce, hapticDuration);
             audioSource.pitch = UnityEngine.Random.Range(0.6f,1.2f);
             audioSource.Play();
