@@ -16,6 +16,7 @@ public class Mole : MonoBehaviour
     private float offset = 0.12f;
     private float hapticForce = 0.4f;
     private float hapticDuration = 0.1f;
+    private float teddyYScale;
 
     [SerializeField]
     AudioSource audioSource;
@@ -32,6 +33,7 @@ public class Mole : MonoBehaviour
     private void Start()
     {
         MoleManager.gameOver += GameOver;
+        teddyYScale = transform.localScale.y;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +42,7 @@ public class Mole : MonoBehaviour
         {
             Hide();
             whack?.Invoke(this);
+            CompressTeddyOnHit();
             HammerHand.hammerHand.SendHapticImpulse(hapticForce, hapticDuration);
             audioSource.pitch = UnityEngine.Random.Range(0.6f,1.2f);
             audioSource.Play();
@@ -73,6 +76,14 @@ public class Mole : MonoBehaviour
         moles.Add(this);
     }
 
+    void CompressTeddyOnHit()
+    {
+        transform.DOScaleY(teddyYScale - 2, 0.25f).SetEase(Ease.OutBounce).OnComplete(ResetTeddyComression);
+    }
+    void ResetTeddyComression()
+    {
+        transform.DOScaleY(teddyYScale, 0.5f);
+    }
     private void OnDisable()
     {
         MoleManager.gameOver -= GameOver;
