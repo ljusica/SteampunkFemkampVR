@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1554194573}
-  m_IndirectSpecularColor: {r: 0.0032029443, g: 0.006342596, b: 0.01448181, a: 1}
+  m_IndirectSpecularColor: {r: 0.003202678, g: 0.0063423594, b: 0.014481739, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3451,6 +3451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_medium (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5241cd0cb8884544685ea9e1c17a809e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5241cd0cb8884544685ea9e1c17a809e, type: 3}
 --- !u!4 &151336347 stripped
@@ -4270,6 +4275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_medium (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5241cd0cb8884544685ea9e1c17a809e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5241cd0cb8884544685ea9e1c17a809e, type: 3}
@@ -9214,6 +9224,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_medium (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5241cd0cb8884544685ea9e1c17a809e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5241cd0cb8884544685ea9e1c17a809e, type: 3}
 --- !u!4 &456747825 stripped
@@ -13251,6 +13266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_large
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d15534c6d6682b4896c6a77969807ff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d15534c6d6682b4896c6a77969807ff, type: 3}
 --- !u!4 &612017848 stripped
@@ -14484,6 +14504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_small (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b841e250714d5f4abd89697a74afe7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b841e250714d5f4abd89697a74afe7a, type: 3}
@@ -17133,6 +17158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_large (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d15534c6d6682b4896c6a77969807ff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d15534c6d6682b4896c6a77969807ff, type: 3}
@@ -21981,6 +22011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_medium (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5241cd0cb8884544685ea9e1c17a809e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5241cd0cb8884544685ea9e1c17a809e, type: 3}
 --- !u!4 &1073033692 stripped
@@ -25823,6 +25858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_small (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b841e250714d5f4abd89697a74afe7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b841e250714d5f4abd89697a74afe7a, type: 3}
@@ -32038,6 +32078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_small
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b841e250714d5f4abd89697a74afe7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b841e250714d5f4abd89697a74afe7a, type: 3}
 --- !u!4 &1633371084 stripped
@@ -32268,6 +32313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_large (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d15534c6d6682b4896c6a77969807ff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d15534c6d6682b4896c6a77969807ff, type: 3}
@@ -36643,6 +36693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target_small (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b841e250714d5f4abd89697a74afe7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b841e250714d5f4abd89697a74afe7a, type: 3}
 --- !u!4 &1906755963 stripped
@@ -40622,6 +40677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target_small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b841e250714d5f4abd89697a74afe7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Teddy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b841e250714d5f4abd89697a74afe7a, type: 3}

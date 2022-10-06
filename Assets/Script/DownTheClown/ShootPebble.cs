@@ -60,15 +60,10 @@ public class ShootPebble : MonoBehaviour, IShotable
     {
         rb.velocity = notch.transform.forward * 10;
         collider.enabled = true;
+        Invoke(nameof(ResetPebble), 3);
         yield return null;
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Teddy"))
-        {
-            ResetPebble();
-        }
-    }
+
 
     private void ResetPebble()
     {
