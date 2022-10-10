@@ -2435,6 +2435,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 718207889819983129, guid: 86f62d71f234b5e4fb40588ab1b793d0,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5582568c74be5b94fb2413b9058812eb, type: 2}
+    - target: {fileID: 718207889819983129, guid: 86f62d71f234b5e4fb40588ab1b793d0,
+        type: 3}
       propertyPath: m_Parameters.widthMultiplier
       value: 0.005
       objectReference: {fileID: 0}
